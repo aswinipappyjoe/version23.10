@@ -1,0 +1,979 @@
+﻿using PappyjoeMVC.Controller;
+using System;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Drawing.Printing;
+using System.IO;
+using System.Windows.Forms;
+
+
+namespace PappyjoeMVC.View
+{
+    public partial class Add_New_Patients : Form
+    {
+        Add_New_patient_controller cntrl = new Add_New_patient_controller();
+        Communication_Setting_controller ccntrl = new Communication_Setting_controller();
+        public string patient_name = "", doctor_id = "", staff_id = "", PatientId = "", path = "";
+        string pat_id = "";
+        int medhisStatus = 0, selectGrp = 0;
+        public int statusForNewPatient = 0; string clinicn = "";
+        public static bool SetFlag = false;
+
+        private void txtPMobNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void txtPMobNumber_Leave(object sender, EventArgs e)
+        {
+            //if (txtPMobNumber.TextLength > 10 && txtPMobNumber.TextLength < 8 && txtPMobNumber.TextLength == 9)
+            //{
+            //    DialogResult res = MessageBox.Show("Do you really want to add this number?", " confirmation",
+            //                  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //    if (res == DialogResult.No)
+            //    {
+            //        txtPMobNumber.Text = "";
+            //        txtPMobNumber.Focus();
+            //        return;
+            //    }
+            //    //txtPMobNumber.Focus();
+            //    //Lab_InvalidNumber.Visible = true;
+            //    //return;
+            //}
+            //else
+            //{
+            //    //Lab_InvalidNumber.Visible = false;
+            //    //validatenumber();
+            //}
+
+        }
+        public void validatenumber()
+        {
+            string patSearchnumber = this.cntrl.Get_pnonenumber(txtPMobNumber.Text);
+            if (Convert.ToDecimal(patSearchnumber) != 0)
+            {
+                MessageBox.Show("User with same Number already exists", "Number exists", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtPMobNumber.Focus();
+            }
+        }
+
+        private void txtPatName_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (txtPatName.Text != "")
+            {
+            }
+            else
+            {
+                Lab_UsernameAvailable.Hide();
+            }
+        }
+
+        private void txtPatName_Leave(object sender, EventArgs e)
+        {
+            Lab_UsernameAvailable.Show();
+            DataTable patSearch = this.cntrl.Get_patient_details(txtPatName.Text);
+            if (patSearch.Rows.Count > 0)
+            {
+                Lab_UsernameAvailable.Text = "User with same name already exists";
+                Lab_UsernameAvailable.ForeColor = Color.Red;
+                Lab_ViewDetails.Show();
+            }
+            else
+            {
+                Lab_UsernameAvailable.Text = "User Available";
+                Lab_UsernameAvailable.ForeColor = Color.LimeGreen;
+                Lab_ViewDetails.Hide();
+            }
+        }
+
+        private void DTP_Dob_ValueChanged(object sender, EventArgs e)
+        {
+            int age = DateTime.Now.Year - DTP_Dob.Value.Year - (DateTime.Now.DayOfYear < DTP_Dob.Value.DayOfYear ? 1 : 0);
+            txtxAge.Text = age.ToString();
+            DTP_Dob.Format = DateTimePickerFormat.Custom;
+            DTP_Dob.CustomFormat = "dd-MM-yyyy";
+        }
+
+        public void openform(Form myForm)
+        {
+            Panel p = this.Parent as Panel;
+            if (p != null)
+            {
+                myForm.FormBorderStyle = FormBorderStyle.None;
+                myForm.TopLevel = false;
+                myForm.Dock = DockStyle.Fill;
+                p.Controls.Add(myForm);
+                myForm.Show();
+                this.Close();
+            }
+        }
+        private void btn_SavePatient_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string pat_mobNo = txtPMobNumber.Text;
+                string pat_name = txtPatName.Text;
+                //if (txtPMobNumber.TextLength != 10)
+                //{
+                //    MessageBox.Show("Enter the mobile number.. !!", "Data not found.. ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    return;
+                //}
+                //if(txtpassportno.Text!="")
+                //{
+                //    if (txtpassportno.TextLength != 8 && !(txtpassportno.Text).StartsWith("J"))
+                //    {
+                //        MessageBox.Show("Enter the passport number.. !!", "Data not found.. ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //        return;
+                //    }
+                //}
+                if (txtPatientId.Text != "")
+                {
+                    DataTable dtb = this.cntrl.get_patientid(txtPatientId.Text);
+                    if (dtb.Rows.Count > 0)
+                    {
+                        MessageBox.Show("This patient id already exists", "Duplication encountered", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+                else
+                {
+                    DataTable cmd = this.cntrl.automaticid_when_automation_No();
+                    if (cmd.Rows.Count > 0)
+                    {
+                        //int n = 0;
+                        //n = int.Parse(cmd.Rows[0]["patient_number"].ToString()) + 1;patient_prefix
+                        //if (n != 0)
+                        //{
+                        txtPatientId.Text = cmd.Rows[0]["patient_prefix"].ToString() + cmd.Rows[0]["patient_number"].ToString();
+                        //this.cntrl.update_autogenerateid(n);
+                        //}
+                    }
+                }
+                if (String.IsNullOrWhiteSpace(txtPatName.Text))
+                {
+                    txtPatName.Focus();
+                    return;
+                }
+                else
+                {
+                    string gender = "", dob = "", visited = "",passport="",p_expiry="";
+                    Lab_UsernameAvailable.Show();
+                    DataTable patSearch = this.cntrl.Get_patient_details(txtPatName.Text);
+                    if (patSearch.Rows.Count > 0)
+                    {
+                        Lab_UsernameAvailable.Text = "User with same name already exists";
+                        Lab_UsernameAvailable.ForeColor = Color.Red;
+                        Lab_ViewDetails.Show();
+                    }
+                    else
+                    {
+                        Lab_UsernameAvailable.Text = "User Available";
+                        Lab_UsernameAvailable.ForeColor = Color.LimeGreen;
+                        Lab_ViewDetails.Hide();
+                    }
+                    if (txtPMobNumber.Text != "" && txtPMobNumber.Text.Length > 7 && txtPMobNumber.Text.Length < 14)
+                    {
+                        DataTable dtb_phone = this.cntrl.Get_patient_phoneno(txtPMobNumber.Text, txtPatName.Text);
+                        if (dtb_phone.Rows.Count > 0)
+                        {
+                            DialogResult res = MessageBox.Show(" This patient already exists,Do you really want to save this number?", " confirmation",
+                           MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            if (res == DialogResult.No)
+                            {
+                                txtPMobNumber.Text = "";
+                                txtPatName.Text = "";
+                                return;
+                            }
+
+                        }
+                        //else
+                        //{
+
+                        //}
+                        int i = 0;
+                        if (radMale.Checked == true)
+                            gender = "Male";
+                        else
+                            gender = "Female";
+                        if (DateTime.Now.Date.ToString("MM/dd/yyyy") == DTP_Dob.Value.ToString("MM/dd/yyyy"))
+                        {
+                            dob = null;
+                        }
+                        else
+                        {
+                            dob = DTP_Dob.Value.ToString("yyyy-MM-dd");
+                        }
+                        if (DateTime.Now.Date.ToString("MM/dd/yyyy") == dateTimePickervisited.Value.ToString("MM/dd/yyyy"))
+                        {
+                            visited = DateTime.Now.Date.ToString("yyyy/MM/dd");
+                        }
+                        else
+                        {
+                            visited = dateTimePickervisited.Value.ToString("yyyy/MM/dd");
+                        }
+                        if (DateTime.Now.Date.ToString("MM/dd/yyyy") == dtp_pass_expiry_date.Value.ToString("MM/dd/yyyy"))
+                        {
+                            passport = null;
+                        }
+                        else
+                        {
+                            passport = dtp_pass_expiry_date.Value.ToString("yyyy-MM-dd");
+                        }
+                        if (DateTime.Now.Date.ToString("MM/dd/yyyy") == dtp_visa_expiry_date.Value.ToString("MM/dd/yyyy"))
+                        {
+                            p_expiry = null;
+                        }
+                        else
+                        {
+                            p_expiry = dtp_visa_expiry_date.Value.ToString("yyyy-MM-dd");
+                        }
+                        //Addfunction();
+                        string smsName = "", smsPass = "";
+                        DataTable sms = this.cntrl.smsdetails();
+                        if (sms.Rows.Count > 0)
+                        {
+                            smsName = sms.Rows[0]["smsName"].ToString();
+                            smsPass = sms.Rows[0]["smsPass"].ToString();
+                        }
+                        string smsName1 = PappyjoeMVC.Model.GlobalVariables.smsName.ToString();
+                        string smsPass1 = PappyjoeMVC.Model.GlobalVariables.smsPass.ToString();
+                        string type = "LNG";
+                        i = this.cntrl.Save(txtPatName.Text, txtPatientId.Text, txtAadhar.Text, gender, dob, txtxAge.Text,txt_age_decimal.Text,cmb_age.Text, cmdBloodbroup.Text, txtAccompained.Text, txtPMobNumber.Text, txtSMobileNumber.Text, txtLandline.Text, txtEmail.Text, txtxStreet.Text, txtLocality.Text, txtCity.Text, txtPincode.Text, txtReferedby.Text, txtFileNo.Text, visited, ddldoctor.Text, txtOccupation.Text, txtnationality.Text, txtpassportno.Text, txt_c_o.Text, passport, txt_Count_issusing_pass.Text,txt_latest_visa_no.Text,txt_visa_issuing_country.Text, p_expiry);
+                        string dt = DateTime.Now.Date.ToString("yyyy-MM-dd");
+                        DateTime Timeonly = DateTime.Now;
+                        DataTable cmd = this.cntrl.automaticid();
+                        if (cmd.Rows.Count > 0)
+                        {
+                            int n = 0;
+                            n = int.Parse(cmd.Rows[0]["patient_number"].ToString()) + 1;
+                            if (n != 0)
+                            {
+                                this.cntrl.update_autogenerateid(n);
+                            }
+                        }
+                        if (i > 0)
+                        {
+                            txtPic.Text = "";
+                            string rs_patient = this.cntrl.get_maxId();
+                            pat_id = rs_patient;
+                            if (medhisStatus == 0)
+                            {
+                                foreach (DataGridViewRow row in grmedical.Rows)
+                                {
+                                    //string d = row.Cells[1].Value.ToString();
+                                    //DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[0];
+                                    //if (chk.Selected == true)
+                                    //{
+                                    //    this.cntrl.save_medical(pat_id, row.Cells[1].Value.ToString());
+                                    //}
+                                    DataGridViewCheckBoxCell chkchecking = row.Cells[0] as DataGridViewCheckBoxCell;//bhj
+
+                                    if (Convert.ToBoolean(chkchecking.Value) == true)
+                                    {
+                                        this.cntrl.save_medical(pat_id, row.Cells[1].Value.ToString());
+                                    }
+                                }
+
+                                //for (int count = 0; count < grmedical.Rows.Count; count++)
+                                //{
+                                //    if (Convert.ToBoolean(grmedical.Rows[count].Cells[1].Value) == true)
+                                //    {
+                                //        this.cntrl.save_medical(pat_id, grmedical.Rows[count].Cells[0].Value.ToString());
+                                //    }
+                                //}
+                            }
+                            else
+                            {
+                                foreach (DataGridViewRow row in grmedical.Rows)
+                                {
+                                    //string d = row.Cells[1].Value.ToString();
+                                    //DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[0];
+                                    //if (chk.Selected == true)
+                                    //{
+                                    //    this.cntrl.save_medical(pat_id, row.Cells[1].Value.ToString());
+                                    //}
+                                    DataGridViewCheckBoxCell chkchecking = row.Cells[0] as DataGridViewCheckBoxCell;//bhj
+
+                                    if (Convert.ToBoolean(chkchecking.Value) == true)
+                                    {
+                                        this.cntrl.save_medical(pat_id, row.Cells[1].Value.ToString());
+                                    }
+                                }
+
+                                //for (int count = 0; count < grmedical.Rows.Count; count++)
+                                //{
+                                //    if (Convert.ToBoolean(grmedical.Rows[count].Cells[0].Value) == true)
+                                //    {
+                                //        this.cntrl.save_medical(pat_id, grmedical.Rows[count].Cells[1].Value.ToString());
+                                //    }
+                                //}
+                            }
+
+                            if (selectGrp == 0)
+                            {
+                                foreach (DataGridViewRow row in gridgroups.Rows)
+                                {
+                                    DataGridViewCheckBoxCell chkchecking = row.Cells[0] as DataGridViewCheckBoxCell;//bhj
+
+                                    if (Convert.ToBoolean(chkchecking.Value) == true)
+                                    {
+                                        this.cntrl.save_group(pat_id, row.Cells[1].Value.ToString());
+                                    }
+                                    //string d = row.Cells[1].Value.ToString();
+                                    //DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[0];
+                                    //if (chk.Selected == true)
+                                    //{
+                                    //    this.cntrl.save_group(pat_id, row.Cells[1].Value.ToString());
+                                    //}
+                                }
+
+                                //for (int count = 0; count < gridgroups.Rows.Count; count++)
+                                //{
+                                //    if (Convert.ToBoolean(gridgroups.Rows[count].Cells[1].Value) == true)
+                                //    {
+                                //        this.cntrl.save_group(pat_id, gridgroups.Rows[count].Cells[0].Value.ToString());
+                                //    }
+                                //}
+                            }
+                            else
+                            {
+                                foreach (DataGridViewRow row in gridgroups.Rows)
+                                {
+                                    //string d = row.Cells[1].Value.ToString();
+                                    //DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[0];
+                                    //if (chk.Selected == true)
+                                    //{
+                                    //    this.cntrl.save_group(pat_id, row.Cells[1].Value.ToString());
+                                    //}
+                                    DataGridViewCheckBoxCell chkchecking = row.Cells[0] as DataGridViewCheckBoxCell;//bhj
+
+                                    if (Convert.ToBoolean(chkchecking.Value) == true)
+                                    {
+                                        this.cntrl.save_group(pat_id, row.Cells[1].Value.ToString());
+                                    }
+                                }
+                                //for (int count = 0; count < gridgroups.Rows.Count; count++)
+                                //{
+                                //    if (Convert.ToBoolean(gridgroups.Rows[count].Cells[0].Value) == true)
+                                //    {
+                                //        this.cntrl.save_group(pat_id, gridgroups.Rows[count].Cells[1].Value.ToString());
+                                //    }
+                                //}
+                            }
+                            this.cntrl.save_log(doctor_id, "Patient", " Adds Patient", dt, Convert.ToString(Timeonly.ToString("hh:mm tt")), "Add", pat_id);
+
+                            Clear_data();
+                            string server = this.cntrl.server();
+                            if (path != "")
+                            {
+
+                                try
+                                {
+                                    if (File.Exists(@"\\" + server + "\\Pappyjoe_utilities\\patient_image\\" + pat_id))
+                                    {
+                                    }
+                                    else
+                                    {
+                                        System.IO.File.Copy(path, @"\\" + server + "\\Pappyjoe_utilities\\patient_image\\" + pat_id);
+                                    }
+                                }
+                                catch { }
+                            }
+                            string scount = "";
+                            DataTable smscount = this.ccntrl.getsmscnt();
+                            if (smscount.Rows[0]["sms"].ToString() != "")
+                            {
+                                scount = PappyjoeMVC.Model.EncryptionDecryption.Decrypt(smscount.Rows[0]["sms"].ToString(), "ch3lSeAW0n2o2!C1");
+                                if (Convert.ToInt32(scount) > 5)
+                                {
+                                    string clnc = this.cntrl.Load_CompanyName();
+                                    if (sms.Rows[0]["pat_welcSMS"].ToString() == "1")
+                                    {
+                                        string text = "Dear " + pat_name + " Thanks for choosing us. We are pleased to serve you as a new patient. Regards " + clnc;
+                                        this.cntrl.SendSMS(smsName, smsPass, pat_mobNo, text, type);
+                                    }
+                                    scount = Convert.ToString(Convert.ToInt32(scount) - 1);
+                                    string Encrypt = PappyjoeMVC.Model.EncryptionDecryption.Encrypt(scount, "ch3lSeAW0n2o2!C1");
+                                    this.ccntrl.smsCount(Encrypt);
+                                }
+                            }
+                            if (statusForNewPatient == 1)
+                            {
+                                ActiveForm.Close();
+                            }
+                            else
+                            {
+                                var form2 = new Patient_Profile_Details();
+                                form2.patient_id = pat_id;
+                                form2.doctor_id = doctor_id;
+                                openform(form2);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Inseration Failed,Error occured !!", " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Enter the mobile number..Mobile number is invalid !!", "Data not found.. ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Lab_InvalidNumber.Visible = true;
+                        return;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public void Clear_data()
+        {
+            txtPatName.Text = "";
+            txtPatientId.Text = "";
+            txtAadhar.Text = "";
+            txtxAge.Text = "";
+            cmdBloodbroup.SelectedIndex = 0;
+            txtAccompained.Text = "";
+            DTP_Dob.Value = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd"));
+            dateTimePickervisited.Value = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd"));
+            txtPMobNumber.Text = "";
+            txtSMobileNumber.Text = "";
+            txtLandline.Text = "";
+            radFemale.Checked = false;
+            radMale.Checked = false;
+            txtEmail.Text = "";
+            txtxStreet.Text = "";
+            txtLocality.Text = "";
+            txtCity.Text = "";
+            txtPincode.Text = "";
+            txtFileNo.Text = "";
+            txtOccupation.Text = "";
+            txtReferedby.Text = "";
+            txt_c_o.Text = "";
+            dtp_pass_expiry_date.Value = Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd")); 
+            txt_Count_issusing_pass.Text = "";
+            txt_latest_visa_no.Text = "";
+            txt_visa_issuing_country.Text = "";
+            dtp_visa_expiry_date.Value= Convert.ToDateTime(DateTime.Now.ToString("yyyy-MM-dd"));
+        }
+        public int len;
+        public void pathlength()
+        {
+            string fullpath = Application.StartupPath.Substring(0, Application.StartupPath.Length);
+            if (fullpath.Substring((Application.StartupPath.Length) - 1) == "e")
+            {
+                len = 11;
+            }
+            else if (fullpath.Substring((Application.StartupPath.Length - 1)) == "g")
+            {
+                len = 10;
+            }
+        }
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            grmedical.Visible = false;
+            txtMedHistory.Visible = true;
+            dataGridViewmedical.Visible = true;
+            btnMED_Add.Visible = true;
+            btnMED_Cancle.Visible = true;
+            DataTable dt = this.cntrl.load_medical();
+            dataGridViewmedical.DataSource = dt;
+            btnAddNew.Visible = false;
+        }
+
+        private void btnMED_Add_Click(object sender, EventArgs e)
+        {
+            medhisStatus = 1;
+            DataTable dtb = this.cntrl.check_medical(txtMedHistory.Text);
+            insertMED(dtb);
+            DataTable dt = this.cntrl.load_medical();
+            grmedical.DataSource = dt;
+        }
+        public void insertMED(DataTable checkdatacc)
+        {
+            try
+            {
+                if (checkdatacc.Rows.Count > 0)
+                {
+                    MessageBox.Show("Medical History " + txtMedHistory.Text + " already exist");
+                }
+                else
+                {
+                    if (txtMedHistory.Text != "")
+                    {
+                        this.cntrl.insert_medical(txtMedHistory.Text);
+                        txtMedHistory.Text = "";
+                        btnAddNew.Visible = true;
+                        grmedical.Visible = true;
+                        txtMedHistory.Visible = false;
+                        dataGridViewmedical.Visible = false;
+                        btnMED_Add.Visible = false;
+                        btnMED_Cancle.Visible = false;
+                    }
+                    else
+                    { }
+                }
+            }
+            catch { }
+        }
+
+        private void btnMED_Cancle_Click(object sender, EventArgs e)
+        {
+            DataTable dt = this.cntrl.load_medical();
+            grmedical.DataSource = dt;
+            btnAddNew.Visible = true;
+            grmedical.Visible = true;
+            txtMedHistory.Visible = false;
+            dataGridViewmedical.Visible = false;
+            btnMED_Add.Visible = false;
+            btnMED_Cancle.Visible = false;
+        }
+
+        private void btn_addgrps_Click(object sender, EventArgs e)
+        {
+            DataTable dt1 = this.cntrl.load_group();
+            grouptext.Text = "";
+            gridgroup1.DataSource = dt1;
+            btn_addgrps.Visible = false;
+            gridgroups.Visible = false;
+            grouptext.Visible = true;
+            btnGrp_Add.Visible = true;
+            btn_GrpCancel.Visible = true;
+            gridgroup1.Visible = true;
+        }
+
+        private void btnGrp_Add_Click(object sender, EventArgs e)
+        {
+            selectGrp = 1;
+            DataTable dtb = this.cntrl.check_group(grouptext.Text);
+            insertgroup(dtb);
+            DataTable dt1 = this.cntrl.load_group();
+            grouptext.Text = "";
+            gridgroups.DataSource = dt1;
+        }
+        public void insertgroup(DataTable checkdatacc)
+        {
+            try
+            {
+                if (checkdatacc.Rows.Count > 0)
+                {
+                    MessageBox.Show("Group  " + grouptext.Text + " already exist");
+                }
+                else
+                {
+                    if (grouptext.Text != "")
+                    {
+                        this.cntrl.insert_group(grouptext.Text);
+                        grouptext.Text = "";
+                        btn_addgrps.Visible = true;
+                        gridgroups.Visible = true;
+                        grouptext.Visible = false;
+                        btnGrp_Add.Visible = false;
+                        btn_GrpCancel.Visible = false;
+                        gridgroup1.Visible = false;
+                    }
+                    else { }
+                }
+            }
+            catch { }
+        }
+
+        private void btn_GrpCancel_Click(object sender, EventArgs e)
+        {
+            DataTable dt1 = this.cntrl.load_group();
+            grouptext.Text = "";
+            gridgroups.DataSource = dt1;
+            btn_addgrps.Visible = true;
+            gridgroups.Visible = true;
+            grouptext.Visible = false;
+            btnGrp_Add.Visible = false;
+            btn_GrpCancel.Visible = false;
+            gridgroup1.Visible = false;
+        }
+
+        private void Lab_ViewDetails_Click(object sender, EventArgs e)
+        {
+            if (Lab_ViewDetails.Text == "View Details")
+            {
+                DataTable dtb = new DataTable();
+                dtb = this.cntrl.Get_patient_details(txtPatName.Text);
+                Search_Available_Patient frm = new Search_Available_Patient(dtb, doctor_id);
+                frm.ShowDialog();
+                frm.Closed += (sender1, args) => this.Close();
+                if (SetFlag == true)
+                {
+
+                    this.Visible = false;
+                    SetFlag = false;
+                }
+                frm.Dispose();
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            try
+            {
+                int w = e.MarginBounds.Width / 2;
+                int x = e.MarginBounds.Left;
+                int y = e.MarginBounds.Top;
+                Font printFont = new Font("Arial", 10);
+                string tabDataText = clinicn.Replace("¤", "'");
+                var tabDataForeColor = Color.Blue;
+                var txtDataWidth = e.Graphics.MeasureString(tabDataText, printFont).Width;
+                using (var sf = new StringFormat())
+                {
+                    sf.LineAlignment = StringAlignment.Center;
+                    sf.Alignment = StringAlignment.Center;
+                    e.Graphics.DrawString(tabDataText, new Font(this.Font.Name, 18),
+                         new SolidBrush(tabDataForeColor),
+                         e.MarginBounds.Left + (e.MarginBounds.Width / 2),
+                         e.MarginBounds.Top - 55,
+                         sf);
+                }
+                e.HasMorePages = false;
+                int iLeftMargin = e.MarginBounds.Left;
+                string date = System.DateTime.Now.ToShortDateString();
+                e.Graphics.DrawString("Patient Registration Form", new Font("Arial", 16, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point), Brushes.Black, 200, 75);
+                string underLine = "--------------------------------------------";
+                e.Graphics.DrawString(underLine, new Font("Arial", 14, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 200, 95);
+                e.Graphics.DrawString("Printed By:", new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 1, 130);
+                e.Graphics.DrawString("Admin", new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 75, 130);
+                e.Graphics.DrawString("Date:", new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 150, 130);
+                e.Graphics.DrawString(date, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 195, 130);
+                e.Graphics.DrawString("Personal Details", new Font("Arial", 12, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point), Brushes.Black, 10, 160);
+                e.Graphics.DrawString(this.label1.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 210);
+                e.Graphics.DrawString(this.label8.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 260);
+                e.Graphics.DrawString(this.txtPatientId.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 200, 260);
+                e.Graphics.DrawString(this.label10.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 310);
+                e.Graphics.DrawString(this.label14.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 360);
+                e.Graphics.DrawString(this.label17.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 410);
+                e.Graphics.DrawString(this.label16.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 460);
+                e.Graphics.DrawString(this.label19.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 510);
+                e.Graphics.DrawString("General Details", new Font("Arial", 12, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point), Brushes.Black, 10, 560);
+                e.Graphics.DrawString(this.label21.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 610);
+                e.Graphics.DrawString(this.label9.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 660);
+                e.Graphics.DrawString("Male", new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 200, 660);
+                Pen blackPen = new Pen(Color.Black, 1);
+                Rectangle re_Male = new Rectangle(0, 0, 50, 50);
+                re_Male.X = 250;
+                re_Male.Y = 660;
+                re_Male.Width = 25;
+                re_Male.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, re_Male);
+                e.Graphics.DrawString("Female", new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 300, 660);
+                Rectangle refamale = new Rectangle(0, 0, 50, 50);
+                refamale.X = 355;
+                refamale.Y = 660;
+                refamale.Width = 25;
+                refamale.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, refamale);
+                e.Graphics.DrawString(this.label4.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 710);
+                Rectangle rect = new Rectangle(0, 0, 50, 50);
+                rect.X = 190;
+                rect.Y = 710;
+                rect.Width = 25;
+                rect.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect);
+                Rectangle rect1 = new Rectangle(0, 0, 50, 50);
+                rect1.X = 220;
+                rect1.Y = 710;
+                rect1.Width = 25;
+                rect1.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect1);
+                Rectangle rect2 = new Rectangle(0, 0, 50, 50);
+                rect2.X = 265;
+                rect2.Y = 710;
+                rect2.Width = 25;
+                rect2.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect2);
+                Rectangle rect3 = new Rectangle(0, 0, 50, 50);
+                rect3.X = 297;
+                rect3.Y = 710;
+                rect3.Width = 25;
+                rect3.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect3);
+                Rectangle rect4 = new Rectangle(0, 0, 50, 50);
+                rect4.X = 350;
+                rect4.Y = 710;
+                rect4.Width = 25;
+                rect4.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect4);
+                Rectangle rect5 = new Rectangle(0, 0, 50, 50);
+                rect5.X = 380;
+                rect5.Y = 710;
+                rect5.Width = 25;
+                rect5.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect5);
+                Rectangle rect6 = new Rectangle(0, 0, 50, 50);
+                rect6.X = 400;
+                rect6.Y = 710;
+                rect6.Width = 25;
+                rect6.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect);
+                Rectangle rect7 = new Rectangle(0, 0, 50, 50);
+                rect7.X = 410;
+                rect7.Y = 710;
+                rect7.Width = 25;
+                rect7.Height = 25;
+                e.Graphics.DrawRectangle(blackPen, rect7);
+                e.Graphics.DrawString(this.label23.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 760);
+                e.Graphics.DrawString(this.label30.Text, new Font("Arial", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point), Brushes.Black, 25, 810);
+                e.Graphics.DrawString("Medical History", new Font("Arial", 12, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point), Brushes.Black, 10, 860);
+                DataTable dt = this.cntrl.load_medical();
+                grmedical.DataSource = dt;
+                Graphics graphics = e.Graphics;
+                Font font = new Font("Arial", 10);
+                float fontHeight = font.GetHeight();
+                int startX = 25; int LineY = 900;
+                int startY = 875;
+                int Offset = 10;
+                Rectangle recta = new Rectangle(0, 0, 50, 50);
+                int a = grmedical.Rows.Count;
+                for (int i = 0; i < a; i++)
+                {
+                    recta.X = startX + 150;
+                    recta.Y = startY + 50;
+                    recta.Width = 15;
+                    recta.Height = 15;
+                    graphics.DrawString(Convert.ToString(grmedical.Rows[i].Cells[0].Value), new Font("Arial", 10), new SolidBrush(Color.Black), startX, LineY + Offset);
+                    graphics.DrawString("\t\n" + Convert.ToString(grmedical.Rows[i].Cells[1].Value), new Font("Arial", 10), new SolidBrush(Color.Black), startX, LineY + Offset);
+                    e.Graphics.DrawRectangle(blackPen, recta);
+                    startY = startY + 30; Offset = Offset + 30;
+                }
+            }
+            catch
+            { }
+        }
+
+        private void print_Click(object sender, EventArgs e)
+        {
+            PrintDocument printdocument = new PrintDocument();
+            printdocument.PrintPage += printDocument1_PrintPage;
+            printdocument.Print();
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.Show();
+        }
+
+        public string Group
+        {
+            get { return this.grouptext.Text; }
+            set { grouptext.Text = value; }
+        }
+        OpenFileDialog open = new OpenFileDialog();
+        private void PB_Image_Click(object sender, EventArgs e)
+        {
+            DialogResult ok = MessageBox.Show("The image can be saved just once. Do you wish to add one now? Or You can add later from patient profile.", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (ok == DialogResult.Yes)
+            {
+                open.Filter = "jpeg|*.jpg|bmp|*.bmp|all files|*.*";
+                DialogResult res = open.ShowDialog();
+                path = open.FileName;
+                if (res == DialogResult.OK)
+                {
+                    PB_Image.Image = Image.FromFile(open.FileName);
+                }
+            }
+            else
+            {
+                PB_Image.Image = null;
+                path = "";
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            var form2 = new Patients();
+            form2.doctor_id = doctor_id;
+            openform(form2);
+        }
+
+        private void grmedical_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            //grmedical.ClearSelection();
+            grmedical.CurrentCell.Selected = false;
+        }
+
+        private void gridgroups_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            //gridgroups.ClearSelection();
+            gridgroups.CurrentCell.Selected = false;
+        }
+
+        private void grmedical_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            grmedical.CurrentCell.Selected = true;
+        }
+
+        private void txtxAge_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void Lab_UsernameAvailable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public Add_New_Patients()
+        {
+            InitializeComponent();
+        }
+        public Add_New_Patients(bool setFlag)
+        {
+            InitializeComponent();
+            SetFlag = true;
+        }
+        private void AddNewPatients_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                if (SetFlag == false)
+                {
+                    if (PappyjoeMVC.Model.Connection.MyGlobals.project_type == "Pharmacy")
+                    {
+                        grmedical.Visible = false; print.Visible = false;
+                        panel1.Visible = false; panel2.Visible = false; btnAddNew.Visible = false; label32.Visible = false;
+                    }
+                    else
+                    {
+                        panel1.Visible = true;
+                        grmedical.Visible = true; panel2.Visible = true;
+                        DataTable dt = this.cntrl.load_medical();
+                        grmedical.DataSource = dt;
+                        DataGridViewCheckBoxColumn check = new DataGridViewCheckBoxColumn()
+                        {
+                            Name = "Check"
+                        };
+                        grmedical.Columns.Add(check);
+                        check.Width = 100;
+                        check.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                        grmedical.CurrentCell.Selected = false;
+
+                    }
+                    txtxAge.Text = ""; txtPic.Text = "";
+                    doctornamebind();
+                    //btnAddNew.Visible = true;
+                    string docnam = this.cntrl.Get_DoctorName(doctor_id);
+                    DataTable auto = this.cntrl.data_from_automaticid();
+                    if (auto.Rows.Count > 0)
+                    {
+                        if (auto.Rows[0]["patient_automation"].ToString() == "Yes")
+                        {
+                            txtPatientId.Text = auto.Rows[0]["patient_prefix"].ToString() + auto.Rows[0]["patient_number"].ToString();
+                            txtPatientId.ReadOnly = true;
+                        }
+                    }
+                    this.Size = new System.Drawing.Size(500, 500);
+                    if (statusForNewPatient == 1)
+                    {
+                        txtPatName.Text = patient_name;
+                    }
+                    gridgroups.Show();
+                    Lab_InvalidNumber.Visible = false;
+                    gridgroups.Visible = true;
+                    Lab_UsernameAvailable.Visible = false;
+                    txtReferedby.Visible = true;
+                  
+                    DTP_Dob.MaxDate = DateTime.Now.Date;
+                    DataTable dt1 = this.cntrl.load_group();
+                    grouptext.Text = "";
+                    gridgroups.DataSource = dt1;
+                    DataGridViewCheckBoxColumn check1 = new DataGridViewCheckBoxColumn()
+                    {
+                        Name = "Check1"
+                    };
+                    gridgroups.Columns.Add(check1);
+                    check1.Width = 100;
+                    check1.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                    // Barcode Printing
+                    if (txtPatientId.Text.Trim() != "")
+                    {
+                        string barCode = txtPatientId.Text;
+                        Bitmap bitMap = new Bitmap(barCode.Length * 40, 20);
+                        using (Graphics graphics = Graphics.FromImage(bitMap))
+                        {
+                            Font oFont = new Font("IDAutomationHC39M", 16);
+                            PointF point = new PointF(2f, 2f);
+                            SolidBrush blackBrush = new SolidBrush(Color.Black);
+                            SolidBrush whiteBrush = new SolidBrush(Color.White);
+                            graphics.FillRectangle(whiteBrush, 0, 0, bitMap.Width, bitMap.Height);
+                            graphics.DrawString(barCode, oFont, blackBrush, point);
+                        }
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            bitMap.Save(ms, ImageFormat.Png);
+                            pictureBox_barcode.Image = bitMap;
+                            pictureBox_barcode.Height = bitMap.Height;
+                            pictureBox_barcode.Width = bitMap.Width;
+                        }
+                    }
+                    txtxAge.Text = "";
+                }
+                gridgroups.CurrentCell.Selected = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        public void doctornamebind()
+        {
+            try
+            {
+                if (doctor_id != "0")
+                {
+                    int dr_index = 0;
+                    DataTable dt = this.cntrl.get_all_doctorname();
+                    if (dt.Rows.Count > 0)
+                    {
+                        ddldoctor.DisplayMember = "doctor_name";
+                        ddldoctor.ValueMember = "id";
+                        ddldoctor.DataSource = dt;
+                        for (int j = 0; j < dt.Rows.Count; j++)
+                        {
+                            if (dt.Rows[j]["id"].ToString() == doctor_id)
+                            {
+                                dr_index = j;
+                            }
+                        }
+                        ddldoctor.SelectedIndex = dr_index;
+                    }
+                }
+                else
+                {
+                    DataTable dt = this.cntrl.get_all_doctorname();
+                    if (dt.Rows.Count > 0)
+                    {
+                        ddldoctor.DisplayMember = "doctor_name";
+                        ddldoctor.ValueMember = "id";
+                        ddldoctor.DataSource = dt;
+                        ddldoctor.SelectedIndex = 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+    }
+}

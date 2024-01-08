@@ -1,0 +1,12 @@
+1.Dashboard
+2. fasttrack
+3.dental and medical combaind
+4.lab attachment
+5.lab edit and delete.
+6.remove update from sales
+7.change patients notify checkbox in appointment booking page based on sms settings.
+8.recreate print settings page
+9.sql transaction in lab
+10. Recreate print page
+11. Refund
+12.Doctor fee add- fasttrack

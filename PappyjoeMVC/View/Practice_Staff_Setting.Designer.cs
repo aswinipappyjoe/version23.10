@@ -1,0 +1,5788 @@
+﻿namespace PappyjoeMVC.View
+{
+    partial class Practice_Staff_Setting
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Practice_Staff_Setting));
+            this.label55 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_manage = new System.Windows.Forms.Panel();
+            this.button__manage_addoctor = new System.Windows.Forms.Button();
+            this.btn_Refresh = new System.Windows.Forms.Button();
+            this.dataGridView_Staff = new System.Windows.Forms.DataGridView();
+            this.S_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Doctor_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mobile_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.followup_fee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.followup_period = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Activated_Login = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txt_period = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_followup_fee = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txt_fee = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.labPasword = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmbStaffType = new System.Windows.Forms.ComboBox();
+            this.text_mobile = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel_color = new System.Windows.Forms.Panel();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label_doctor_error = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label_email_error = new System.Windows.Forms.Label();
+            this.choosecolor = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.text_reg_no = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.text_email = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.text_PassConfrim = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.text_password = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.text_doctorname = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radio_login_yes = new System.Windows.Forms.RadioButton();
+            this.button_closedoctor = new System.Windows.Forms.Button();
+            this.radio_login_no = new System.Windows.Forms.RadioButton();
+            this.button_savedoctor = new System.Windows.Forms.Button();
+            this.Lab_InvalidNumber = new System.Windows.Forms.Label();
+            this.lab_Activation = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button_refresh = new System.Windows.Forms.Button();
+            this.button_notification_Save = new System.Windows.Forms.Button();
+            this.dataGridView_notification = new System.Windows.Forms.DataGridView();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel_visitingtime_main = new System.Windows.Forms.Panel();
+            this.panel_manage_edit = new System.Windows.Forms.Panel();
+            this.dataGridView_visit_timing = new System.Windows.Forms.DataGridView();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_fulldayandtime = new System.Windows.Forms.Panel();
+            this.panel_saturday_break = new System.Windows.Forms.Panel();
+            this.combo_resume_saturday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_break_saturday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_resume_saturday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_break_saturday_hour = new System.Windows.Forms.ComboBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel_friday_break = new System.Windows.Forms.Panel();
+            this.combo_resume_friday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_break_friday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_resume_friday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_break_friday_hour = new System.Windows.Forms.ComboBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel_thursday_break = new System.Windows.Forms.Panel();
+            this.combo_resume_thursday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_break_thursday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_resume_thursday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_break_thursday_hour = new System.Windows.Forms.ComboBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.panel_wednesday_break = new System.Windows.Forms.Panel();
+            this.combo_resume_wednesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_break_wednesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_resume_wednesday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_break_wednesday_hour = new System.Windows.Forms.ComboBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.panel_tuesday_break = new System.Windows.Forms.Panel();
+            this.combo_resume_tuesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_break_tuesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_resume_tuesday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_break_tuesday_hour = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.panel_monday_break = new System.Windows.Forms.Panel();
+            this.combo_resume_monday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_break_monday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_resume_monday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_break_monday_hour = new System.Windows.Forms.ComboBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.panel_sunday_break = new System.Windows.Forms.Panel();
+            this.combo_resume_sunday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_break_sunday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_resume_sunday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_break_sunday_hour = new System.Windows.Forms.ComboBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel_alldays = new System.Windows.Forms.Panel();
+            this.check_visit_saturday = new System.Windows.Forms.CheckBox();
+            this.check_break_saturday = new System.Windows.Forms.CheckBox();
+            this.check_break_friday = new System.Windows.Forms.CheckBox();
+            this.check_visit_friday = new System.Windows.Forms.CheckBox();
+            this.check_break_thursday = new System.Windows.Forms.CheckBox();
+            this.check_visit_thursday = new System.Windows.Forms.CheckBox();
+            this.check_break_wednesday = new System.Windows.Forms.CheckBox();
+            this.check_visit_wednesday = new System.Windows.Forms.CheckBox();
+            this.check_break_tuesday = new System.Windows.Forms.CheckBox();
+            this.check_visit_tuesday = new System.Windows.Forms.CheckBox();
+            this.check_break_monday = new System.Windows.Forms.CheckBox();
+            this.check_visit_monday = new System.Windows.Forms.CheckBox();
+            this.check_break_sunday = new System.Windows.Forms.CheckBox();
+            this.check_visit_sunday = new System.Windows.Forms.CheckBox();
+            this.panel_saturday_visit = new System.Windows.Forms.Panel();
+            this.combo_leave_saturday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_visit_saturday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_leave_saturday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_visit_saturday_hour = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.panel_friday_visit = new System.Windows.Forms.Panel();
+            this.combo_leave_friday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_visit_friday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_leave_friday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_visit_friday_hour = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel_thursday_visit = new System.Windows.Forms.Panel();
+            this.combo_leave_thursday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_visit_thursday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_leave_thursday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_visit_thursday_hour = new System.Windows.Forms.ComboBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.panel_wednesday_visit = new System.Windows.Forms.Panel();
+            this.combo_leave_wednesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_visit_wednesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_leave_wednesday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_visit_wednesday_hour = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.panel_tuesday_visit = new System.Windows.Forms.Panel();
+            this.combo_leave_tuesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_visit_tuesday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_leave_tuesday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_visit_tuesday_hour = new System.Windows.Forms.ComboBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.panel_monday_visit = new System.Windows.Forms.Panel();
+            this.combo_leave_monday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_visit_monday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_leave_monday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_visit_monday_hour = new System.Windows.Forms.ComboBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel_sunday_visit = new System.Windows.Forms.Panel();
+            this.combo_leave_sunday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_visit_sunday_minute = new System.Windows.Forms.ComboBox();
+            this.combo_leave_sunday_hour = new System.Windows.Forms.ComboBox();
+            this.combo_visit_sunday_hour = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.button_savetimings = new System.Windows.Forms.Button();
+            this.panel_main_break = new System.Windows.Forms.Panel();
+            this.combo_main_resume_minute = new System.Windows.Forms.ComboBox();
+            this.combo_main_break_minute = new System.Windows.Forms.ComboBox();
+            this.combo_main_resume_hour = new System.Windows.Forms.ComboBox();
+            this.combo_main_break_hour = new System.Windows.Forms.ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel_main_visit = new System.Windows.Forms.Panel();
+            this.combo_main_leave_minute = new System.Windows.Forms.ComboBox();
+            this.combo_main_visit_minute = new System.Windows.Forms.ComboBox();
+            this.combo_main_leave_hour = new System.Windows.Forms.ComboBox();
+            this.combo_main_visit_hour = new System.Windows.Forms.ComboBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.check_visiting_main = new System.Windows.Forms.CheckBox();
+            this.check_break_main = new System.Windows.Forms.CheckBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button_closegrid = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.chk_refund_add = new System.Windows.Forms.CheckBox();
+            this.chk_refund = new System.Windows.Forms.CheckBox();
+            this.chk_lab_show = new System.Windows.Forms.CheckBox();
+            this.chk_lab_add = new System.Windows.Forms.CheckBox();
+            this.chkLab = new System.Windows.Forms.CheckBox();
+            this.chk_vital_show = new System.Windows.Forms.CheckBox();
+            this.chk_vital_edit = new System.Windows.Forms.CheckBox();
+            this.chk_vital_add = new System.Windows.Forms.CheckBox();
+            this.chk_vital = new System.Windows.Forms.CheckBox();
+            this.chk_attach_delete = new System.Windows.Forms.CheckBox();
+            this.chk_c_finding_show = new System.Windows.Forms.CheckBox();
+            this.treatment_show = new System.Windows.Forms.CheckBox();
+            this.prescrption_show = new System.Windows.Forms.CheckBox();
+            this.finished_show = new System.Windows.Forms.CheckBox();
+            this.attachmnt_show = new System.Windows.Forms.CheckBox();
+            this.invoice_show = new System.Windows.Forms.CheckBox();
+            this.patient_show = new System.Windows.Forms.CheckBox();
+            this.payments_show = new System.Windows.Forms.CheckBox();
+            this.chk_report_show = new System.Windows.Forms.CheckBox();
+            this.chk_appo_show = new System.Windows.Forms.CheckBox();
+            this.chkPurchase = new System.Windows.Forms.CheckBox();
+            this.chkstocktransfer = new System.Windows.Forms.CheckBox();
+            this.chkSales = new System.Windows.Forms.CheckBox();
+            this.chk_inv = new System.Windows.Forms.CheckBox();
+            this.chkRPTIncom = new System.Windows.Forms.CheckBox();
+            this.chkCommnctn = new System.Windows.Forms.CheckBox();
+            this.chkCalendar = new System.Windows.Forms.CheckBox();
+            this.chk_profile = new System.Windows.Forms.CheckBox();
+            this.chkConsltn = new System.Windows.Forms.CheckBox();
+            this.chkLabTrackng = new System.Windows.Forms.CheckBox();
+            this.chkExpnse = new System.Windows.Forms.CheckBox();
+            this.chkInventory = new System.Windows.Forms.CheckBox();
+            this.chkAPTClinicAppoinment = new System.Windows.Forms.CheckBox();
+            this.chkEMRIdelete = new System.Windows.Forms.CheckBox();
+            this.chkEMRIedit = new System.Windows.Forms.CheckBox();
+            this.chkEMRIadd = new System.Windows.Forms.CheckBox();
+            this.chkEMRI = new System.Windows.Forms.CheckBox();
+            this.chkRPTINVadd = new System.Windows.Forms.CheckBox();
+            this.chkRPTEMRadd = new System.Windows.Forms.CheckBox();
+            this.chkRPTINCadd = new System.Windows.Forms.CheckBox();
+            this.chkRPTPAYadd = new System.Windows.Forms.CheckBox();
+            this.chkRPTPATadd = new System.Windows.Forms.CheckBox();
+            this.chkRPTAPTadd = new System.Windows.Forms.CheckBox();
+            this.chkRPT = new System.Windows.Forms.CheckBox();
+            this.chkCLMSadd = new System.Windows.Forms.CheckBox();
+            this.chkstockledger = new System.Windows.Forms.CheckBox();
+            this.chkINVCSadd = new System.Windows.Forms.CheckBox();
+            this.chkINVAIadd = new System.Windows.Forms.CheckBox();
+            this.chkadjustment = new System.Windows.Forms.CheckBox();
+            this.chkEMRFPdelete = new System.Windows.Forms.CheckBox();
+            this.chkEMRFPadd = new System.Windows.Forms.CheckBox();
+            this.chkEMRFadd = new System.Windows.Forms.CheckBox();
+            this.chkEMRFP = new System.Windows.Forms.CheckBox();
+            this.chkEMRF = new System.Windows.Forms.CheckBox();
+            this.chkEMRPdelete = new System.Windows.Forms.CheckBox();
+            this.chkEMRPedit = new System.Windows.Forms.CheckBox();
+            this.chkEMRPadd = new System.Windows.Forms.CheckBox();
+            this.chkEMRTPdelete = new System.Windows.Forms.CheckBox();
+            this.chkEMRTPedit = new System.Windows.Forms.CheckBox();
+            this.chkEMRTPadd = new System.Windows.Forms.CheckBox();
+            this.chkEMRP = new System.Windows.Forms.CheckBox();
+            this.chkEMRTP = new System.Windows.Forms.CheckBox();
+            this.chkEMRCFadd = new System.Windows.Forms.CheckBox();
+            this.chkEMRCFedit = new System.Windows.Forms.CheckBox();
+            this.chkEMRCFdelete = new System.Windows.Forms.CheckBox();
+            this.chkEMRCF = new System.Windows.Forms.CheckBox();
+            this.chkPMTadd = new System.Windows.Forms.CheckBox();
+            this.chkAPTdelete = new System.Windows.Forms.CheckBox();
+            this.chkAPTedit = new System.Windows.Forms.CheckBox();
+            this.chkAPTadd = new System.Windows.Forms.CheckBox();
+            this.chkPMT = new System.Windows.Forms.CheckBox();
+            this.chkEMR = new System.Windows.Forms.CheckBox();
+            this.chkAPT = new System.Windows.Forms.CheckBox();
+            this.chkPATadd = new System.Windows.Forms.CheckBox();
+            this.chkPATedit = new System.Windows.Forms.CheckBox();
+            this.chkPATdelete = new System.Windows.Forms.CheckBox();
+            this.chkPAT = new System.Windows.Forms.CheckBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.dataGridView_users = new System.Windows.Forms.DataGridView();
+            this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usertype = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAssignPrivilege = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btn_staff_refresh = new System.Windows.Forms.Button();
+            this.btn_staff_availa_add = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.DGV_Staff = new System.Windows.Forms.DataGridView();
+            this.Column35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.slno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Designation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.available = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel_manage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Staff)).BeginInit();
+            this.panel_color.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_notification)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.panel_visitingtime_main.SuspendLayout();
+            this.panel_manage_edit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_visit_timing)).BeginInit();
+            this.panel_fulldayandtime.SuspendLayout();
+            this.panel_saturday_break.SuspendLayout();
+            this.panel_friday_break.SuspendLayout();
+            this.panel_thursday_break.SuspendLayout();
+            this.panel_wednesday_break.SuspendLayout();
+            this.panel_tuesday_break.SuspendLayout();
+            this.panel_monday_break.SuspendLayout();
+            this.panel_sunday_break.SuspendLayout();
+            this.panel_alldays.SuspendLayout();
+            this.panel_saturday_visit.SuspendLayout();
+            this.panel_friday_visit.SuspendLayout();
+            this.panel_thursday_visit.SuspendLayout();
+            this.panel_wednesday_visit.SuspendLayout();
+            this.panel_tuesday_visit.SuspendLayout();
+            this.panel_monday_visit.SuspendLayout();
+            this.panel_sunday_visit.SuspendLayout();
+            this.panel_main_break.SuspendLayout();
+            this.panel_main_visit.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_users)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Staff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Underline);
+            this.label55.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label55.Location = new System.Drawing.Point(16, 8);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(121, 25);
+            this.label55.TabIndex = 2;
+            this.label55.Text = "Practice Staff";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.tabControl1.Location = new System.Drawing.Point(16, 68);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1133, 620);
+            this.tabControl1.TabIndex = 3;
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1125, 591);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Manage staff";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel_manage);
+            this.panel2.Controls.Add(this.label69);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.txt_period);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.txt_followup_fee);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.txt_fee);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.labPasword);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.cmbStaffType);
+            this.panel2.Controls.Add(this.text_mobile);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.panel_color);
+            this.panel2.Controls.Add(this.label_doctor_error);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label_email_error);
+            this.panel2.Controls.Add(this.choosecolor);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.text_reg_no);
+            this.panel2.Controls.Add(this.label67);
+            this.panel2.Controls.Add(this.text_email);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label68);
+            this.panel2.Controls.Add(this.text_PassConfrim);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.text_password);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.text_doctorname);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.radio_login_yes);
+            this.panel2.Controls.Add(this.button_closedoctor);
+            this.panel2.Controls.Add(this.radio_login_no);
+            this.panel2.Controls.Add(this.button_savedoctor);
+            this.panel2.Controls.Add(this.Lab_InvalidNumber);
+            this.panel2.Controls.Add(this.lab_Activation);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1096, 581);
+            this.panel2.TabIndex = 51;
+            // 
+            // panel_manage
+            // 
+            this.panel_manage.BackColor = System.Drawing.Color.White;
+            this.panel_manage.Controls.Add(this.button__manage_addoctor);
+            this.panel_manage.Controls.Add(this.btn_Refresh);
+            this.panel_manage.Controls.Add(this.dataGridView_Staff);
+            this.panel_manage.Location = new System.Drawing.Point(5, 3);
+            this.panel_manage.Name = "panel_manage";
+            this.panel_manage.Size = new System.Drawing.Size(1087, 549);
+            this.panel_manage.TabIndex = 47;
+            // 
+            // button__manage_addoctor
+            // 
+            this.button__manage_addoctor.BackColor = System.Drawing.Color.LimeGreen;
+            this.button__manage_addoctor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button__manage_addoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button__manage_addoctor.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button__manage_addoctor.ForeColor = System.Drawing.Color.White;
+            this.button__manage_addoctor.Location = new System.Drawing.Point(873, 17);
+            this.button__manage_addoctor.Name = "button__manage_addoctor";
+            this.button__manage_addoctor.Size = new System.Drawing.Size(99, 33);
+            this.button__manage_addoctor.TabIndex = 75;
+            this.button__manage_addoctor.Text = "Add Staff";
+            this.button__manage_addoctor.UseVisualStyleBackColor = false;
+            this.button__manage_addoctor.Click += new System.EventHandler(this.button__manage_addoctor_Click);
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Refresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Refresh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_Refresh.Location = new System.Drawing.Point(974, 17);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(99, 33);
+            this.btn_Refresh.TabIndex = 74;
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.UseVisualStyleBackColor = false;
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // dataGridView_Staff
+            // 
+            this.dataGridView_Staff.AllowUserToAddRows = false;
+            this.dataGridView_Staff.AllowUserToDeleteRows = false;
+            this.dataGridView_Staff.AllowUserToResizeRows = false;
+            this.dataGridView_Staff.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_Staff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_Staff.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView_Staff.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Staff.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_Staff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_Staff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.S_ID,
+            this.Doctor_Name,
+            this.Mobile_Number,
+            this.Role,
+            this.fee,
+            this.followup_fee,
+            this.followup_period,
+            this.Activated_Login,
+            this.Edit,
+            this.Delete});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Staff.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_Staff.Location = new System.Drawing.Point(8, 73);
+            this.dataGridView_Staff.Name = "dataGridView_Staff";
+            this.dataGridView_Staff.ReadOnly = true;
+            this.dataGridView_Staff.RowHeadersVisible = false;
+            this.dataGridView_Staff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_Staff.Size = new System.Drawing.Size(1065, 481);
+            this.dataGridView_Staff.TabIndex = 0;
+            this.dataGridView_Staff.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Staff_CellClick);
+            this.dataGridView_Staff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Staff_CellContentClick);
+            // 
+            // S_ID
+            // 
+            this.S_ID.DataPropertyName = "id";
+            this.S_ID.HeaderText = "Id";
+            this.S_ID.Name = "S_ID";
+            this.S_ID.ReadOnly = true;
+            this.S_ID.Visible = false;
+            // 
+            // Doctor_Name
+            // 
+            this.Doctor_Name.DataPropertyName = "doctor_name";
+            this.Doctor_Name.HeaderText = "Doctor Name";
+            this.Doctor_Name.Name = "Doctor_Name";
+            this.Doctor_Name.ReadOnly = true;
+            this.Doctor_Name.Width = 200;
+            // 
+            // Mobile_Number
+            // 
+            this.Mobile_Number.DataPropertyName = "mobile_number";
+            this.Mobile_Number.HeaderText = "Mobile Number";
+            this.Mobile_Number.Name = "Mobile_Number";
+            this.Mobile_Number.ReadOnly = true;
+            this.Mobile_Number.Width = 200;
+            // 
+            // Role
+            // 
+            this.Role.DataPropertyName = "login_type";
+            this.Role.HeaderText = "Role";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
+            this.Role.Width = 200;
+            // 
+            // fee
+            // 
+            this.fee.HeaderText = "Doctor Fee";
+            this.fee.Name = "fee";
+            this.fee.ReadOnly = true;
+            // 
+            // followup_fee
+            // 
+            this.followup_fee.HeaderText = "Followup Fee";
+            this.followup_fee.Name = "followup_fee";
+            this.followup_fee.ReadOnly = true;
+            // 
+            // followup_period
+            // 
+            this.followup_period.HeaderText = "Followup Period";
+            this.followup_period.Name = "followup_period";
+            this.followup_period.ReadOnly = true;
+            // 
+            // Activated_Login
+            // 
+            this.Activated_Login.DataPropertyName = "activate_login";
+            this.Activated_Login.HeaderText = "Activated Login";
+            this.Activated_Login.Name = "Activated_Login";
+            this.Activated_Login.ReadOnly = true;
+            this.Activated_Login.Width = 125;
+            // 
+            // Edit
+            // 
+            this.Edit.HeaderText = "";
+            this.Edit.Image = global::PappyjoeMVC.Properties.Resources.editicon;
+            this.Edit.Name = "Edit";
+            this.Edit.ReadOnly = true;
+            this.Edit.Width = 19;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "";
+            this.Delete.Image = global::PappyjoeMVC.Properties.Resources.deleteicon;
+            this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
+            this.Delete.Visible = false;
+            this.Delete.Width = 70;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.ForeColor = System.Drawing.Color.Red;
+            this.label69.Location = new System.Drawing.Point(690, 188);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(117, 13);
+            this.label69.TabIndex = 325;
+            this.label69.Text = "Password Miss Match";
+            this.label69.Visible = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Red;
+            this.label21.Location = new System.Drawing.Point(726, 336);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(14, 18);
+            this.label21.TabIndex = 324;
+            this.label21.Text = "*";
+            // 
+            // txt_period
+            // 
+            this.txt_period.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_period.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_period.Location = new System.Drawing.Point(744, 334);
+            this.txt_period.Name = "txt_period";
+            this.txt_period.Size = new System.Drawing.Size(64, 20);
+            this.txt_period.TabIndex = 323;
+            this.txt_period.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_period_KeyPress);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(636, 334);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(92, 13);
+            this.label19.TabIndex = 322;
+            this.label19.Text = "Followup Period";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Red;
+            this.label18.Location = new System.Drawing.Point(506, 334);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(14, 18);
+            this.label18.TabIndex = 321;
+            this.label18.Text = "*";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Red;
+            this.label17.Location = new System.Drawing.Point(241, 332);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(14, 18);
+            this.label17.TabIndex = 320;
+            this.label17.Text = "*";
+            // 
+            // txt_followup_fee
+            // 
+            this.txt_followup_fee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_followup_fee.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_followup_fee.Location = new System.Drawing.Point(538, 332);
+            this.txt_followup_fee.Name = "txt_followup_fee";
+            this.txt_followup_fee.Size = new System.Drawing.Size(87, 20);
+            this.txt_followup_fee.TabIndex = 318;
+            this.txt_followup_fee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_followup_fee_KeyPress);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(423, 336);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(77, 13);
+            this.label16.TabIndex = 319;
+            this.label16.Text = "Followup Fee";
+            // 
+            // txt_fee
+            // 
+            this.txt_fee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_fee.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_fee.Location = new System.Drawing.Point(270, 332);
+            this.txt_fee.Name = "txt_fee";
+            this.txt_fee.Size = new System.Drawing.Size(138, 20);
+            this.txt_fee.TabIndex = 316;
+            this.txt_fee.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_fee_KeyPress);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(175, 336);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(63, 13);
+            this.label15.TabIndex = 317;
+            this.label15.Text = "Doctor Fee";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(241, 175);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(14, 18);
+            this.label13.TabIndex = 314;
+            this.label13.Text = "*";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(241, 257);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(14, 18);
+            this.label12.TabIndex = 313;
+            this.label12.Text = "*";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(241, 442);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(14, 18);
+            this.label11.TabIndex = 312;
+            this.label11.Text = "*";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(240, 134);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(14, 18);
+            this.label9.TabIndex = 311;
+            this.label9.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(241, 93);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(14, 18);
+            this.label8.TabIndex = 310;
+            this.label8.Text = "*";
+            // 
+            // labPasword
+            // 
+            this.labPasword.AutoSize = true;
+            this.labPasword.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPasword.ForeColor = System.Drawing.Color.Red;
+            this.labPasword.Location = new System.Drawing.Point(690, 173);
+            this.labPasword.Name = "labPasword";
+            this.labPasword.Size = new System.Drawing.Size(346, 13);
+            this.labPasword.TabIndex = 100;
+            this.labPasword.Text = "Can\'t be empty,password must contains atleast a special character";
+            this.labPasword.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(181, 96);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 13);
+            this.label10.TabIndex = 52;
+            this.label10.Text = "Staff Type";
+            // 
+            // cmbStaffType
+            // 
+            this.cmbStaffType.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.cmbStaffType.FormattingEnabled = true;
+            this.cmbStaffType.Items.AddRange(new object[] {
+            "DOCTOR ",
+            "NURSE",
+            "PHARMACY",
+            "STAFF",
+            "LAB TECHNICIAN",
+            "HEAD  NURSE",
+            "RECEPTIONIST"});
+            this.cmbStaffType.Location = new System.Drawing.Point(269, 92);
+            this.cmbStaffType.Name = "cmbStaffType";
+            this.cmbStaffType.Size = new System.Drawing.Size(139, 21);
+            this.cmbStaffType.TabIndex = 51;
+            this.cmbStaffType.SelectedIndexChanged += new System.EventHandler(this.cmbStaffType_SelectedIndexChanged);
+            this.cmbStaffType.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbStaffType_KeyPress);
+            this.cmbStaffType.MouseLeave += new System.EventHandler(this.cmbStaffType_MouseLeave);
+            // 
+            // text_mobile
+            // 
+            this.text_mobile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_mobile.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.text_mobile.Location = new System.Drawing.Point(270, 215);
+            this.text_mobile.MaxLength = 10;
+            this.text_mobile.Name = "text_mobile";
+            this.text_mobile.Size = new System.Drawing.Size(138, 20);
+            this.text_mobile.TabIndex = 3;
+            this.text_mobile.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_mobile_KeyPress);
+            this.text_mobile.Leave += new System.EventHandler(this.text_mobile_Leave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Underline);
+            this.label1.Location = new System.Drawing.Point(16, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 25);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "ADD STAFF";
+            // 
+            // panel_color
+            // 
+            this.panel_color.Controls.Add(this.label62);
+            this.panel_color.Controls.Add(this.label66);
+            this.panel_color.Controls.Add(this.label65);
+            this.panel_color.Controls.Add(this.label61);
+            this.panel_color.Controls.Add(this.label64);
+            this.panel_color.Controls.Add(this.label60);
+            this.panel_color.Controls.Add(this.label63);
+            this.panel_color.Controls.Add(this.label59);
+            this.panel_color.Controls.Add(this.label56);
+            this.panel_color.Controls.Add(this.label58);
+            this.panel_color.Controls.Add(this.label57);
+            this.panel_color.Location = new System.Drawing.Point(357, 352);
+            this.panel_color.Name = "panel_color";
+            this.panel_color.Size = new System.Drawing.Size(173, 77);
+            this.panel_color.TabIndex = 49;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label62.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label62.Location = new System.Drawing.Point(48, 32);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(33, 17);
+            this.label62.TabIndex = 0;
+            this.label62.Text = "labe";
+            this.label62.Click += new System.EventHandler(this.label62_Click);
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label66.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label66.Location = new System.Drawing.Point(93, 56);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(33, 17);
+            this.label66.TabIndex = 0;
+            this.label66.Text = "labe";
+            this.label66.Click += new System.EventHandler(this.label66_Click);
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.BackColor = System.Drawing.Color.CadetBlue;
+            this.label65.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.CadetBlue;
+            this.label65.Location = new System.Drawing.Point(49, 56);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(33, 17);
+            this.label65.TabIndex = 0;
+            this.label65.Text = "labe";
+            this.label65.Click += new System.EventHandler(this.label65_Click);
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label61.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label61.Location = new System.Drawing.Point(5, 32);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(33, 17);
+            this.label61.TabIndex = 0;
+            this.label61.Text = "labe";
+            this.label61.Click += new System.EventHandler(this.label61_Click);
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label64.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label64.Location = new System.Drawing.Point(5, 56);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(33, 17);
+            this.label64.TabIndex = 0;
+            this.label64.Text = "labe";
+            this.label64.Click += new System.EventHandler(this.label64_Click);
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label60.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label60.Location = new System.Drawing.Point(135, 6);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(33, 17);
+            this.label60.TabIndex = 0;
+            this.label60.Text = "labe";
+            this.label60.Click += new System.EventHandler(this.label60_Click);
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.BackColor = System.Drawing.Color.Goldenrod;
+            this.label63.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label63.Location = new System.Drawing.Point(135, 32);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(33, 17);
+            this.label63.TabIndex = 0;
+            this.label63.Text = "labe";
+            this.label63.Click += new System.EventHandler(this.label63_Click);
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label59.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label59.Location = new System.Drawing.Point(93, 6);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(33, 17);
+            this.label59.TabIndex = 0;
+            this.label59.Text = "labe";
+            this.label59.Click += new System.EventHandler(this.label59_Click);
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.BackColor = System.Drawing.Color.Cyan;
+            this.label56.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.Cyan;
+            this.label56.Location = new System.Drawing.Point(93, 31);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(33, 17);
+            this.label56.TabIndex = 0;
+            this.label56.Text = "labe";
+            this.label56.Click += new System.EventHandler(this.label56_Click);
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label58.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label58.Location = new System.Drawing.Point(49, 7);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(33, 17);
+            this.label58.TabIndex = 0;
+            this.label58.Text = "labe";
+            this.label58.Click += new System.EventHandler(this.label58_Click);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label57.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label57.Location = new System.Drawing.Point(5, 7);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(33, 17);
+            this.label57.TabIndex = 0;
+            this.label57.Text = "labe";
+            this.label57.Click += new System.EventHandler(this.label57_Click);
+            // 
+            // label_doctor_error
+            // 
+            this.label_doctor_error.AutoSize = true;
+            this.label_doctor_error.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_doctor_error.ForeColor = System.Drawing.Color.Red;
+            this.label_doctor_error.Location = new System.Drawing.Point(424, 137);
+            this.label_doctor_error.Name = "label_doctor_error";
+            this.label_doctor_error.Size = new System.Drawing.Size(84, 13);
+            this.label_doctor_error.TabIndex = 33;
+            this.label_doctor_error.Text = "Can\'t be empty";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(271, 399);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 23);
+            this.button1.TabIndex = 50;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label_email_error
+            // 
+            this.label_email_error.AutoSize = true;
+            this.label_email_error.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_email_error.ForeColor = System.Drawing.Color.Red;
+            this.label_email_error.Location = new System.Drawing.Point(424, 260);
+            this.label_email_error.Name = "label_email_error";
+            this.label_email_error.Size = new System.Drawing.Size(223, 13);
+            this.label_email_error.TabIndex = 34;
+            this.label_email_error.Text = "Enter a valid email (eg. abc@example.com)";
+            // 
+            // choosecolor
+            // 
+            this.choosecolor.AutoSize = true;
+            this.choosecolor.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.choosecolor.Location = new System.Drawing.Point(316, 403);
+            this.choosecolor.Name = "choosecolor";
+            this.choosecolor.Size = new System.Drawing.Size(35, 13);
+            this.choosecolor.TabIndex = 48;
+            this.choosecolor.Text = "Close";
+            this.choosecolor.Click += new System.EventHandler(this.choosecolor_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(151, 219);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Mobile Number";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(202, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 13);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Name";
+            // 
+            // text_reg_no
+            // 
+            this.text_reg_no.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_reg_no.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.text_reg_no.Location = new System.Drawing.Point(270, 297);
+            this.text_reg_no.Name = "text_reg_no";
+            this.text_reg_no.Size = new System.Drawing.Size(138, 20);
+            this.text_reg_no.TabIndex = 5;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(182, 178);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(56, 13);
+            this.label67.TabIndex = 35;
+            this.label67.Text = "Password";
+            // 
+            // text_email
+            // 
+            this.text_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_email.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.text_email.Location = new System.Drawing.Point(270, 256);
+            this.text_email.Name = "text_email";
+            this.text_email.Size = new System.Drawing.Size(138, 20);
+            this.text_email.TabIndex = 4;
+            this.text_email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_email_KeyPress);
+            this.text_email.Leave += new System.EventHandler(this.text_email_Leave);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(134, 260);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 13);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Email ID/UserName";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(424, 178);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(100, 13);
+            this.label68.TabIndex = 35;
+            this.label68.Text = "Confirm Password";
+            // 
+            // text_PassConfrim
+            // 
+            this.text_PassConfrim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_PassConfrim.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.text_PassConfrim.Location = new System.Drawing.Point(538, 174);
+            this.text_PassConfrim.Name = "text_PassConfrim";
+            this.text_PassConfrim.PasswordChar = '*';
+            this.text_PassConfrim.Size = new System.Drawing.Size(138, 20);
+            this.text_PassConfrim.TabIndex = 2;
+            this.text_PassConfrim.TextChanged += new System.EventHandler(this.text_PassConfrim_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(124, 301);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(114, 13);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Registration Number";
+            // 
+            // text_password
+            // 
+            this.text_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_password.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.text_password.Location = new System.Drawing.Point(270, 174);
+            this.text_password.Name = "text_password";
+            this.text_password.PasswordChar = '*';
+            this.text_password.Size = new System.Drawing.Size(138, 20);
+            this.text_password.TabIndex = 1;
+            this.text_password.ModifiedChanged += new System.EventHandler(this.text_password_ModifiedChanged);
+            this.text_password.TextChanged += new System.EventHandler(this.text_password_TextChanged);
+            this.text_password.Leave += new System.EventHandler(this.text_password_Leave);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(147, 404);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 13);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Calendar Colour";
+            // 
+            // text_doctorname
+            // 
+            this.text_doctorname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.text_doctorname.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.text_doctorname.Location = new System.Drawing.Point(270, 133);
+            this.text_doctorname.Name = "text_doctorname";
+            this.text_doctorname.Size = new System.Drawing.Size(138, 20);
+            this.text_doctorname.TabIndex = 0;
+            this.text_doctorname.TextChanged += new System.EventHandler(this.text_doctorname_TextChanged);
+            this.text_doctorname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.text_doctorname_KeyPress);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(161, 445);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 13);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Activate login";
+            // 
+            // radio_login_yes
+            // 
+            this.radio_login_yes.AutoSize = true;
+            this.radio_login_yes.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_login_yes.Location = new System.Drawing.Point(270, 443);
+            this.radio_login_yes.Name = "radio_login_yes";
+            this.radio_login_yes.Size = new System.Drawing.Size(40, 17);
+            this.radio_login_yes.TabIndex = 6;
+            this.radio_login_yes.TabStop = true;
+            this.radio_login_yes.Text = "Yes";
+            this.radio_login_yes.UseVisualStyleBackColor = true;
+            this.radio_login_yes.CheckedChanged += new System.EventHandler(this.radio_login_yes_CheckedChanged);
+            // 
+            // button_closedoctor
+            // 
+            this.button_closedoctor.BackColor = System.Drawing.Color.Tomato;
+            this.button_closedoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_closedoctor.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_closedoctor.ForeColor = System.Drawing.Color.White;
+            this.button_closedoctor.Location = new System.Drawing.Point(970, 10);
+            this.button_closedoctor.Name = "button_closedoctor";
+            this.button_closedoctor.Size = new System.Drawing.Size(99, 33);
+            this.button_closedoctor.TabIndex = 38;
+            this.button_closedoctor.Text = "Close";
+            this.button_closedoctor.UseVisualStyleBackColor = false;
+            this.button_closedoctor.Click += new System.EventHandler(this.button_closedoctor_Click);
+            // 
+            // radio_login_no
+            // 
+            this.radio_login_no.AutoSize = true;
+            this.radio_login_no.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_login_no.Location = new System.Drawing.Point(344, 443);
+            this.radio_login_no.Name = "radio_login_no";
+            this.radio_login_no.Size = new System.Drawing.Size(40, 17);
+            this.radio_login_no.TabIndex = 7;
+            this.radio_login_no.TabStop = true;
+            this.radio_login_no.Text = "No";
+            this.radio_login_no.UseVisualStyleBackColor = true;
+            this.radio_login_no.CheckedChanged += new System.EventHandler(this.radio_login_no_CheckedChanged);
+            // 
+            // button_savedoctor
+            // 
+            this.button_savedoctor.BackColor = System.Drawing.Color.LimeGreen;
+            this.button_savedoctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_savedoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_savedoctor.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_savedoctor.ForeColor = System.Drawing.Color.White;
+            this.button_savedoctor.Location = new System.Drawing.Point(865, 10);
+            this.button_savedoctor.Name = "button_savedoctor";
+            this.button_savedoctor.Size = new System.Drawing.Size(99, 33);
+            this.button_savedoctor.TabIndex = 8;
+            this.button_savedoctor.Text = "Add ";
+            this.button_savedoctor.UseVisualStyleBackColor = false;
+            this.button_savedoctor.Click += new System.EventHandler(this.button_savedoctor_Click);
+            // 
+            // Lab_InvalidNumber
+            // 
+            this.Lab_InvalidNumber.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_InvalidNumber.ForeColor = System.Drawing.Color.Red;
+            this.Lab_InvalidNumber.Location = new System.Drawing.Point(424, 214);
+            this.Lab_InvalidNumber.Name = "Lab_InvalidNumber";
+            this.Lab_InvalidNumber.Size = new System.Drawing.Size(101, 23);
+            this.Lab_InvalidNumber.TabIndex = 98;
+            this.Lab_InvalidNumber.Text = "Invalid number";
+            this.Lab_InvalidNumber.Visible = false;
+            // 
+            // lab_Activation
+            // 
+            this.lab_Activation.AutoSize = true;
+            this.lab_Activation.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_Activation.ForeColor = System.Drawing.Color.Red;
+            this.lab_Activation.Location = new System.Drawing.Point(424, 445);
+            this.lab_Activation.Name = "lab_Activation";
+            this.lab_Activation.Size = new System.Drawing.Size(118, 13);
+            this.lab_Activation.TabIndex = 315;
+            this.lab_Activation.Text = "Choose activate login";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.button_refresh);
+            this.tabPage2.Controls.Add(this.button_notification_Save);
+            this.tabPage2.Controls.Add(this.dataGridView_notification);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1125, 591);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Staff Notification";
+            // 
+            // button_refresh
+            // 
+            this.button_refresh.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button_refresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_refresh.ForeColor = System.Drawing.Color.White;
+            this.button_refresh.Location = new System.Drawing.Point(976, 25);
+            this.button_refresh.Name = "button_refresh";
+            this.button_refresh.Size = new System.Drawing.Size(99, 33);
+            this.button_refresh.TabIndex = 2;
+            this.button_refresh.Text = "Refresh";
+            this.button_refresh.UseVisualStyleBackColor = false;
+            // 
+            // button_notification_Save
+            // 
+            this.button_notification_Save.BackColor = System.Drawing.Color.LimeGreen;
+            this.button_notification_Save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_notification_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_notification_Save.ForeColor = System.Drawing.Color.White;
+            this.button_notification_Save.Location = new System.Drawing.Point(871, 25);
+            this.button_notification_Save.Name = "button_notification_Save";
+            this.button_notification_Save.Size = new System.Drawing.Size(99, 33);
+            this.button_notification_Save.TabIndex = 1;
+            this.button_notification_Save.Text = "Save";
+            this.button_notification_Save.UseVisualStyleBackColor = false;
+            this.button_notification_Save.Click += new System.EventHandler(this.button_notification_Save_Click);
+            // 
+            // dataGridView_notification
+            // 
+            this.dataGridView_notification.AllowUserToAddRows = false;
+            this.dataGridView_notification.AllowUserToDeleteRows = false;
+            this.dataGridView_notification.AllowUserToResizeColumns = false;
+            this.dataGridView_notification.AllowUserToResizeRows = false;
+            this.dataGridView_notification.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_notification.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_notification.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView_notification.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_notification.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView_notification.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_notification.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column9,
+            this.Column10});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_notification.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView_notification.GridColor = System.Drawing.Color.White;
+            this.dataGridView_notification.Location = new System.Drawing.Point(10, 11);
+            this.dataGridView_notification.Name = "dataGridView_notification";
+            this.dataGridView_notification.RowHeadersVisible = false;
+            this.dataGridView_notification.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_notification.Size = new System.Drawing.Size(767, 358);
+            this.dataGridView_notification.TabIndex = 0;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column9.DataPropertyName = "id";
+            this.Column9.HeaderText = "id";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Visible = false;
+            // 
+            // Column10
+            // 
+            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column10.DataPropertyName = "doctor_name";
+            this.Column10.HeaderText = "Doctor Name";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.panel_visitingtime_main);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1125, 591);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Doctor\'s Visiting Time";
+            // 
+            // panel_visitingtime_main
+            // 
+            this.panel_visitingtime_main.Controls.Add(this.panel_manage_edit);
+            this.panel_visitingtime_main.Controls.Add(this.panel_fulldayandtime);
+            this.panel_visitingtime_main.Controls.Add(this.button_savetimings);
+            this.panel_visitingtime_main.Controls.Add(this.panel_main_break);
+            this.panel_visitingtime_main.Controls.Add(this.panel_main_visit);
+            this.panel_visitingtime_main.Controls.Add(this.check_visiting_main);
+            this.panel_visitingtime_main.Controls.Add(this.check_break_main);
+            this.panel_visitingtime_main.Controls.Add(this.label54);
+            this.panel_visitingtime_main.Controls.Add(this.label20);
+            this.panel_visitingtime_main.Controls.Add(this.button_closegrid);
+            this.panel_visitingtime_main.Location = new System.Drawing.Point(14, 6);
+            this.panel_visitingtime_main.Name = "panel_visitingtime_main";
+            this.panel_visitingtime_main.Size = new System.Drawing.Size(1266, 788);
+            this.panel_visitingtime_main.TabIndex = 0;
+            // 
+            // panel_manage_edit
+            // 
+            this.panel_manage_edit.BackColor = System.Drawing.Color.White;
+            this.panel_manage_edit.Controls.Add(this.dataGridView_visit_timing);
+            this.panel_manage_edit.Location = new System.Drawing.Point(3, 4);
+            this.panel_manage_edit.Name = "panel_manage_edit";
+            this.panel_manage_edit.Size = new System.Drawing.Size(1241, 681);
+            this.panel_manage_edit.TabIndex = 59;
+            // 
+            // dataGridView_visit_timing
+            // 
+            this.dataGridView_visit_timing.AllowUserToAddRows = false;
+            this.dataGridView_visit_timing.AllowUserToDeleteRows = false;
+            this.dataGridView_visit_timing.AllowUserToResizeRows = false;
+            this.dataGridView_visit_timing.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView_visit_timing.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_visit_timing.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_visit_timing.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView_visit_timing.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_visit_timing.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView_visit_timing.ColumnHeadersHeight = 32;
+            this.dataGridView_visit_timing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_visit_timing.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column13,
+            this.Column26,
+            this.Column14,
+            this.Column15,
+            this.Column16,
+            this.Column17,
+            this.Column18,
+            this.Column19,
+            this.Column20,
+            this.Column21,
+            this.Column22,
+            this.Column23,
+            this.Column24,
+            this.Column25,
+            this.Column27,
+            this.Column28});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_visit_timing.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView_visit_timing.Location = new System.Drawing.Point(7, 10);
+            this.dataGridView_visit_timing.Name = "dataGridView_visit_timing";
+            this.dataGridView_visit_timing.ReadOnly = true;
+            this.dataGridView_visit_timing.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_visit_timing.RowHeadersVisible = false;
+            this.dataGridView_visit_timing.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_visit_timing.Size = new System.Drawing.Size(1090, 539);
+            this.dataGridView_visit_timing.TabIndex = 0;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "dr_id";
+            this.Column13.HeaderText = "Dr_id";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            this.Column13.Visible = false;
+            this.Column13.Width = 50;
+            // 
+            // Column26
+            // 
+            this.Column26.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column26.DataPropertyName = "doctor_name";
+            this.Column26.HeaderText = "Doctor ";
+            this.Column26.Name = "Column26";
+            this.Column26.ReadOnly = true;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "dr_open1";
+            this.Column14.HeaderText = "Sun Open";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            this.Column14.Width = 65;
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "dr_close1";
+            this.Column15.HeaderText = "Sun Close";
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            this.Column15.Width = 65;
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "dr_open2";
+            this.Column16.HeaderText = "Mon Open";
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            this.Column16.Width = 65;
+            // 
+            // Column17
+            // 
+            this.Column17.DataPropertyName = "dr_close2";
+            this.Column17.HeaderText = "Mon Close";
+            this.Column17.Name = "Column17";
+            this.Column17.ReadOnly = true;
+            this.Column17.Width = 65;
+            // 
+            // Column18
+            // 
+            this.Column18.DataPropertyName = "dr_open3";
+            this.Column18.HeaderText = "Tue Open";
+            this.Column18.Name = "Column18";
+            this.Column18.ReadOnly = true;
+            this.Column18.Width = 65;
+            // 
+            // Column19
+            // 
+            this.Column19.DataPropertyName = "dr_close3";
+            this.Column19.HeaderText = "Tue Close";
+            this.Column19.Name = "Column19";
+            this.Column19.ReadOnly = true;
+            this.Column19.Width = 65;
+            // 
+            // Column20
+            // 
+            this.Column20.DataPropertyName = "dr_open4";
+            this.Column20.HeaderText = "Wed Open";
+            this.Column20.Name = "Column20";
+            this.Column20.ReadOnly = true;
+            this.Column20.Width = 65;
+            // 
+            // Column21
+            // 
+            this.Column21.DataPropertyName = "dr_close4";
+            this.Column21.HeaderText = "Wed Close";
+            this.Column21.Name = "Column21";
+            this.Column21.ReadOnly = true;
+            this.Column21.Width = 65;
+            // 
+            // Column22
+            // 
+            this.Column22.DataPropertyName = "dr_open5";
+            this.Column22.HeaderText = "Thu Open";
+            this.Column22.Name = "Column22";
+            this.Column22.ReadOnly = true;
+            this.Column22.Width = 65;
+            // 
+            // Column23
+            // 
+            this.Column23.DataPropertyName = "dr_close5";
+            this.Column23.HeaderText = "Thu Close";
+            this.Column23.Name = "Column23";
+            this.Column23.ReadOnly = true;
+            this.Column23.Width = 65;
+            // 
+            // Column24
+            // 
+            this.Column24.DataPropertyName = "dr_open6";
+            this.Column24.HeaderText = "Fri Open";
+            this.Column24.Name = "Column24";
+            this.Column24.ReadOnly = true;
+            this.Column24.Width = 65;
+            // 
+            // Column25
+            // 
+            this.Column25.DataPropertyName = "dr_close6";
+            this.Column25.HeaderText = "Fri Close";
+            this.Column25.Name = "Column25";
+            this.Column25.ReadOnly = true;
+            this.Column25.Width = 65;
+            // 
+            // Column27
+            // 
+            this.Column27.DataPropertyName = "dr_open7";
+            this.Column27.HeaderText = "Sat Open";
+            this.Column27.Name = "Column27";
+            this.Column27.ReadOnly = true;
+            this.Column27.Width = 65;
+            // 
+            // Column28
+            // 
+            this.Column28.DataPropertyName = "dr_close7";
+            this.Column28.HeaderText = "Sat Close";
+            this.Column28.Name = "Column28";
+            this.Column28.ReadOnly = true;
+            this.Column28.Width = 65;
+            // 
+            // panel_fulldayandtime
+            // 
+            this.panel_fulldayandtime.Controls.Add(this.panel_saturday_break);
+            this.panel_fulldayandtime.Controls.Add(this.panel_friday_break);
+            this.panel_fulldayandtime.Controls.Add(this.panel_thursday_break);
+            this.panel_fulldayandtime.Controls.Add(this.panel_wednesday_break);
+            this.panel_fulldayandtime.Controls.Add(this.panel_tuesday_break);
+            this.panel_fulldayandtime.Controls.Add(this.panel_monday_break);
+            this.panel_fulldayandtime.Controls.Add(this.panel_sunday_break);
+            this.panel_fulldayandtime.Controls.Add(this.panel_alldays);
+            this.panel_fulldayandtime.Controls.Add(this.panel_saturday_visit);
+            this.panel_fulldayandtime.Controls.Add(this.panel_friday_visit);
+            this.panel_fulldayandtime.Controls.Add(this.panel_thursday_visit);
+            this.panel_fulldayandtime.Controls.Add(this.panel_wednesday_visit);
+            this.panel_fulldayandtime.Controls.Add(this.panel_tuesday_visit);
+            this.panel_fulldayandtime.Controls.Add(this.panel_monday_visit);
+            this.panel_fulldayandtime.Controls.Add(this.panel_sunday_visit);
+            this.panel_fulldayandtime.Location = new System.Drawing.Point(16, 86);
+            this.panel_fulldayandtime.Name = "panel_fulldayandtime";
+            this.panel_fulldayandtime.Size = new System.Drawing.Size(959, 485);
+            this.panel_fulldayandtime.TabIndex = 18;
+            // 
+            // panel_saturday_break
+            // 
+            this.panel_saturday_break.Controls.Add(this.combo_resume_saturday_minute);
+            this.panel_saturday_break.Controls.Add(this.combo_break_saturday_minute);
+            this.panel_saturday_break.Controls.Add(this.combo_resume_saturday_hour);
+            this.panel_saturday_break.Controls.Add(this.combo_break_saturday_hour);
+            this.panel_saturday_break.Controls.Add(this.label48);
+            this.panel_saturday_break.Controls.Add(this.label35);
+            this.panel_saturday_break.Location = new System.Drawing.Point(248, 453);
+            this.panel_saturday_break.Name = "panel_saturday_break";
+            this.panel_saturday_break.Size = new System.Drawing.Size(600, 29);
+            this.panel_saturday_break.TabIndex = 57;
+            // 
+            // combo_resume_saturday_minute
+            // 
+            this.combo_resume_saturday_minute.FormattingEnabled = true;
+            this.combo_resume_saturday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_resume_saturday_minute.Location = new System.Drawing.Point(531, 4);
+            this.combo_resume_saturday_minute.Name = "combo_resume_saturday_minute";
+            this.combo_resume_saturday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_saturday_minute.TabIndex = 46;
+            // 
+            // combo_break_saturday_minute
+            // 
+            this.combo_break_saturday_minute.FormattingEnabled = true;
+            this.combo_break_saturday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_break_saturday_minute.Location = new System.Drawing.Point(191, 5);
+            this.combo_break_saturday_minute.Name = "combo_break_saturday_minute";
+            this.combo_break_saturday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_saturday_minute.TabIndex = 47;
+            // 
+            // combo_resume_saturday_hour
+            // 
+            this.combo_resume_saturday_hour.FormattingEnabled = true;
+            this.combo_resume_saturday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_resume_saturday_hour.Location = new System.Drawing.Point(440, 2);
+            this.combo_resume_saturday_hour.Name = "combo_resume_saturday_hour";
+            this.combo_resume_saturday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_saturday_hour.TabIndex = 49;
+            // 
+            // combo_break_saturday_hour
+            // 
+            this.combo_break_saturday_hour.FormattingEnabled = true;
+            this.combo_break_saturday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_break_saturday_hour.Location = new System.Drawing.Point(107, 4);
+            this.combo_break_saturday_hour.Name = "combo_break_saturday_hour";
+            this.combo_break_saturday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_saturday_hour.TabIndex = 48;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(351, 7);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(59, 13);
+            this.label48.TabIndex = 45;
+            this.label48.Text = "I resume at";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(16, 8);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(85, 13);
+            this.label35.TabIndex = 44;
+            this.label35.Text = "I take a break at";
+            // 
+            // panel_friday_break
+            // 
+            this.panel_friday_break.Controls.Add(this.combo_resume_friday_minute);
+            this.panel_friday_break.Controls.Add(this.combo_break_friday_minute);
+            this.panel_friday_break.Controls.Add(this.combo_resume_friday_hour);
+            this.panel_friday_break.Controls.Add(this.combo_break_friday_hour);
+            this.panel_friday_break.Controls.Add(this.label36);
+            this.panel_friday_break.Controls.Add(this.label33);
+            this.panel_friday_break.Location = new System.Drawing.Point(248, 384);
+            this.panel_friday_break.Name = "panel_friday_break";
+            this.panel_friday_break.Size = new System.Drawing.Size(600, 29);
+            this.panel_friday_break.TabIndex = 56;
+            // 
+            // combo_resume_friday_minute
+            // 
+            this.combo_resume_friday_minute.FormattingEnabled = true;
+            this.combo_resume_friday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_resume_friday_minute.Location = new System.Drawing.Point(531, 3);
+            this.combo_resume_friday_minute.Name = "combo_resume_friday_minute";
+            this.combo_resume_friday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_friday_minute.TabIndex = 46;
+            // 
+            // combo_break_friday_minute
+            // 
+            this.combo_break_friday_minute.FormattingEnabled = true;
+            this.combo_break_friday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_break_friday_minute.Location = new System.Drawing.Point(191, 3);
+            this.combo_break_friday_minute.Name = "combo_break_friday_minute";
+            this.combo_break_friday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_friday_minute.TabIndex = 47;
+            // 
+            // combo_resume_friday_hour
+            // 
+            this.combo_resume_friday_hour.FormattingEnabled = true;
+            this.combo_resume_friday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_resume_friday_hour.Location = new System.Drawing.Point(440, 2);
+            this.combo_resume_friday_hour.Name = "combo_resume_friday_hour";
+            this.combo_resume_friday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_friday_hour.TabIndex = 49;
+            // 
+            // combo_break_friday_hour
+            // 
+            this.combo_break_friday_hour.FormattingEnabled = true;
+            this.combo_break_friday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_break_friday_hour.Location = new System.Drawing.Point(107, 2);
+            this.combo_break_friday_hour.Name = "combo_break_friday_hour";
+            this.combo_break_friday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_friday_hour.TabIndex = 48;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(351, 4);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(59, 13);
+            this.label36.TabIndex = 45;
+            this.label36.Text = "I resume at";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(16, 10);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(85, 13);
+            this.label33.TabIndex = 44;
+            this.label33.Text = "I take a break at";
+            // 
+            // panel_thursday_break
+            // 
+            this.panel_thursday_break.Controls.Add(this.combo_resume_thursday_minute);
+            this.panel_thursday_break.Controls.Add(this.combo_break_thursday_minute);
+            this.panel_thursday_break.Controls.Add(this.combo_resume_thursday_hour);
+            this.panel_thursday_break.Controls.Add(this.combo_break_thursday_hour);
+            this.panel_thursday_break.Controls.Add(this.label38);
+            this.panel_thursday_break.Controls.Add(this.label31);
+            this.panel_thursday_break.Location = new System.Drawing.Point(248, 316);
+            this.panel_thursday_break.Name = "panel_thursday_break";
+            this.panel_thursday_break.Size = new System.Drawing.Size(600, 29);
+            this.panel_thursday_break.TabIndex = 55;
+            // 
+            // combo_resume_thursday_minute
+            // 
+            this.combo_resume_thursday_minute.FormattingEnabled = true;
+            this.combo_resume_thursday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_resume_thursday_minute.Location = new System.Drawing.Point(531, 4);
+            this.combo_resume_thursday_minute.Name = "combo_resume_thursday_minute";
+            this.combo_resume_thursday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_thursday_minute.TabIndex = 46;
+            // 
+            // combo_break_thursday_minute
+            // 
+            this.combo_break_thursday_minute.FormattingEnabled = true;
+            this.combo_break_thursday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_break_thursday_minute.Location = new System.Drawing.Point(191, 3);
+            this.combo_break_thursday_minute.Name = "combo_break_thursday_minute";
+            this.combo_break_thursday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_thursday_minute.TabIndex = 47;
+            // 
+            // combo_resume_thursday_hour
+            // 
+            this.combo_resume_thursday_hour.FormattingEnabled = true;
+            this.combo_resume_thursday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_resume_thursday_hour.Location = new System.Drawing.Point(440, 3);
+            this.combo_resume_thursday_hour.Name = "combo_resume_thursday_hour";
+            this.combo_resume_thursday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_thursday_hour.TabIndex = 49;
+            // 
+            // combo_break_thursday_hour
+            // 
+            this.combo_break_thursday_hour.FormattingEnabled = true;
+            this.combo_break_thursday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_break_thursday_hour.Location = new System.Drawing.Point(107, 1);
+            this.combo_break_thursday_hour.Name = "combo_break_thursday_hour";
+            this.combo_break_thursday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_thursday_hour.TabIndex = 48;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(351, 8);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(59, 13);
+            this.label38.TabIndex = 45;
+            this.label38.Text = "I resume at";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(16, 6);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(85, 13);
+            this.label31.TabIndex = 44;
+            this.label31.Text = "I take a break at";
+            // 
+            // panel_wednesday_break
+            // 
+            this.panel_wednesday_break.Controls.Add(this.combo_resume_wednesday_minute);
+            this.panel_wednesday_break.Controls.Add(this.combo_break_wednesday_minute);
+            this.panel_wednesday_break.Controls.Add(this.combo_resume_wednesday_hour);
+            this.panel_wednesday_break.Controls.Add(this.combo_break_wednesday_hour);
+            this.panel_wednesday_break.Controls.Add(this.label40);
+            this.panel_wednesday_break.Controls.Add(this.label29);
+            this.panel_wednesday_break.Location = new System.Drawing.Point(247, 247);
+            this.panel_wednesday_break.Name = "panel_wednesday_break";
+            this.panel_wednesday_break.Size = new System.Drawing.Size(600, 29);
+            this.panel_wednesday_break.TabIndex = 54;
+            // 
+            // combo_resume_wednesday_minute
+            // 
+            this.combo_resume_wednesday_minute.FormattingEnabled = true;
+            this.combo_resume_wednesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_resume_wednesday_minute.Location = new System.Drawing.Point(531, 5);
+            this.combo_resume_wednesday_minute.Name = "combo_resume_wednesday_minute";
+            this.combo_resume_wednesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_wednesday_minute.TabIndex = 46;
+            // 
+            // combo_break_wednesday_minute
+            // 
+            this.combo_break_wednesday_minute.FormattingEnabled = true;
+            this.combo_break_wednesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_break_wednesday_minute.Location = new System.Drawing.Point(191, 4);
+            this.combo_break_wednesday_minute.Name = "combo_break_wednesday_minute";
+            this.combo_break_wednesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_wednesday_minute.TabIndex = 47;
+            // 
+            // combo_resume_wednesday_hour
+            // 
+            this.combo_resume_wednesday_hour.FormattingEnabled = true;
+            this.combo_resume_wednesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_resume_wednesday_hour.Location = new System.Drawing.Point(440, 4);
+            this.combo_resume_wednesday_hour.Name = "combo_resume_wednesday_hour";
+            this.combo_resume_wednesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_wednesday_hour.TabIndex = 49;
+            // 
+            // combo_break_wednesday_hour
+            // 
+            this.combo_break_wednesday_hour.FormattingEnabled = true;
+            this.combo_break_wednesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_break_wednesday_hour.Location = new System.Drawing.Point(107, 5);
+            this.combo_break_wednesday_hour.Name = "combo_break_wednesday_hour";
+            this.combo_break_wednesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_wednesday_hour.TabIndex = 48;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(351, 12);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(59, 13);
+            this.label40.TabIndex = 45;
+            this.label40.Text = "I resume at";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(16, 9);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(85, 13);
+            this.label29.TabIndex = 44;
+            this.label29.Text = "I take a break at";
+            // 
+            // panel_tuesday_break
+            // 
+            this.panel_tuesday_break.Controls.Add(this.combo_resume_tuesday_minute);
+            this.panel_tuesday_break.Controls.Add(this.combo_break_tuesday_minute);
+            this.panel_tuesday_break.Controls.Add(this.combo_resume_tuesday_hour);
+            this.panel_tuesday_break.Controls.Add(this.combo_break_tuesday_hour);
+            this.panel_tuesday_break.Controls.Add(this.label42);
+            this.panel_tuesday_break.Controls.Add(this.label27);
+            this.panel_tuesday_break.Location = new System.Drawing.Point(248, 178);
+            this.panel_tuesday_break.Name = "panel_tuesday_break";
+            this.panel_tuesday_break.Size = new System.Drawing.Size(600, 29);
+            this.panel_tuesday_break.TabIndex = 53;
+            // 
+            // combo_resume_tuesday_minute
+            // 
+            this.combo_resume_tuesday_minute.FormattingEnabled = true;
+            this.combo_resume_tuesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_resume_tuesday_minute.Location = new System.Drawing.Point(531, 2);
+            this.combo_resume_tuesday_minute.Name = "combo_resume_tuesday_minute";
+            this.combo_resume_tuesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_tuesday_minute.TabIndex = 46;
+            // 
+            // combo_break_tuesday_minute
+            // 
+            this.combo_break_tuesday_minute.FormattingEnabled = true;
+            this.combo_break_tuesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_break_tuesday_minute.Location = new System.Drawing.Point(191, 3);
+            this.combo_break_tuesday_minute.Name = "combo_break_tuesday_minute";
+            this.combo_break_tuesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_tuesday_minute.TabIndex = 47;
+            // 
+            // combo_resume_tuesday_hour
+            // 
+            this.combo_resume_tuesday_hour.FormattingEnabled = true;
+            this.combo_resume_tuesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_resume_tuesday_hour.Location = new System.Drawing.Point(440, 3);
+            this.combo_resume_tuesday_hour.Name = "combo_resume_tuesday_hour";
+            this.combo_resume_tuesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_tuesday_hour.TabIndex = 49;
+            // 
+            // combo_break_tuesday_hour
+            // 
+            this.combo_break_tuesday_hour.FormattingEnabled = true;
+            this.combo_break_tuesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_break_tuesday_hour.Location = new System.Drawing.Point(107, 3);
+            this.combo_break_tuesday_hour.Name = "combo_break_tuesday_hour";
+            this.combo_break_tuesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_tuesday_hour.TabIndex = 48;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(351, 5);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(59, 13);
+            this.label42.TabIndex = 45;
+            this.label42.Text = "I resume at";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(16, 6);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(85, 13);
+            this.label27.TabIndex = 44;
+            this.label27.Text = "I take a break at";
+            // 
+            // panel_monday_break
+            // 
+            this.panel_monday_break.Controls.Add(this.combo_resume_monday_minute);
+            this.panel_monday_break.Controls.Add(this.combo_break_monday_minute);
+            this.panel_monday_break.Controls.Add(this.combo_resume_monday_hour);
+            this.panel_monday_break.Controls.Add(this.combo_break_monday_hour);
+            this.panel_monday_break.Controls.Add(this.label44);
+            this.panel_monday_break.Controls.Add(this.label25);
+            this.panel_monday_break.Location = new System.Drawing.Point(247, 108);
+            this.panel_monday_break.Name = "panel_monday_break";
+            this.panel_monday_break.Size = new System.Drawing.Size(600, 29);
+            this.panel_monday_break.TabIndex = 52;
+            // 
+            // combo_resume_monday_minute
+            // 
+            this.combo_resume_monday_minute.FormattingEnabled = true;
+            this.combo_resume_monday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_resume_monday_minute.Location = new System.Drawing.Point(531, 4);
+            this.combo_resume_monday_minute.Name = "combo_resume_monday_minute";
+            this.combo_resume_monday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_monday_minute.TabIndex = 46;
+            // 
+            // combo_break_monday_minute
+            // 
+            this.combo_break_monday_minute.FormattingEnabled = true;
+            this.combo_break_monday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_break_monday_minute.Location = new System.Drawing.Point(191, 5);
+            this.combo_break_monday_minute.Name = "combo_break_monday_minute";
+            this.combo_break_monday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_monday_minute.TabIndex = 47;
+            // 
+            // combo_resume_monday_hour
+            // 
+            this.combo_resume_monday_hour.FormattingEnabled = true;
+            this.combo_resume_monday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_resume_monday_hour.Location = new System.Drawing.Point(440, 4);
+            this.combo_resume_monday_hour.Name = "combo_resume_monday_hour";
+            this.combo_resume_monday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_monday_hour.TabIndex = 49;
+            // 
+            // combo_break_monday_hour
+            // 
+            this.combo_break_monday_hour.FormattingEnabled = true;
+            this.combo_break_monday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_break_monday_hour.Location = new System.Drawing.Point(107, 4);
+            this.combo_break_monday_hour.Name = "combo_break_monday_hour";
+            this.combo_break_monday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_monday_hour.TabIndex = 48;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(351, 3);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(59, 13);
+            this.label44.TabIndex = 45;
+            this.label44.Text = "I resume at";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(16, 6);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(85, 13);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "I take a break at";
+            // 
+            // panel_sunday_break
+            // 
+            this.panel_sunday_break.Controls.Add(this.combo_resume_sunday_minute);
+            this.panel_sunday_break.Controls.Add(this.combo_break_sunday_minute);
+            this.panel_sunday_break.Controls.Add(this.combo_resume_sunday_hour);
+            this.panel_sunday_break.Controls.Add(this.combo_break_sunday_hour);
+            this.panel_sunday_break.Controls.Add(this.label46);
+            this.panel_sunday_break.Controls.Add(this.label23);
+            this.panel_sunday_break.Location = new System.Drawing.Point(247, 38);
+            this.panel_sunday_break.Name = "panel_sunday_break";
+            this.panel_sunday_break.Size = new System.Drawing.Size(600, 29);
+            this.panel_sunday_break.TabIndex = 51;
+            // 
+            // combo_resume_sunday_minute
+            // 
+            this.combo_resume_sunday_minute.FormattingEnabled = true;
+            this.combo_resume_sunday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_resume_sunday_minute.Location = new System.Drawing.Point(531, 4);
+            this.combo_resume_sunday_minute.Name = "combo_resume_sunday_minute";
+            this.combo_resume_sunday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_sunday_minute.TabIndex = 46;
+            // 
+            // combo_break_sunday_minute
+            // 
+            this.combo_break_sunday_minute.FormattingEnabled = true;
+            this.combo_break_sunday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_break_sunday_minute.Location = new System.Drawing.Point(191, 2);
+            this.combo_break_sunday_minute.Name = "combo_break_sunday_minute";
+            this.combo_break_sunday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_sunday_minute.TabIndex = 47;
+            // 
+            // combo_resume_sunday_hour
+            // 
+            this.combo_resume_sunday_hour.FormattingEnabled = true;
+            this.combo_resume_sunday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_resume_sunday_hour.Location = new System.Drawing.Point(440, 3);
+            this.combo_resume_sunday_hour.Name = "combo_resume_sunday_hour";
+            this.combo_resume_sunday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_resume_sunday_hour.TabIndex = 49;
+            // 
+            // combo_break_sunday_hour
+            // 
+            this.combo_break_sunday_hour.FormattingEnabled = true;
+            this.combo_break_sunday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_break_sunday_hour.Location = new System.Drawing.Point(107, 1);
+            this.combo_break_sunday_hour.Name = "combo_break_sunday_hour";
+            this.combo_break_sunday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_break_sunday_hour.TabIndex = 48;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(351, 3);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(59, 13);
+            this.label46.TabIndex = 45;
+            this.label46.Text = "I resume at";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(16, 4);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(85, 13);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "I take a break at";
+            // 
+            // panel_alldays
+            // 
+            this.panel_alldays.Controls.Add(this.check_visit_saturday);
+            this.panel_alldays.Controls.Add(this.check_break_saturday);
+            this.panel_alldays.Controls.Add(this.check_break_friday);
+            this.panel_alldays.Controls.Add(this.check_visit_friday);
+            this.panel_alldays.Controls.Add(this.check_break_thursday);
+            this.panel_alldays.Controls.Add(this.check_visit_thursday);
+            this.panel_alldays.Controls.Add(this.check_break_wednesday);
+            this.panel_alldays.Controls.Add(this.check_visit_wednesday);
+            this.panel_alldays.Controls.Add(this.check_break_tuesday);
+            this.panel_alldays.Controls.Add(this.check_visit_tuesday);
+            this.panel_alldays.Controls.Add(this.check_break_monday);
+            this.panel_alldays.Controls.Add(this.check_visit_monday);
+            this.panel_alldays.Controls.Add(this.check_break_sunday);
+            this.panel_alldays.Controls.Add(this.check_visit_sunday);
+            this.panel_alldays.Location = new System.Drawing.Point(27, 4);
+            this.panel_alldays.Name = "panel_alldays";
+            this.panel_alldays.Size = new System.Drawing.Size(200, 478);
+            this.panel_alldays.TabIndex = 50;
+            // 
+            // check_visit_saturday
+            // 
+            this.check_visit_saturday.AutoSize = true;
+            this.check_visit_saturday.Location = new System.Drawing.Point(8, 423);
+            this.check_visit_saturday.Name = "check_visit_saturday";
+            this.check_visit_saturday.Size = new System.Drawing.Size(162, 17);
+            this.check_visit_saturday.TabIndex = 54;
+            this.check_visit_saturday.Text = "I Visit this clinic on Saturdays";
+            this.check_visit_saturday.UseVisualStyleBackColor = true;
+            // 
+            // check_break_saturday
+            // 
+            this.check_break_saturday.AutoSize = true;
+            this.check_break_saturday.Location = new System.Drawing.Point(8, 450);
+            this.check_break_saturday.Name = "check_break_saturday";
+            this.check_break_saturday.Size = new System.Drawing.Size(136, 17);
+            this.check_break_saturday.TabIndex = 55;
+            this.check_break_saturday.Text = "I take a break for lunch";
+            this.check_break_saturday.UseVisualStyleBackColor = true;
+            // 
+            // check_break_friday
+            // 
+            this.check_break_friday.AutoSize = true;
+            this.check_break_friday.Location = new System.Drawing.Point(8, 381);
+            this.check_break_friday.Name = "check_break_friday";
+            this.check_break_friday.Size = new System.Drawing.Size(136, 17);
+            this.check_break_friday.TabIndex = 52;
+            this.check_break_friday.Text = "I take a break for lunch";
+            this.check_break_friday.UseVisualStyleBackColor = true;
+            // 
+            // check_visit_friday
+            // 
+            this.check_visit_friday.AutoSize = true;
+            this.check_visit_friday.Location = new System.Drawing.Point(8, 350);
+            this.check_visit_friday.Name = "check_visit_friday";
+            this.check_visit_friday.Size = new System.Drawing.Size(148, 17);
+            this.check_visit_friday.TabIndex = 53;
+            this.check_visit_friday.Text = "I Visit this clinic on Fridays";
+            this.check_visit_friday.UseVisualStyleBackColor = true;
+            // 
+            // check_break_thursday
+            // 
+            this.check_break_thursday.AutoSize = true;
+            this.check_break_thursday.Location = new System.Drawing.Point(8, 308);
+            this.check_break_thursday.Name = "check_break_thursday";
+            this.check_break_thursday.Size = new System.Drawing.Size(136, 17);
+            this.check_break_thursday.TabIndex = 50;
+            this.check_break_thursday.Text = "I take a break for lunch";
+            this.check_break_thursday.UseVisualStyleBackColor = true;
+            // 
+            // check_visit_thursday
+            // 
+            this.check_visit_thursday.AutoSize = true;
+            this.check_visit_thursday.Location = new System.Drawing.Point(8, 276);
+            this.check_visit_thursday.Name = "check_visit_thursday";
+            this.check_visit_thursday.Size = new System.Drawing.Size(164, 17);
+            this.check_visit_thursday.TabIndex = 51;
+            this.check_visit_thursday.Text = "I Visit this clinic on Thursdays";
+            this.check_visit_thursday.UseVisualStyleBackColor = true;
+            // 
+            // check_break_wednesday
+            // 
+            this.check_break_wednesday.AutoSize = true;
+            this.check_break_wednesday.Location = new System.Drawing.Point(8, 234);
+            this.check_break_wednesday.Name = "check_break_wednesday";
+            this.check_break_wednesday.Size = new System.Drawing.Size(136, 17);
+            this.check_break_wednesday.TabIndex = 48;
+            this.check_break_wednesday.Text = "I take a break for lunch";
+            this.check_break_wednesday.UseVisualStyleBackColor = true;
+            // 
+            // check_visit_wednesday
+            // 
+            this.check_visit_wednesday.AutoSize = true;
+            this.check_visit_wednesday.Location = new System.Drawing.Point(8, 207);
+            this.check_visit_wednesday.Name = "check_visit_wednesday";
+            this.check_visit_wednesday.Size = new System.Drawing.Size(177, 17);
+            this.check_visit_wednesday.TabIndex = 49;
+            this.check_visit_wednesday.Text = "I Visit this clinic on Wednesdays";
+            this.check_visit_wednesday.UseVisualStyleBackColor = true;
+            // 
+            // check_break_tuesday
+            // 
+            this.check_break_tuesday.AutoSize = true;
+            this.check_break_tuesday.Location = new System.Drawing.Point(8, 167);
+            this.check_break_tuesday.Name = "check_break_tuesday";
+            this.check_break_tuesday.Size = new System.Drawing.Size(136, 17);
+            this.check_break_tuesday.TabIndex = 46;
+            this.check_break_tuesday.Text = "I take a break for lunch";
+            this.check_break_tuesday.UseVisualStyleBackColor = true;
+            // 
+            // check_visit_tuesday
+            // 
+            this.check_visit_tuesday.AutoSize = true;
+            this.check_visit_tuesday.Location = new System.Drawing.Point(8, 142);
+            this.check_visit_tuesday.Name = "check_visit_tuesday";
+            this.check_visit_tuesday.Size = new System.Drawing.Size(161, 17);
+            this.check_visit_tuesday.TabIndex = 47;
+            this.check_visit_tuesday.Text = "I Visit this clinic on Tuesdays";
+            this.check_visit_tuesday.UseVisualStyleBackColor = true;
+            // 
+            // check_break_monday
+            // 
+            this.check_break_monday.AutoSize = true;
+            this.check_break_monday.Location = new System.Drawing.Point(8, 99);
+            this.check_break_monday.Name = "check_break_monday";
+            this.check_break_monday.Size = new System.Drawing.Size(139, 17);
+            this.check_break_monday.TabIndex = 44;
+            this.check_break_monday.Text = " I take a break for lunch";
+            this.check_break_monday.UseVisualStyleBackColor = true;
+            // 
+            // check_visit_monday
+            // 
+            this.check_visit_monday.AutoSize = true;
+            this.check_visit_monday.Location = new System.Drawing.Point(8, 74);
+            this.check_visit_monday.Name = "check_visit_monday";
+            this.check_visit_monday.Size = new System.Drawing.Size(158, 17);
+            this.check_visit_monday.TabIndex = 45;
+            this.check_visit_monday.Text = "I Visit this clinic on Mondays";
+            this.check_visit_monday.UseVisualStyleBackColor = true;
+            // 
+            // check_break_sunday
+            // 
+            this.check_break_sunday.AutoSize = true;
+            this.check_break_sunday.Location = new System.Drawing.Point(8, 38);
+            this.check_break_sunday.Name = "check_break_sunday";
+            this.check_break_sunday.Size = new System.Drawing.Size(136, 17);
+            this.check_break_sunday.TabIndex = 42;
+            this.check_break_sunday.Text = "I take a break for lunch";
+            this.check_break_sunday.UseVisualStyleBackColor = true;
+            // 
+            // check_visit_sunday
+            // 
+            this.check_visit_sunday.AutoSize = true;
+            this.check_visit_sunday.Location = new System.Drawing.Point(8, 11);
+            this.check_visit_sunday.Name = "check_visit_sunday";
+            this.check_visit_sunday.Size = new System.Drawing.Size(156, 17);
+            this.check_visit_sunday.TabIndex = 43;
+            this.check_visit_sunday.Text = "I Visit this clinic on Sundays";
+            this.check_visit_sunday.UseVisualStyleBackColor = true;
+            // 
+            // panel_saturday_visit
+            // 
+            this.panel_saturday_visit.Controls.Add(this.combo_leave_saturday_minute);
+            this.panel_saturday_visit.Controls.Add(this.combo_visit_saturday_minute);
+            this.panel_saturday_visit.Controls.Add(this.combo_leave_saturday_hour);
+            this.panel_saturday_visit.Controls.Add(this.combo_visit_saturday_hour);
+            this.panel_saturday_visit.Controls.Add(this.label49);
+            this.panel_saturday_visit.Controls.Add(this.label34);
+            this.panel_saturday_visit.Location = new System.Drawing.Point(248, 422);
+            this.panel_saturday_visit.Name = "panel_saturday_visit";
+            this.panel_saturday_visit.Size = new System.Drawing.Size(600, 29);
+            this.panel_saturday_visit.TabIndex = 49;
+            // 
+            // combo_leave_saturday_minute
+            // 
+            this.combo_leave_saturday_minute.FormattingEnabled = true;
+            this.combo_leave_saturday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_leave_saturday_minute.Location = new System.Drawing.Point(531, 4);
+            this.combo_leave_saturday_minute.Name = "combo_leave_saturday_minute";
+            this.combo_leave_saturday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_saturday_minute.TabIndex = 39;
+            // 
+            // combo_visit_saturday_minute
+            // 
+            this.combo_visit_saturday_minute.FormattingEnabled = true;
+            this.combo_visit_saturday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_visit_saturday_minute.Location = new System.Drawing.Point(191, 3);
+            this.combo_visit_saturday_minute.Name = "combo_visit_saturday_minute";
+            this.combo_visit_saturday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_saturday_minute.TabIndex = 38;
+            // 
+            // combo_leave_saturday_hour
+            // 
+            this.combo_leave_saturday_hour.FormattingEnabled = true;
+            this.combo_leave_saturday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_leave_saturday_hour.Location = new System.Drawing.Point(440, 3);
+            this.combo_leave_saturday_hour.Name = "combo_leave_saturday_hour";
+            this.combo_leave_saturday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_saturday_hour.TabIndex = 41;
+            // 
+            // combo_visit_saturday_hour
+            // 
+            this.combo_visit_saturday_hour.FormattingEnabled = true;
+            this.combo_visit_saturday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_visit_saturday_hour.Location = new System.Drawing.Point(107, 2);
+            this.combo_visit_saturday_hour.Name = "combo_visit_saturday_hour";
+            this.combo_visit_saturday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_saturday_hour.TabIndex = 37;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(351, 7);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(78, 13);
+            this.label49.TabIndex = 34;
+            this.label49.Text = "I leave clinic at";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(16, 5);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(78, 13);
+            this.label34.TabIndex = 33;
+            this.label34.Text = "I come clinic at";
+            // 
+            // panel_friday_visit
+            // 
+            this.panel_friday_visit.Controls.Add(this.combo_leave_friday_minute);
+            this.panel_friday_visit.Controls.Add(this.combo_visit_friday_minute);
+            this.panel_friday_visit.Controls.Add(this.combo_leave_friday_hour);
+            this.panel_friday_visit.Controls.Add(this.combo_visit_friday_hour);
+            this.panel_friday_visit.Controls.Add(this.label37);
+            this.panel_friday_visit.Controls.Add(this.label32);
+            this.panel_friday_visit.Location = new System.Drawing.Point(248, 353);
+            this.panel_friday_visit.Name = "panel_friday_visit";
+            this.panel_friday_visit.Size = new System.Drawing.Size(600, 29);
+            this.panel_friday_visit.TabIndex = 48;
+            // 
+            // combo_leave_friday_minute
+            // 
+            this.combo_leave_friday_minute.FormattingEnabled = true;
+            this.combo_leave_friday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_leave_friday_minute.Location = new System.Drawing.Point(531, 2);
+            this.combo_leave_friday_minute.Name = "combo_leave_friday_minute";
+            this.combo_leave_friday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_friday_minute.TabIndex = 39;
+            // 
+            // combo_visit_friday_minute
+            // 
+            this.combo_visit_friday_minute.FormattingEnabled = true;
+            this.combo_visit_friday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_visit_friday_minute.Location = new System.Drawing.Point(191, 5);
+            this.combo_visit_friday_minute.Name = "combo_visit_friday_minute";
+            this.combo_visit_friday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_friday_minute.TabIndex = 38;
+            // 
+            // combo_leave_friday_hour
+            // 
+            this.combo_leave_friday_hour.FormattingEnabled = true;
+            this.combo_leave_friday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_leave_friday_hour.Location = new System.Drawing.Point(440, 1);
+            this.combo_leave_friday_hour.Name = "combo_leave_friday_hour";
+            this.combo_leave_friday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_friday_hour.TabIndex = 41;
+            // 
+            // combo_visit_friday_hour
+            // 
+            this.combo_visit_friday_hour.FormattingEnabled = true;
+            this.combo_visit_friday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_visit_friday_hour.Location = new System.Drawing.Point(107, 4);
+            this.combo_visit_friday_hour.Name = "combo_visit_friday_hour";
+            this.combo_visit_friday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_friday_hour.TabIndex = 37;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(351, 8);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(78, 13);
+            this.label37.TabIndex = 34;
+            this.label37.Text = "I leave clinic at";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(16, 11);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(78, 13);
+            this.label32.TabIndex = 33;
+            this.label32.Text = "I come clinic at";
+            // 
+            // panel_thursday_visit
+            // 
+            this.panel_thursday_visit.Controls.Add(this.combo_leave_thursday_minute);
+            this.panel_thursday_visit.Controls.Add(this.combo_visit_thursday_minute);
+            this.panel_thursday_visit.Controls.Add(this.combo_leave_thursday_hour);
+            this.panel_thursday_visit.Controls.Add(this.combo_visit_thursday_hour);
+            this.panel_thursday_visit.Controls.Add(this.label39);
+            this.panel_thursday_visit.Controls.Add(this.label30);
+            this.panel_thursday_visit.Location = new System.Drawing.Point(248, 285);
+            this.panel_thursday_visit.Name = "panel_thursday_visit";
+            this.panel_thursday_visit.Size = new System.Drawing.Size(600, 29);
+            this.panel_thursday_visit.TabIndex = 47;
+            // 
+            // combo_leave_thursday_minute
+            // 
+            this.combo_leave_thursday_minute.FormattingEnabled = true;
+            this.combo_leave_thursday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_leave_thursday_minute.Location = new System.Drawing.Point(531, 3);
+            this.combo_leave_thursday_minute.Name = "combo_leave_thursday_minute";
+            this.combo_leave_thursday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_thursday_minute.TabIndex = 39;
+            // 
+            // combo_visit_thursday_minute
+            // 
+            this.combo_visit_thursday_minute.FormattingEnabled = true;
+            this.combo_visit_thursday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_visit_thursday_minute.Location = new System.Drawing.Point(191, 3);
+            this.combo_visit_thursday_minute.Name = "combo_visit_thursday_minute";
+            this.combo_visit_thursday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_thursday_minute.TabIndex = 38;
+            // 
+            // combo_leave_thursday_hour
+            // 
+            this.combo_leave_thursday_hour.FormattingEnabled = true;
+            this.combo_leave_thursday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_leave_thursday_hour.Location = new System.Drawing.Point(440, 3);
+            this.combo_leave_thursday_hour.Name = "combo_leave_thursday_hour";
+            this.combo_leave_thursday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_thursday_hour.TabIndex = 41;
+            // 
+            // combo_visit_thursday_hour
+            // 
+            this.combo_visit_thursday_hour.FormattingEnabled = true;
+            this.combo_visit_thursday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_visit_thursday_hour.Location = new System.Drawing.Point(107, 4);
+            this.combo_visit_thursday_hour.Name = "combo_visit_thursday_hour";
+            this.combo_visit_thursday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_thursday_hour.TabIndex = 37;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(351, 8);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(78, 13);
+            this.label39.TabIndex = 35;
+            this.label39.Text = "I leave clinic at";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(16, 7);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(78, 13);
+            this.label30.TabIndex = 33;
+            this.label30.Text = "I come clinic at";
+            // 
+            // panel_wednesday_visit
+            // 
+            this.panel_wednesday_visit.Controls.Add(this.combo_leave_wednesday_minute);
+            this.panel_wednesday_visit.Controls.Add(this.combo_visit_wednesday_minute);
+            this.panel_wednesday_visit.Controls.Add(this.combo_leave_wednesday_hour);
+            this.panel_wednesday_visit.Controls.Add(this.combo_visit_wednesday_hour);
+            this.panel_wednesday_visit.Controls.Add(this.label41);
+            this.panel_wednesday_visit.Controls.Add(this.label28);
+            this.panel_wednesday_visit.Location = new System.Drawing.Point(247, 216);
+            this.panel_wednesday_visit.Name = "panel_wednesday_visit";
+            this.panel_wednesday_visit.Size = new System.Drawing.Size(600, 29);
+            this.panel_wednesday_visit.TabIndex = 46;
+            // 
+            // combo_leave_wednesday_minute
+            // 
+            this.combo_leave_wednesday_minute.FormattingEnabled = true;
+            this.combo_leave_wednesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_leave_wednesday_minute.Location = new System.Drawing.Point(531, 3);
+            this.combo_leave_wednesday_minute.Name = "combo_leave_wednesday_minute";
+            this.combo_leave_wednesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_wednesday_minute.TabIndex = 39;
+            // 
+            // combo_visit_wednesday_minute
+            // 
+            this.combo_visit_wednesday_minute.FormattingEnabled = true;
+            this.combo_visit_wednesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_visit_wednesday_minute.Location = new System.Drawing.Point(191, 4);
+            this.combo_visit_wednesday_minute.Name = "combo_visit_wednesday_minute";
+            this.combo_visit_wednesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_wednesday_minute.TabIndex = 38;
+            // 
+            // combo_leave_wednesday_hour
+            // 
+            this.combo_leave_wednesday_hour.FormattingEnabled = true;
+            this.combo_leave_wednesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_leave_wednesday_hour.Location = new System.Drawing.Point(440, 4);
+            this.combo_leave_wednesday_hour.Name = "combo_leave_wednesday_hour";
+            this.combo_leave_wednesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_wednesday_hour.TabIndex = 41;
+            // 
+            // combo_visit_wednesday_hour
+            // 
+            this.combo_visit_wednesday_hour.FormattingEnabled = true;
+            this.combo_visit_wednesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_visit_wednesday_hour.Location = new System.Drawing.Point(107, 4);
+            this.combo_visit_wednesday_hour.Name = "combo_visit_wednesday_hour";
+            this.combo_visit_wednesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_wednesday_hour.TabIndex = 37;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(351, 7);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(78, 13);
+            this.label41.TabIndex = 34;
+            this.label41.Text = "I leave clinic at";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(16, 7);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(78, 13);
+            this.label28.TabIndex = 33;
+            this.label28.Text = "I come clinic at";
+            // 
+            // panel_tuesday_visit
+            // 
+            this.panel_tuesday_visit.Controls.Add(this.combo_leave_tuesday_minute);
+            this.panel_tuesday_visit.Controls.Add(this.combo_visit_tuesday_minute);
+            this.panel_tuesday_visit.Controls.Add(this.combo_leave_tuesday_hour);
+            this.panel_tuesday_visit.Controls.Add(this.combo_visit_tuesday_hour);
+            this.panel_tuesday_visit.Controls.Add(this.label43);
+            this.panel_tuesday_visit.Controls.Add(this.label26);
+            this.panel_tuesday_visit.Location = new System.Drawing.Point(248, 147);
+            this.panel_tuesday_visit.Name = "panel_tuesday_visit";
+            this.panel_tuesday_visit.Size = new System.Drawing.Size(600, 29);
+            this.panel_tuesday_visit.TabIndex = 45;
+            // 
+            // combo_leave_tuesday_minute
+            // 
+            this.combo_leave_tuesday_minute.FormattingEnabled = true;
+            this.combo_leave_tuesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_leave_tuesday_minute.Location = new System.Drawing.Point(531, 3);
+            this.combo_leave_tuesday_minute.Name = "combo_leave_tuesday_minute";
+            this.combo_leave_tuesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_tuesday_minute.TabIndex = 39;
+            // 
+            // combo_visit_tuesday_minute
+            // 
+            this.combo_visit_tuesday_minute.FormattingEnabled = true;
+            this.combo_visit_tuesday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_visit_tuesday_minute.Location = new System.Drawing.Point(191, 4);
+            this.combo_visit_tuesday_minute.Name = "combo_visit_tuesday_minute";
+            this.combo_visit_tuesday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_tuesday_minute.TabIndex = 38;
+            // 
+            // combo_leave_tuesday_hour
+            // 
+            this.combo_leave_tuesday_hour.FormattingEnabled = true;
+            this.combo_leave_tuesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_leave_tuesday_hour.Location = new System.Drawing.Point(440, 3);
+            this.combo_leave_tuesday_hour.Name = "combo_leave_tuesday_hour";
+            this.combo_leave_tuesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_tuesday_hour.TabIndex = 41;
+            // 
+            // combo_visit_tuesday_hour
+            // 
+            this.combo_visit_tuesday_hour.FormattingEnabled = true;
+            this.combo_visit_tuesday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_visit_tuesday_hour.Location = new System.Drawing.Point(107, 3);
+            this.combo_visit_tuesday_hour.Name = "combo_visit_tuesday_hour";
+            this.combo_visit_tuesday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_tuesday_hour.TabIndex = 37;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(351, 5);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(78, 13);
+            this.label43.TabIndex = 34;
+            this.label43.Text = "I leave clinic at";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(16, 5);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(78, 13);
+            this.label26.TabIndex = 33;
+            this.label26.Text = "I come clinic at";
+            // 
+            // panel_monday_visit
+            // 
+            this.panel_monday_visit.Controls.Add(this.combo_leave_monday_minute);
+            this.panel_monday_visit.Controls.Add(this.combo_visit_monday_minute);
+            this.panel_monday_visit.Controls.Add(this.combo_leave_monday_hour);
+            this.panel_monday_visit.Controls.Add(this.combo_visit_monday_hour);
+            this.panel_monday_visit.Controls.Add(this.label45);
+            this.panel_monday_visit.Controls.Add(this.label24);
+            this.panel_monday_visit.Location = new System.Drawing.Point(247, 77);
+            this.panel_monday_visit.Name = "panel_monday_visit";
+            this.panel_monday_visit.Size = new System.Drawing.Size(600, 29);
+            this.panel_monday_visit.TabIndex = 44;
+            // 
+            // combo_leave_monday_minute
+            // 
+            this.combo_leave_monday_minute.FormattingEnabled = true;
+            this.combo_leave_monday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_leave_monday_minute.Location = new System.Drawing.Point(531, 6);
+            this.combo_leave_monday_minute.Name = "combo_leave_monday_minute";
+            this.combo_leave_monday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_monday_minute.TabIndex = 39;
+            // 
+            // combo_visit_monday_minute
+            // 
+            this.combo_visit_monday_minute.FormattingEnabled = true;
+            this.combo_visit_monday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_visit_monday_minute.Location = new System.Drawing.Point(191, 5);
+            this.combo_visit_monday_minute.Name = "combo_visit_monday_minute";
+            this.combo_visit_monday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_monday_minute.TabIndex = 38;
+            // 
+            // combo_leave_monday_hour
+            // 
+            this.combo_leave_monday_hour.FormattingEnabled = true;
+            this.combo_leave_monday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_leave_monday_hour.Location = new System.Drawing.Point(440, 5);
+            this.combo_leave_monday_hour.Name = "combo_leave_monday_hour";
+            this.combo_leave_monday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_monday_hour.TabIndex = 41;
+            // 
+            // combo_visit_monday_hour
+            // 
+            this.combo_visit_monday_hour.FormattingEnabled = true;
+            this.combo_visit_monday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_visit_monday_hour.Location = new System.Drawing.Point(107, 4);
+            this.combo_visit_monday_hour.Name = "combo_visit_monday_hour";
+            this.combo_visit_monday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_monday_hour.TabIndex = 37;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(351, 5);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(78, 13);
+            this.label45.TabIndex = 35;
+            this.label45.Text = "I leave clinic at";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(16, 8);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(78, 13);
+            this.label24.TabIndex = 33;
+            this.label24.Text = "I come clinic at";
+            // 
+            // panel_sunday_visit
+            // 
+            this.panel_sunday_visit.Controls.Add(this.combo_leave_sunday_minute);
+            this.panel_sunday_visit.Controls.Add(this.combo_visit_sunday_minute);
+            this.panel_sunday_visit.Controls.Add(this.combo_leave_sunday_hour);
+            this.panel_sunday_visit.Controls.Add(this.combo_visit_sunday_hour);
+            this.panel_sunday_visit.Controls.Add(this.label47);
+            this.panel_sunday_visit.Controls.Add(this.label22);
+            this.panel_sunday_visit.Location = new System.Drawing.Point(247, 7);
+            this.panel_sunday_visit.Name = "panel_sunday_visit";
+            this.panel_sunday_visit.Size = new System.Drawing.Size(600, 29);
+            this.panel_sunday_visit.TabIndex = 43;
+            // 
+            // combo_leave_sunday_minute
+            // 
+            this.combo_leave_sunday_minute.FormattingEnabled = true;
+            this.combo_leave_sunday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_leave_sunday_minute.Location = new System.Drawing.Point(531, 5);
+            this.combo_leave_sunday_minute.Name = "combo_leave_sunday_minute";
+            this.combo_leave_sunday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_sunday_minute.TabIndex = 39;
+            // 
+            // combo_visit_sunday_minute
+            // 
+            this.combo_visit_sunday_minute.FormattingEnabled = true;
+            this.combo_visit_sunday_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_visit_sunday_minute.Location = new System.Drawing.Point(191, 5);
+            this.combo_visit_sunday_minute.Name = "combo_visit_sunday_minute";
+            this.combo_visit_sunday_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_sunday_minute.TabIndex = 38;
+            // 
+            // combo_leave_sunday_hour
+            // 
+            this.combo_leave_sunday_hour.FormattingEnabled = true;
+            this.combo_leave_sunday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_leave_sunday_hour.Location = new System.Drawing.Point(440, 4);
+            this.combo_leave_sunday_hour.Name = "combo_leave_sunday_hour";
+            this.combo_leave_sunday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_leave_sunday_hour.TabIndex = 42;
+            // 
+            // combo_visit_sunday_hour
+            // 
+            this.combo_visit_sunday_hour.FormattingEnabled = true;
+            this.combo_visit_sunday_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_visit_sunday_hour.Location = new System.Drawing.Point(107, 5);
+            this.combo_visit_sunday_hour.Name = "combo_visit_sunday_hour";
+            this.combo_visit_sunday_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_visit_sunday_hour.TabIndex = 37;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(351, 11);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(78, 13);
+            this.label47.TabIndex = 34;
+            this.label47.Text = "I leave clinic at";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(16, 9);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(78, 13);
+            this.label22.TabIndex = 33;
+            this.label22.Text = "I come clinic at";
+            // 
+            // button_savetimings
+            // 
+            this.button_savetimings.BackColor = System.Drawing.Color.LimeGreen;
+            this.button_savetimings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_savetimings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_savetimings.ForeColor = System.Drawing.Color.White;
+            this.button_savetimings.Location = new System.Drawing.Point(887, 95);
+            this.button_savetimings.Name = "button_savetimings";
+            this.button_savetimings.Size = new System.Drawing.Size(84, 37);
+            this.button_savetimings.TabIndex = 58;
+            this.button_savetimings.Text = "Save";
+            this.button_savetimings.UseVisualStyleBackColor = false;
+            // 
+            // panel_main_break
+            // 
+            this.panel_main_break.Controls.Add(this.combo_main_resume_minute);
+            this.panel_main_break.Controls.Add(this.combo_main_break_minute);
+            this.panel_main_break.Controls.Add(this.combo_main_resume_hour);
+            this.panel_main_break.Controls.Add(this.combo_main_break_hour);
+            this.panel_main_break.Controls.Add(this.label53);
+            this.panel_main_break.Controls.Add(this.label51);
+            this.panel_main_break.Location = new System.Drawing.Point(395, 59);
+            this.panel_main_break.Name = "panel_main_break";
+            this.panel_main_break.Size = new System.Drawing.Size(580, 30);
+            this.panel_main_break.TabIndex = 20;
+            // 
+            // combo_main_resume_minute
+            // 
+            this.combo_main_resume_minute.FormattingEnabled = true;
+            this.combo_main_resume_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_main_resume_minute.Location = new System.Drawing.Point(475, 3);
+            this.combo_main_resume_minute.Name = "combo_main_resume_minute";
+            this.combo_main_resume_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_resume_minute.TabIndex = 20;
+            // 
+            // combo_main_break_minute
+            // 
+            this.combo_main_break_minute.FormattingEnabled = true;
+            this.combo_main_break_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_main_break_minute.Location = new System.Drawing.Point(181, 4);
+            this.combo_main_break_minute.Name = "combo_main_break_minute";
+            this.combo_main_break_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_break_minute.TabIndex = 21;
+            // 
+            // combo_main_resume_hour
+            // 
+            this.combo_main_resume_hour.FormattingEnabled = true;
+            this.combo_main_resume_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_main_resume_hour.Location = new System.Drawing.Point(392, 3);
+            this.combo_main_resume_hour.Name = "combo_main_resume_hour";
+            this.combo_main_resume_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_resume_hour.TabIndex = 22;
+            // 
+            // combo_main_break_hour
+            // 
+            this.combo_main_break_hour.FormattingEnabled = true;
+            this.combo_main_break_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_main_break_hour.Location = new System.Drawing.Point(98, 4);
+            this.combo_main_break_hour.Name = "combo_main_break_hour";
+            this.combo_main_break_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_break_hour.TabIndex = 23;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(295, 11);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(59, 13);
+            this.label53.TabIndex = 19;
+            this.label53.Text = "I resume at";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(3, 8);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(85, 13);
+            this.label51.TabIndex = 18;
+            this.label51.Text = "I take a break at";
+            // 
+            // panel_main_visit
+            // 
+            this.panel_main_visit.Controls.Add(this.combo_main_leave_minute);
+            this.panel_main_visit.Controls.Add(this.combo_main_visit_minute);
+            this.panel_main_visit.Controls.Add(this.combo_main_leave_hour);
+            this.panel_main_visit.Controls.Add(this.combo_main_visit_hour);
+            this.panel_main_visit.Controls.Add(this.label52);
+            this.panel_main_visit.Controls.Add(this.label50);
+            this.panel_main_visit.Location = new System.Drawing.Point(395, 28);
+            this.panel_main_visit.Name = "panel_main_visit";
+            this.panel_main_visit.Size = new System.Drawing.Size(580, 29);
+            this.panel_main_visit.TabIndex = 19;
+            // 
+            // combo_main_leave_minute
+            // 
+            this.combo_main_leave_minute.FormattingEnabled = true;
+            this.combo_main_leave_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_main_leave_minute.Location = new System.Drawing.Point(475, 4);
+            this.combo_main_leave_minute.Name = "combo_main_leave_minute";
+            this.combo_main_leave_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_leave_minute.TabIndex = 20;
+            // 
+            // combo_main_visit_minute
+            // 
+            this.combo_main_visit_minute.FormattingEnabled = true;
+            this.combo_main_visit_minute.Items.AddRange(new object[] {
+            "00",
+            "05",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30",
+            "35",
+            "40",
+            "45",
+            "50",
+            "55"});
+            this.combo_main_visit_minute.Location = new System.Drawing.Point(181, 5);
+            this.combo_main_visit_minute.Name = "combo_main_visit_minute";
+            this.combo_main_visit_minute.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_visit_minute.TabIndex = 21;
+            // 
+            // combo_main_leave_hour
+            // 
+            this.combo_main_leave_hour.FormattingEnabled = true;
+            this.combo_main_leave_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_main_leave_hour.Location = new System.Drawing.Point(392, 4);
+            this.combo_main_leave_hour.Name = "combo_main_leave_hour";
+            this.combo_main_leave_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_leave_hour.TabIndex = 22;
+            // 
+            // combo_main_visit_hour
+            // 
+            this.combo_main_visit_hour.FormattingEnabled = true;
+            this.combo_main_visit_hour.Items.AddRange(new object[] {
+            "12am\t",
+            "1am",
+            "2am",
+            "3am",
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12pm",
+            "1pm",
+            "2pm",
+            "3pm",
+            "4pm",
+            "5pm",
+            "6pm",
+            "7pm",
+            "8pm",
+            "9pm",
+            "10pm",
+            "11pm"});
+            this.combo_main_visit_hour.Location = new System.Drawing.Point(98, 5);
+            this.combo_main_visit_hour.Name = "combo_main_visit_hour";
+            this.combo_main_visit_hour.Size = new System.Drawing.Size(64, 21);
+            this.combo_main_visit_hour.TabIndex = 23;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(295, 8);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(78, 13);
+            this.label52.TabIndex = 19;
+            this.label52.Text = "I leave clinic at";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(3, 9);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(78, 13);
+            this.label50.TabIndex = 18;
+            this.label50.Text = "I come clinic at";
+            // 
+            // check_visiting_main
+            // 
+            this.check_visiting_main.AutoSize = true;
+            this.check_visiting_main.Location = new System.Drawing.Point(51, 35);
+            this.check_visiting_main.Name = "check_visiting_main";
+            this.check_visiting_main.Size = new System.Drawing.Size(302, 17);
+            this.check_visiting_main.TabIndex = 1;
+            this.check_visiting_main.Text = "Visiting hours are NOT same for all working days in a week";
+            this.check_visiting_main.UseVisualStyleBackColor = true;
+            // 
+            // check_break_main
+            // 
+            this.check_break_main.AutoSize = true;
+            this.check_break_main.Location = new System.Drawing.Point(52, 69);
+            this.check_break_main.Name = "check_break_main";
+            this.check_break_main.Size = new System.Drawing.Size(136, 17);
+            this.check_break_main.TabIndex = 1;
+            this.check_break_main.Text = "I take a break for lunch";
+            this.check_break_main.UseVisualStyleBackColor = true;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(175, 13);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(0, 13);
+            this.label54.TabIndex = 0;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(24, 14);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(157, 13);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "EDIT VISIT TIMINGS FOR DR.";
+            // 
+            // button_closegrid
+            // 
+            this.button_closegrid.BackColor = System.Drawing.Color.Tomato;
+            this.button_closegrid.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_closegrid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_closegrid.ForeColor = System.Drawing.Color.White;
+            this.button_closegrid.Location = new System.Drawing.Point(976, 95);
+            this.button_closegrid.Name = "button_closegrid";
+            this.button_closegrid.Size = new System.Drawing.Size(84, 37);
+            this.button_closegrid.TabIndex = 58;
+            this.button_closegrid.Text = "Close";
+            this.button_closegrid.UseVisualStyleBackColor = false;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.White;
+            this.tabPage4.Controls.Add(this.panel1);
+            this.tabPage4.Controls.Add(this.dataGridView_users);
+            this.tabPage4.Controls.Add(this.btnAssignPrivilege);
+            this.tabPage4.Controls.Add(this.btnRefresh);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1125, 591);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "User Privilege";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.chk_refund_add);
+            this.panel1.Controls.Add(this.chk_refund);
+            this.panel1.Controls.Add(this.chk_lab_show);
+            this.panel1.Controls.Add(this.chk_lab_add);
+            this.panel1.Controls.Add(this.chkLab);
+            this.panel1.Controls.Add(this.chk_vital_show);
+            this.panel1.Controls.Add(this.chk_vital_edit);
+            this.panel1.Controls.Add(this.chk_vital_add);
+            this.panel1.Controls.Add(this.chk_vital);
+            this.panel1.Controls.Add(this.chk_attach_delete);
+            this.panel1.Controls.Add(this.chk_c_finding_show);
+            this.panel1.Controls.Add(this.treatment_show);
+            this.panel1.Controls.Add(this.prescrption_show);
+            this.panel1.Controls.Add(this.finished_show);
+            this.panel1.Controls.Add(this.attachmnt_show);
+            this.panel1.Controls.Add(this.invoice_show);
+            this.panel1.Controls.Add(this.patient_show);
+            this.panel1.Controls.Add(this.payments_show);
+            this.panel1.Controls.Add(this.chk_report_show);
+            this.panel1.Controls.Add(this.chk_appo_show);
+            this.panel1.Controls.Add(this.chkPurchase);
+            this.panel1.Controls.Add(this.chkstocktransfer);
+            this.panel1.Controls.Add(this.chkSales);
+            this.panel1.Controls.Add(this.chk_inv);
+            this.panel1.Controls.Add(this.chkRPTIncom);
+            this.panel1.Controls.Add(this.chkCommnctn);
+            this.panel1.Controls.Add(this.chkCalendar);
+            this.panel1.Controls.Add(this.chk_profile);
+            this.panel1.Controls.Add(this.chkConsltn);
+            this.panel1.Controls.Add(this.chkLabTrackng);
+            this.panel1.Controls.Add(this.chkExpnse);
+            this.panel1.Controls.Add(this.chkInventory);
+            this.panel1.Controls.Add(this.chkAPTClinicAppoinment);
+            this.panel1.Controls.Add(this.chkEMRIdelete);
+            this.panel1.Controls.Add(this.chkEMRIedit);
+            this.panel1.Controls.Add(this.chkEMRIadd);
+            this.panel1.Controls.Add(this.chkEMRI);
+            this.panel1.Controls.Add(this.chkRPTINVadd);
+            this.panel1.Controls.Add(this.chkRPTEMRadd);
+            this.panel1.Controls.Add(this.chkRPTINCadd);
+            this.panel1.Controls.Add(this.chkRPTPAYadd);
+            this.panel1.Controls.Add(this.chkRPTPATadd);
+            this.panel1.Controls.Add(this.chkRPTAPTadd);
+            this.panel1.Controls.Add(this.chkRPT);
+            this.panel1.Controls.Add(this.chkCLMSadd);
+            this.panel1.Controls.Add(this.chkstockledger);
+            this.panel1.Controls.Add(this.chkINVCSadd);
+            this.panel1.Controls.Add(this.chkINVAIadd);
+            this.panel1.Controls.Add(this.chkadjustment);
+            this.panel1.Controls.Add(this.chkEMRFPdelete);
+            this.panel1.Controls.Add(this.chkEMRFPadd);
+            this.panel1.Controls.Add(this.chkEMRFadd);
+            this.panel1.Controls.Add(this.chkEMRFP);
+            this.panel1.Controls.Add(this.chkEMRF);
+            this.panel1.Controls.Add(this.chkEMRPdelete);
+            this.panel1.Controls.Add(this.chkEMRPedit);
+            this.panel1.Controls.Add(this.chkEMRPadd);
+            this.panel1.Controls.Add(this.chkEMRTPdelete);
+            this.panel1.Controls.Add(this.chkEMRTPedit);
+            this.panel1.Controls.Add(this.chkEMRTPadd);
+            this.panel1.Controls.Add(this.chkEMRP);
+            this.panel1.Controls.Add(this.chkEMRTP);
+            this.panel1.Controls.Add(this.chkEMRCFadd);
+            this.panel1.Controls.Add(this.chkEMRCFedit);
+            this.panel1.Controls.Add(this.chkEMRCFdelete);
+            this.panel1.Controls.Add(this.chkEMRCF);
+            this.panel1.Controls.Add(this.chkPMTadd);
+            this.panel1.Controls.Add(this.chkAPTdelete);
+            this.panel1.Controls.Add(this.chkAPTedit);
+            this.panel1.Controls.Add(this.chkAPTadd);
+            this.panel1.Controls.Add(this.chkPMT);
+            this.panel1.Controls.Add(this.chkEMR);
+            this.panel1.Controls.Add(this.chkAPT);
+            this.panel1.Controls.Add(this.chkPATadd);
+            this.panel1.Controls.Add(this.chkPATedit);
+            this.panel1.Controls.Add(this.chkPATdelete);
+            this.panel1.Controls.Add(this.chkPAT);
+            this.panel1.Controls.Add(this.label71);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(246, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(876, 582);
+            this.panel1.TabIndex = 5;
+            // 
+            // chk_refund_add
+            // 
+            this.chk_refund_add.AutoSize = true;
+            this.chk_refund_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_refund_add.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_refund_add.Location = new System.Drawing.Point(602, 270);
+            this.chk_refund_add.Name = "chk_refund_add";
+            this.chk_refund_add.Size = new System.Drawing.Size(48, 21);
+            this.chk_refund_add.TabIndex = 146;
+            this.chk_refund_add.Text = "Add";
+            this.chk_refund_add.UseVisualStyleBackColor = true;
+            // 
+            // chk_refund
+            // 
+            this.chk_refund.AutoSize = true;
+            this.chk_refund.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_refund.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_refund.Location = new System.Drawing.Point(580, 249);
+            this.chk_refund.Name = "chk_refund";
+            this.chk_refund.Size = new System.Drawing.Size(112, 21);
+            this.chk_refund.TabIndex = 145;
+            this.chk_refund.Text = "Receipt Refund";
+            this.chk_refund.UseVisualStyleBackColor = true;
+            // 
+            // chk_lab_show
+            // 
+            this.chk_lab_show.AutoSize = true;
+            this.chk_lab_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_lab_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_lab_show.Location = new System.Drawing.Point(500, 294);
+            this.chk_lab_show.Name = "chk_lab_show";
+            this.chk_lab_show.Size = new System.Drawing.Size(55, 21);
+            this.chk_lab_show.TabIndex = 142;
+            this.chk_lab_show.Text = "Show";
+            this.chk_lab_show.UseVisualStyleBackColor = true;
+            // 
+            // chk_lab_add
+            // 
+            this.chk_lab_add.AutoSize = true;
+            this.chk_lab_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_lab_add.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_lab_add.Location = new System.Drawing.Point(500, 270);
+            this.chk_lab_add.Name = "chk_lab_add";
+            this.chk_lab_add.Size = new System.Drawing.Size(48, 21);
+            this.chk_lab_add.TabIndex = 141;
+            this.chk_lab_add.Text = "Add";
+            this.chk_lab_add.UseVisualStyleBackColor = true;
+            // 
+            // chkLab
+            // 
+            this.chkLab.AutoSize = true;
+            this.chkLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkLab.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLab.Location = new System.Drawing.Point(485, 249);
+            this.chkLab.Name = "chkLab";
+            this.chkLab.Size = new System.Drawing.Size(45, 21);
+            this.chkLab.TabIndex = 140;
+            this.chkLab.Text = "Lab";
+            this.chkLab.UseVisualStyleBackColor = true;
+            // 
+            // chk_vital_show
+            // 
+            this.chk_vital_show.AutoSize = true;
+            this.chk_vital_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_vital_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_vital_show.Location = new System.Drawing.Point(412, 320);
+            this.chk_vital_show.Name = "chk_vital_show";
+            this.chk_vital_show.Size = new System.Drawing.Size(55, 21);
+            this.chk_vital_show.TabIndex = 139;
+            this.chk_vital_show.Text = "Show";
+            this.chk_vital_show.UseVisualStyleBackColor = true;
+            // 
+            // chk_vital_edit
+            // 
+            this.chk_vital_edit.AutoSize = true;
+            this.chk_vital_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_vital_edit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_vital_edit.Location = new System.Drawing.Point(411, 294);
+            this.chk_vital_edit.Name = "chk_vital_edit";
+            this.chk_vital_edit.Size = new System.Drawing.Size(46, 21);
+            this.chk_vital_edit.TabIndex = 137;
+            this.chk_vital_edit.Text = "Edit";
+            this.chk_vital_edit.UseVisualStyleBackColor = true;
+            // 
+            // chk_vital_add
+            // 
+            this.chk_vital_add.AutoSize = true;
+            this.chk_vital_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_vital_add.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_vital_add.Location = new System.Drawing.Point(411, 270);
+            this.chk_vital_add.Name = "chk_vital_add";
+            this.chk_vital_add.Size = new System.Drawing.Size(48, 21);
+            this.chk_vital_add.TabIndex = 136;
+            this.chk_vital_add.Text = "Add";
+            this.chk_vital_add.UseVisualStyleBackColor = true;
+            // 
+            // chk_vital
+            // 
+            this.chk_vital.AutoSize = true;
+            this.chk_vital.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_vital.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_vital.Location = new System.Drawing.Point(392, 249);
+            this.chk_vital.Name = "chk_vital";
+            this.chk_vital.Size = new System.Drawing.Size(84, 21);
+            this.chk_vital.TabIndex = 135;
+            this.chk_vital.Text = "Vital Signs";
+            this.chk_vital.UseVisualStyleBackColor = true;
+            // 
+            // chk_attach_delete
+            // 
+            this.chk_attach_delete.AutoSize = true;
+            this.chk_attach_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_attach_delete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_attach_delete.Location = new System.Drawing.Point(548, 160);
+            this.chk_attach_delete.Name = "chk_attach_delete";
+            this.chk_attach_delete.Size = new System.Drawing.Size(61, 21);
+            this.chk_attach_delete.TabIndex = 134;
+            this.chk_attach_delete.Text = "Delete";
+            this.chk_attach_delete.UseVisualStyleBackColor = true;
+            // 
+            // chk_c_finding_show
+            // 
+            this.chk_c_finding_show.AutoSize = true;
+            this.chk_c_finding_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_c_finding_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_c_finding_show.Location = new System.Drawing.Point(66, 210);
+            this.chk_c_finding_show.Name = "chk_c_finding_show";
+            this.chk_c_finding_show.Size = new System.Drawing.Size(55, 21);
+            this.chk_c_finding_show.TabIndex = 133;
+            this.chk_c_finding_show.Text = "Show";
+            this.chk_c_finding_show.UseVisualStyleBackColor = true;
+            // 
+            // treatment_show
+            // 
+            this.treatment_show.AutoSize = true;
+            this.treatment_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.treatment_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treatment_show.Location = new System.Drawing.Point(181, 210);
+            this.treatment_show.Name = "treatment_show";
+            this.treatment_show.Size = new System.Drawing.Size(55, 21);
+            this.treatment_show.TabIndex = 132;
+            this.treatment_show.Text = "Show";
+            this.treatment_show.UseVisualStyleBackColor = true;
+            // 
+            // prescrption_show
+            // 
+            this.prescrption_show.AutoSize = true;
+            this.prescrption_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prescrption_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prescrption_show.Location = new System.Drawing.Point(305, 210);
+            this.prescrption_show.Name = "prescrption_show";
+            this.prescrption_show.Size = new System.Drawing.Size(55, 21);
+            this.prescrption_show.TabIndex = 131;
+            this.prescrption_show.Text = "Show";
+            this.prescrption_show.UseVisualStyleBackColor = true;
+            // 
+            // finished_show
+            // 
+            this.finished_show.AutoSize = true;
+            this.finished_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finished_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finished_show.Location = new System.Drawing.Point(407, 186);
+            this.finished_show.Name = "finished_show";
+            this.finished_show.Size = new System.Drawing.Size(55, 21);
+            this.finished_show.TabIndex = 130;
+            this.finished_show.Text = "Show";
+            this.finished_show.UseVisualStyleBackColor = true;
+            // 
+            // attachmnt_show
+            // 
+            this.attachmnt_show.AutoSize = true;
+            this.attachmnt_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.attachmnt_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.attachmnt_show.Location = new System.Drawing.Point(548, 186);
+            this.attachmnt_show.Name = "attachmnt_show";
+            this.attachmnt_show.Size = new System.Drawing.Size(55, 21);
+            this.attachmnt_show.TabIndex = 129;
+            this.attachmnt_show.Text = "Show";
+            this.attachmnt_show.UseVisualStyleBackColor = true;
+            // 
+            // invoice_show
+            // 
+            this.invoice_show.AutoSize = true;
+            this.invoice_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.invoice_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoice_show.Location = new System.Drawing.Point(650, 210);
+            this.invoice_show.Name = "invoice_show";
+            this.invoice_show.Size = new System.Drawing.Size(55, 21);
+            this.invoice_show.TabIndex = 128;
+            this.invoice_show.Text = "Show";
+            this.invoice_show.UseVisualStyleBackColor = true;
+            // 
+            // patient_show
+            // 
+            this.patient_show.AutoSize = true;
+            this.patient_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.patient_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patient_show.Location = new System.Drawing.Point(57, 345);
+            this.patient_show.Name = "patient_show";
+            this.patient_show.Size = new System.Drawing.Size(55, 21);
+            this.patient_show.TabIndex = 127;
+            this.patient_show.Text = "Show";
+            this.patient_show.UseVisualStyleBackColor = true;
+            this.patient_show.Visible = false;
+            // 
+            // payments_show
+            // 
+            this.payments_show.AutoSize = true;
+            this.payments_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.payments_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.payments_show.Location = new System.Drawing.Point(306, 294);
+            this.payments_show.Name = "payments_show";
+            this.payments_show.Size = new System.Drawing.Size(55, 21);
+            this.payments_show.TabIndex = 126;
+            this.payments_show.Text = "Show";
+            this.payments_show.UseVisualStyleBackColor = true;
+            // 
+            // chk_report_show
+            // 
+            this.chk_report_show.AutoSize = true;
+            this.chk_report_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_report_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_report_show.Location = new System.Drawing.Point(782, 84);
+            this.chk_report_show.Name = "chk_report_show";
+            this.chk_report_show.Size = new System.Drawing.Size(70, 21);
+            this.chk_report_show.TabIndex = 125;
+            this.chk_report_show.Text = "Reports";
+            this.chk_report_show.UseVisualStyleBackColor = true;
+            this.chk_report_show.Visible = false;
+            // 
+            // chk_appo_show
+            // 
+            this.chk_appo_show.AutoSize = true;
+            this.chk_appo_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_appo_show.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_appo_show.Location = new System.Drawing.Point(181, 345);
+            this.chk_appo_show.Name = "chk_appo_show";
+            this.chk_appo_show.Size = new System.Drawing.Size(55, 21);
+            this.chk_appo_show.TabIndex = 124;
+            this.chk_appo_show.Text = "Show";
+            this.chk_appo_show.UseVisualStyleBackColor = true;
+            // 
+            // chkPurchase
+            // 
+            this.chkPurchase.AutoSize = true;
+            this.chkPurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkPurchase.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPurchase.Location = new System.Drawing.Point(120, 405);
+            this.chkPurchase.Name = "chkPurchase";
+            this.chkPurchase.Size = new System.Drawing.Size(76, 21);
+            this.chkPurchase.TabIndex = 123;
+            this.chkPurchase.Text = "Purchase";
+            this.chkPurchase.UseVisualStyleBackColor = true;
+            // 
+            // chkstocktransfer
+            // 
+            this.chkstocktransfer.AutoSize = true;
+            this.chkstocktransfer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkstocktransfer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkstocktransfer.Location = new System.Drawing.Point(215, 405);
+            this.chkstocktransfer.Name = "chkstocktransfer";
+            this.chkstocktransfer.Size = new System.Drawing.Size(106, 21);
+            this.chkstocktransfer.TabIndex = 122;
+            this.chkstocktransfer.Text = "Stock Transfer";
+            this.chkstocktransfer.UseVisualStyleBackColor = true;
+            // 
+            // chkSales
+            // 
+            this.chkSales.AutoSize = true;
+            this.chkSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkSales.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSales.Location = new System.Drawing.Point(47, 405);
+            this.chkSales.Name = "chkSales";
+            this.chkSales.Size = new System.Drawing.Size(54, 21);
+            this.chkSales.TabIndex = 120;
+            this.chkSales.Text = "Sales";
+            this.chkSales.UseVisualStyleBackColor = true;
+            // 
+            // chk_inv
+            // 
+            this.chk_inv.AutoSize = true;
+            this.chk_inv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_inv.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_inv.Location = new System.Drawing.Point(30, 372);
+            this.chk_inv.Name = "chk_inv";
+            this.chk_inv.Size = new System.Drawing.Size(77, 21);
+            this.chk_inv.TabIndex = 116;
+            this.chk_inv.Text = "Inventory";
+            this.chk_inv.UseVisualStyleBackColor = true;
+            // 
+            // chkRPTIncom
+            // 
+            this.chkRPTIncom.AutoSize = true;
+            this.chkRPTIncom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPTIncom.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPTIncom.Location = new System.Drawing.Point(126, 473);
+            this.chkRPTIncom.Name = "chkRPTIncom";
+            this.chkRPTIncom.Size = new System.Drawing.Size(67, 21);
+            this.chkRPTIncom.TabIndex = 115;
+            this.chkRPTIncom.Text = "Receipt";
+            this.chkRPTIncom.UseVisualStyleBackColor = true;
+            // 
+            // chkCommnctn
+            // 
+            this.chkCommnctn.AutoSize = true;
+            this.chkCommnctn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkCommnctn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCommnctn.Location = new System.Drawing.Point(248, 55);
+            this.chkCommnctn.Name = "chkCommnctn";
+            this.chkCommnctn.Size = new System.Drawing.Size(114, 21);
+            this.chkCommnctn.TabIndex = 114;
+            this.chkCommnctn.Text = "Communication";
+            this.chkCommnctn.UseVisualStyleBackColor = true;
+            // 
+            // chkCalendar
+            // 
+            this.chkCalendar.AutoSize = true;
+            this.chkCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkCalendar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCalendar.Location = new System.Drawing.Point(30, 55);
+            this.chkCalendar.Name = "chkCalendar";
+            this.chkCalendar.Size = new System.Drawing.Size(76, 21);
+            this.chkCalendar.TabIndex = 114;
+            this.chkCalendar.Text = "Calendar";
+            this.chkCalendar.UseVisualStyleBackColor = true;
+            // 
+            // chk_profile
+            // 
+            this.chk_profile.AutoSize = true;
+            this.chk_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chk_profile.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chk_profile.Location = new System.Drawing.Point(483, 55);
+            this.chk_profile.Name = "chk_profile";
+            this.chk_profile.Size = new System.Drawing.Size(61, 21);
+            this.chk_profile.TabIndex = 47;
+            this.chk_profile.Text = "Profile";
+            this.chk_profile.UseVisualStyleBackColor = true;
+            // 
+            // chkConsltn
+            // 
+            this.chkConsltn.AutoSize = true;
+            this.chkConsltn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkConsltn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkConsltn.Location = new System.Drawing.Point(129, 55);
+            this.chkConsltn.Name = "chkConsltn";
+            this.chkConsltn.Size = new System.Drawing.Size(96, 21);
+            this.chkConsltn.TabIndex = 114;
+            this.chkConsltn.Text = "Consultation";
+            this.chkConsltn.UseVisualStyleBackColor = true;
+            // 
+            // chkLabTrackng
+            // 
+            this.chkLabTrackng.AutoSize = true;
+            this.chkLabTrackng.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkLabTrackng.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLabTrackng.Location = new System.Drawing.Point(769, 28);
+            this.chkLabTrackng.Name = "chkLabTrackng";
+            this.chkLabTrackng.Size = new System.Drawing.Size(93, 21);
+            this.chkLabTrackng.TabIndex = 114;
+            this.chkLabTrackng.Text = "LabTracking";
+            this.chkLabTrackng.UseVisualStyleBackColor = true;
+            this.chkLabTrackng.Visible = false;
+            // 
+            // chkExpnse
+            // 
+            this.chkExpnse.AutoSize = true;
+            this.chkExpnse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkExpnse.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkExpnse.Location = new System.Drawing.Point(387, 55);
+            this.chkExpnse.Name = "chkExpnse";
+            this.chkExpnse.Size = new System.Drawing.Size(72, 21);
+            this.chkExpnse.TabIndex = 114;
+            this.chkExpnse.Text = "Expense";
+            this.chkExpnse.UseVisualStyleBackColor = true;
+            // 
+            // chkInventory
+            // 
+            this.chkInventory.AutoSize = true;
+            this.chkInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkInventory.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkInventory.Location = new System.Drawing.Point(775, 111);
+            this.chkInventory.Name = "chkInventory";
+            this.chkInventory.Size = new System.Drawing.Size(77, 21);
+            this.chkInventory.TabIndex = 114;
+            this.chkInventory.Text = "Inventory";
+            this.chkInventory.UseVisualStyleBackColor = true;
+            this.chkInventory.Visible = false;
+            // 
+            // chkAPTClinicAppoinment
+            // 
+            this.chkAPTClinicAppoinment.AutoSize = true;
+            this.chkAPTClinicAppoinment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkAPTClinicAppoinment.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAPTClinicAppoinment.Location = new System.Drawing.Point(669, 473);
+            this.chkAPTClinicAppoinment.Name = "chkAPTClinicAppoinment";
+            this.chkAPTClinicAppoinment.Size = new System.Drawing.Size(139, 21);
+            this.chkAPTClinicAppoinment.TabIndex = 113;
+            this.chkAPTClinicAppoinment.Text = "Clinic Appointments";
+            this.chkAPTClinicAppoinment.UseVisualStyleBackColor = true;
+            this.chkAPTClinicAppoinment.Visible = false;
+            // 
+            // chkEMRIdelete
+            // 
+            this.chkEMRIdelete.AutoSize = true;
+            this.chkEMRIdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRIdelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRIdelete.Location = new System.Drawing.Point(650, 159);
+            this.chkEMRIdelete.Name = "chkEMRIdelete";
+            this.chkEMRIdelete.Size = new System.Drawing.Size(61, 21);
+            this.chkEMRIdelete.TabIndex = 111;
+            this.chkEMRIdelete.Text = "Delete";
+            this.chkEMRIdelete.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRIedit
+            // 
+            this.chkEMRIedit.AutoSize = true;
+            this.chkEMRIedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRIedit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRIedit.Location = new System.Drawing.Point(650, 186);
+            this.chkEMRIedit.Name = "chkEMRIedit";
+            this.chkEMRIedit.Size = new System.Drawing.Size(46, 21);
+            this.chkEMRIedit.TabIndex = 110;
+            this.chkEMRIedit.Text = "Edit";
+            this.chkEMRIedit.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRIadd
+            // 
+            this.chkEMRIadd.AutoSize = true;
+            this.chkEMRIadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRIadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRIadd.Location = new System.Drawing.Point(650, 132);
+            this.chkEMRIadd.Name = "chkEMRIadd";
+            this.chkEMRIadd.Size = new System.Drawing.Size(48, 21);
+            this.chkEMRIadd.TabIndex = 109;
+            this.chkEMRIadd.Text = "Add";
+            this.chkEMRIadd.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRI
+            // 
+            this.chkEMRI.AutoSize = true;
+            this.chkEMRI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRI.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRI.Location = new System.Drawing.Point(630, 110);
+            this.chkEMRI.Name = "chkEMRI";
+            this.chkEMRI.Size = new System.Drawing.Size(64, 21);
+            this.chkEMRI.TabIndex = 108;
+            this.chkEMRI.Text = "Invoice";
+            this.chkEMRI.UseVisualStyleBackColor = true;
+            // 
+            // chkRPTINVadd
+            // 
+            this.chkRPTINVadd.AutoSize = true;
+            this.chkRPTINVadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPTINVadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPTINVadd.Location = new System.Drawing.Point(575, 473);
+            this.chkRPTINVadd.Name = "chkRPTINVadd";
+            this.chkRPTINVadd.Size = new System.Drawing.Size(77, 21);
+            this.chkRPTINVadd.TabIndex = 105;
+            this.chkRPTINVadd.Text = "Inventory";
+            this.chkRPTINVadd.UseVisualStyleBackColor = true;
+            // 
+            // chkRPTEMRadd
+            // 
+            this.chkRPTEMRadd.AutoSize = true;
+            this.chkRPTEMRadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPTEMRadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPTEMRadd.Location = new System.Drawing.Point(418, 473);
+            this.chkRPTEMRadd.Name = "chkRPTEMRadd";
+            this.chkRPTEMRadd.Size = new System.Drawing.Size(51, 21);
+            this.chkRPTEMRadd.TabIndex = 103;
+            this.chkRPTEMRadd.Text = "EMR";
+            this.chkRPTEMRadd.UseVisualStyleBackColor = true;
+            // 
+            // chkRPTINCadd
+            // 
+            this.chkRPTINCadd.AutoSize = true;
+            this.chkRPTINCadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPTINCadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPTINCadd.Location = new System.Drawing.Point(45, 473);
+            this.chkRPTINCadd.Name = "chkRPTINCadd";
+            this.chkRPTINCadd.Size = new System.Drawing.Size(64, 21);
+            this.chkRPTINCadd.TabIndex = 95;
+            this.chkRPTINCadd.Text = "Invoice";
+            this.chkRPTINCadd.UseVisualStyleBackColor = true;
+            // 
+            // chkRPTPAYadd
+            // 
+            this.chkRPTPAYadd.AutoSize = true;
+            this.chkRPTPAYadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPTPAYadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPTPAYadd.Location = new System.Drawing.Point(486, 473);
+            this.chkRPTPAYadd.Name = "chkRPTPAYadd";
+            this.chkRPTPAYadd.Size = new System.Drawing.Size(72, 21);
+            this.chkRPTPAYadd.TabIndex = 88;
+            this.chkRPTPAYadd.Text = "Expense";
+            this.chkRPTPAYadd.UseVisualStyleBackColor = true;
+            // 
+            // chkRPTPATadd
+            // 
+            this.chkRPTPATadd.AutoSize = true;
+            this.chkRPTPATadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPTPATadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPTPATadd.Location = new System.Drawing.Point(332, 473);
+            this.chkRPTPATadd.Name = "chkRPTPATadd";
+            this.chkRPTPATadd.Size = new System.Drawing.Size(69, 21);
+            this.chkRPTPATadd.TabIndex = 85;
+            this.chkRPTPATadd.Text = "Patients";
+            this.chkRPTPATadd.UseVisualStyleBackColor = true;
+            // 
+            // chkRPTAPTadd
+            // 
+            this.chkRPTAPTadd.AutoSize = true;
+            this.chkRPTAPTadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPTAPTadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPTAPTadd.Location = new System.Drawing.Point(210, 473);
+            this.chkRPTAPTadd.Name = "chkRPTAPTadd";
+            this.chkRPTAPTadd.Size = new System.Drawing.Size(105, 21);
+            this.chkRPTAPTadd.TabIndex = 77;
+            this.chkRPTAPTadd.Text = "Appointments";
+            this.chkRPTAPTadd.UseVisualStyleBackColor = true;
+            // 
+            // chkRPT
+            // 
+            this.chkRPT.AutoSize = true;
+            this.chkRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkRPT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRPT.Location = new System.Drawing.Point(30, 444);
+            this.chkRPT.Name = "chkRPT";
+            this.chkRPT.Size = new System.Drawing.Size(70, 21);
+            this.chkRPT.TabIndex = 70;
+            this.chkRPT.Text = "Reports";
+            this.chkRPT.UseVisualStyleBackColor = true;
+            // 
+            // chkCLMSadd
+            // 
+            this.chkCLMSadd.AutoSize = true;
+            this.chkCLMSadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkCLMSadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCLMSadd.Location = new System.Drawing.Point(549, 55);
+            this.chkCLMSadd.Name = "chkCLMSadd";
+            this.chkCLMSadd.Size = new System.Drawing.Size(104, 21);
+            this.chkCLMSadd.TabIndex = 65;
+            this.chkCLMSadd.Text = "Clinic Settings";
+            this.chkCLMSadd.UseVisualStyleBackColor = true;
+            // 
+            // chkstockledger
+            // 
+            this.chkstockledger.AutoSize = true;
+            this.chkstockledger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkstockledger.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkstockledger.Location = new System.Drawing.Point(483, 405);
+            this.chkstockledger.Name = "chkstockledger";
+            this.chkstockledger.Size = new System.Drawing.Size(100, 21);
+            this.chkstockledger.TabIndex = 58;
+            this.chkstockledger.Text = "Stock Ledger";
+            this.chkstockledger.UseVisualStyleBackColor = true;
+            // 
+            // chkINVCSadd
+            // 
+            this.chkINVCSadd.AutoSize = true;
+            this.chkINVCSadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkINVCSadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkINVCSadd.Location = new System.Drawing.Point(897, 140);
+            this.chkINVCSadd.Name = "chkINVCSadd";
+            this.chkINVCSadd.Size = new System.Drawing.Size(72, 21);
+            this.chkINVCSadd.TabIndex = 50;
+            this.chkINVCSadd.Text = "Supplier";
+            this.chkINVCSadd.UseVisualStyleBackColor = true;
+            this.chkINVCSadd.Visible = false;
+            // 
+            // chkINVAIadd
+            // 
+            this.chkINVAIadd.AutoSize = true;
+            this.chkINVAIadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkINVAIadd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkINVAIadd.Location = new System.Drawing.Point(8, 544);
+            this.chkINVAIadd.Name = "chkINVAIadd";
+            this.chkINVAIadd.Size = new System.Drawing.Size(72, 19);
+            this.chkINVAIadd.TabIndex = 44;
+            this.chkINVAIadd.Text = "Add Item";
+            this.chkINVAIadd.UseVisualStyleBackColor = true;
+            this.chkINVAIadd.Visible = false;
+            // 
+            // chkadjustment
+            // 
+            this.chkadjustment.AutoSize = true;
+            this.chkadjustment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkadjustment.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkadjustment.Location = new System.Drawing.Point(340, 405);
+            this.chkadjustment.Name = "chkadjustment";
+            this.chkadjustment.Size = new System.Drawing.Size(124, 21);
+            this.chkadjustment.TabIndex = 40;
+            this.chkadjustment.Text = "Stock Adjustment";
+            this.chkadjustment.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRFPdelete
+            // 
+            this.chkEMRFPdelete.AutoSize = true;
+            this.chkEMRFPdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRFPdelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRFPdelete.Location = new System.Drawing.Point(406, 160);
+            this.chkEMRFPdelete.Name = "chkEMRFPdelete";
+            this.chkEMRFPdelete.Size = new System.Drawing.Size(61, 21);
+            this.chkEMRFPdelete.TabIndex = 39;
+            this.chkEMRFPdelete.Text = "Delete";
+            this.chkEMRFPdelete.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRFPadd
+            // 
+            this.chkEMRFPadd.AutoSize = true;
+            this.chkEMRFPadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRFPadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRFPadd.Location = new System.Drawing.Point(406, 132);
+            this.chkEMRFPadd.Name = "chkEMRFPadd";
+            this.chkEMRFPadd.Size = new System.Drawing.Size(48, 21);
+            this.chkEMRFPadd.TabIndex = 37;
+            this.chkEMRFPadd.Text = "Add";
+            this.chkEMRFPadd.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRFadd
+            // 
+            this.chkEMRFadd.AutoSize = true;
+            this.chkEMRFadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRFadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRFadd.Location = new System.Drawing.Point(548, 132);
+            this.chkEMRFadd.Name = "chkEMRFadd";
+            this.chkEMRFadd.Size = new System.Drawing.Size(48, 21);
+            this.chkEMRFadd.TabIndex = 34;
+            this.chkEMRFadd.Text = "Add";
+            this.chkEMRFadd.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRFP
+            // 
+            this.chkEMRFP.AutoSize = true;
+            this.chkEMRFP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRFP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRFP.Location = new System.Drawing.Point(387, 110);
+            this.chkEMRFP.Name = "chkEMRFP";
+            this.chkEMRFP.Size = new System.Drawing.Size(135, 21);
+            this.chkEMRFP.TabIndex = 33;
+            this.chkEMRFP.Text = "Finished Procedure";
+            this.chkEMRFP.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRF
+            // 
+            this.chkEMRF.AutoSize = true;
+            this.chkEMRF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRF.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRF.Location = new System.Drawing.Point(530, 110);
+            this.chkEMRF.Name = "chkEMRF";
+            this.chkEMRF.Size = new System.Drawing.Size(95, 21);
+            this.chkEMRF.TabIndex = 32;
+            this.chkEMRF.Text = "Attachments";
+            this.chkEMRF.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRPdelete
+            // 
+            this.chkEMRPdelete.AutoSize = true;
+            this.chkEMRPdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRPdelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRPdelete.Location = new System.Drawing.Point(305, 186);
+            this.chkEMRPdelete.Name = "chkEMRPdelete";
+            this.chkEMRPdelete.Size = new System.Drawing.Size(61, 21);
+            this.chkEMRPdelete.TabIndex = 27;
+            this.chkEMRPdelete.Text = "Delete";
+            this.chkEMRPdelete.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRPedit
+            // 
+            this.chkEMRPedit.AutoSize = true;
+            this.chkEMRPedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRPedit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRPedit.Location = new System.Drawing.Point(305, 159);
+            this.chkEMRPedit.Name = "chkEMRPedit";
+            this.chkEMRPedit.Size = new System.Drawing.Size(46, 21);
+            this.chkEMRPedit.TabIndex = 26;
+            this.chkEMRPedit.Text = "Edit";
+            this.chkEMRPedit.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRPadd
+            // 
+            this.chkEMRPadd.AutoSize = true;
+            this.chkEMRPadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRPadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRPadd.Location = new System.Drawing.Point(305, 132);
+            this.chkEMRPadd.Name = "chkEMRPadd";
+            this.chkEMRPadd.Size = new System.Drawing.Size(48, 21);
+            this.chkEMRPadd.TabIndex = 25;
+            this.chkEMRPadd.Text = "Add";
+            this.chkEMRPadd.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRTPdelete
+            // 
+            this.chkEMRTPdelete.AutoSize = true;
+            this.chkEMRTPdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRTPdelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRTPdelete.Location = new System.Drawing.Point(181, 186);
+            this.chkEMRTPdelete.Name = "chkEMRTPdelete";
+            this.chkEMRTPdelete.Size = new System.Drawing.Size(61, 21);
+            this.chkEMRTPdelete.TabIndex = 24;
+            this.chkEMRTPdelete.Text = "Delete";
+            this.chkEMRTPdelete.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRTPedit
+            // 
+            this.chkEMRTPedit.AutoSize = true;
+            this.chkEMRTPedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRTPedit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRTPedit.Location = new System.Drawing.Point(181, 159);
+            this.chkEMRTPedit.Name = "chkEMRTPedit";
+            this.chkEMRTPedit.Size = new System.Drawing.Size(46, 21);
+            this.chkEMRTPedit.TabIndex = 23;
+            this.chkEMRTPedit.Text = "Edit";
+            this.chkEMRTPedit.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRTPadd
+            // 
+            this.chkEMRTPadd.AutoSize = true;
+            this.chkEMRTPadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRTPadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRTPadd.Location = new System.Drawing.Point(181, 132);
+            this.chkEMRTPadd.Name = "chkEMRTPadd";
+            this.chkEMRTPadd.Size = new System.Drawing.Size(48, 21);
+            this.chkEMRTPadd.TabIndex = 22;
+            this.chkEMRTPadd.Text = "Add";
+            this.chkEMRTPadd.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRP
+            // 
+            this.chkEMRP.AutoSize = true;
+            this.chkEMRP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRP.Location = new System.Drawing.Point(286, 110);
+            this.chkEMRP.Name = "chkEMRP";
+            this.chkEMRP.Size = new System.Drawing.Size(93, 21);
+            this.chkEMRP.TabIndex = 21;
+            this.chkEMRP.Text = "Prescription";
+            this.chkEMRP.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRTP
+            // 
+            this.chkEMRTP.AutoSize = true;
+            this.chkEMRTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRTP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRTP.Location = new System.Drawing.Point(162, 110);
+            this.chkEMRTP.Name = "chkEMRTP";
+            this.chkEMRTP.Size = new System.Drawing.Size(116, 21);
+            this.chkEMRTP.TabIndex = 20;
+            this.chkEMRTP.Text = "Treatment Plans";
+            this.chkEMRTP.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRCFadd
+            // 
+            this.chkEMRCFadd.AutoSize = true;
+            this.chkEMRCFadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRCFadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRCFadd.Location = new System.Drawing.Point(66, 132);
+            this.chkEMRCFadd.Name = "chkEMRCFadd";
+            this.chkEMRCFadd.Size = new System.Drawing.Size(48, 21);
+            this.chkEMRCFadd.TabIndex = 19;
+            this.chkEMRCFadd.Text = "Add";
+            this.chkEMRCFadd.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRCFedit
+            // 
+            this.chkEMRCFedit.AutoSize = true;
+            this.chkEMRCFedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRCFedit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRCFedit.Location = new System.Drawing.Point(66, 159);
+            this.chkEMRCFedit.Name = "chkEMRCFedit";
+            this.chkEMRCFedit.Size = new System.Drawing.Size(46, 21);
+            this.chkEMRCFedit.TabIndex = 18;
+            this.chkEMRCFedit.Text = "Edit";
+            this.chkEMRCFedit.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRCFdelete
+            // 
+            this.chkEMRCFdelete.AutoSize = true;
+            this.chkEMRCFdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRCFdelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRCFdelete.Location = new System.Drawing.Point(66, 186);
+            this.chkEMRCFdelete.Name = "chkEMRCFdelete";
+            this.chkEMRCFdelete.Size = new System.Drawing.Size(61, 21);
+            this.chkEMRCFdelete.TabIndex = 17;
+            this.chkEMRCFdelete.Text = "Delete";
+            this.chkEMRCFdelete.UseVisualStyleBackColor = true;
+            // 
+            // chkEMRCF
+            // 
+            this.chkEMRCF.AutoSize = true;
+            this.chkEMRCF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMRCF.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMRCF.Location = new System.Drawing.Point(47, 110);
+            this.chkEMRCF.Name = "chkEMRCF";
+            this.chkEMRCF.Size = new System.Drawing.Size(110, 21);
+            this.chkEMRCF.TabIndex = 16;
+            this.chkEMRCF.Text = "Clinical Finding";
+            this.chkEMRCF.UseVisualStyleBackColor = true;
+            // 
+            // chkPMTadd
+            // 
+            this.chkPMTadd.AutoSize = true;
+            this.chkPMTadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkPMTadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPMTadd.Location = new System.Drawing.Point(306, 270);
+            this.chkPMTadd.Name = "chkPMTadd";
+            this.chkPMTadd.Size = new System.Drawing.Size(48, 21);
+            this.chkPMTadd.TabIndex = 13;
+            this.chkPMTadd.Text = "Add";
+            this.chkPMTadd.UseVisualStyleBackColor = true;
+            // 
+            // chkAPTdelete
+            // 
+            this.chkAPTdelete.AutoSize = true;
+            this.chkAPTdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkAPTdelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAPTdelete.Location = new System.Drawing.Point(181, 320);
+            this.chkAPTdelete.Name = "chkAPTdelete";
+            this.chkAPTdelete.Size = new System.Drawing.Size(61, 21);
+            this.chkAPTdelete.TabIndex = 12;
+            this.chkAPTdelete.Text = "Delete";
+            this.chkAPTdelete.UseVisualStyleBackColor = true;
+            // 
+            // chkAPTedit
+            // 
+            this.chkAPTedit.AutoSize = true;
+            this.chkAPTedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkAPTedit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAPTedit.Location = new System.Drawing.Point(181, 295);
+            this.chkAPTedit.Name = "chkAPTedit";
+            this.chkAPTedit.Size = new System.Drawing.Size(46, 21);
+            this.chkAPTedit.TabIndex = 11;
+            this.chkAPTedit.Text = "Edit";
+            this.chkAPTedit.UseVisualStyleBackColor = true;
+            // 
+            // chkAPTadd
+            // 
+            this.chkAPTadd.AutoSize = true;
+            this.chkAPTadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkAPTadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAPTadd.Location = new System.Drawing.Point(181, 270);
+            this.chkAPTadd.Name = "chkAPTadd";
+            this.chkAPTadd.Size = new System.Drawing.Size(48, 21);
+            this.chkAPTadd.TabIndex = 10;
+            this.chkAPTadd.Text = "Add";
+            this.chkAPTadd.UseVisualStyleBackColor = true;
+            // 
+            // chkPMT
+            // 
+            this.chkPMT.AutoSize = true;
+            this.chkPMT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkPMT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPMT.Location = new System.Drawing.Point(286, 249);
+            this.chkPMT.Name = "chkPMT";
+            this.chkPMT.Size = new System.Drawing.Size(79, 21);
+            this.chkPMT.TabIndex = 9;
+            this.chkPMT.Text = "Payments";
+            this.chkPMT.UseVisualStyleBackColor = true;
+            // 
+            // chkEMR
+            // 
+            this.chkEMR.AutoSize = true;
+            this.chkEMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkEMR.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkEMR.Location = new System.Drawing.Point(30, 84);
+            this.chkEMR.Name = "chkEMR";
+            this.chkEMR.Size = new System.Drawing.Size(51, 21);
+            this.chkEMR.TabIndex = 8;
+            this.chkEMR.Text = "EMR";
+            this.chkEMR.UseVisualStyleBackColor = true;
+            // 
+            // chkAPT
+            // 
+            this.chkAPT.AutoSize = true;
+            this.chkAPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkAPT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAPT.Location = new System.Drawing.Point(162, 246);
+            this.chkAPT.Name = "chkAPT";
+            this.chkAPT.Size = new System.Drawing.Size(99, 21);
+            this.chkAPT.TabIndex = 7;
+            this.chkAPT.Text = "Appointment";
+            this.chkAPT.UseVisualStyleBackColor = true;
+            // 
+            // chkPATadd
+            // 
+            this.chkPATadd.AutoSize = true;
+            this.chkPATadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkPATadd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPATadd.Location = new System.Drawing.Point(54, 270);
+            this.chkPATadd.Name = "chkPATadd";
+            this.chkPATadd.Size = new System.Drawing.Size(48, 21);
+            this.chkPATadd.TabIndex = 5;
+            this.chkPATadd.Text = "Add";
+            this.chkPATadd.UseVisualStyleBackColor = true;
+            // 
+            // chkPATedit
+            // 
+            this.chkPATedit.AutoSize = true;
+            this.chkPATedit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkPATedit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPATedit.Location = new System.Drawing.Point(54, 295);
+            this.chkPATedit.Name = "chkPATedit";
+            this.chkPATedit.Size = new System.Drawing.Size(46, 21);
+            this.chkPATedit.TabIndex = 4;
+            this.chkPATedit.Text = "Edit";
+            this.chkPATedit.UseVisualStyleBackColor = true;
+            // 
+            // chkPATdelete
+            // 
+            this.chkPATdelete.AutoSize = true;
+            this.chkPATdelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkPATdelete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPATdelete.Location = new System.Drawing.Point(54, 320);
+            this.chkPATdelete.Name = "chkPATdelete";
+            this.chkPATdelete.Size = new System.Drawing.Size(61, 21);
+            this.chkPATdelete.TabIndex = 3;
+            this.chkPATdelete.Text = "Delete";
+            this.chkPATdelete.UseVisualStyleBackColor = true;
+            // 
+            // chkPAT
+            // 
+            this.chkPAT.AutoSize = true;
+            this.chkPAT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkPAT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPAT.Location = new System.Drawing.Point(30, 246);
+            this.chkPAT.Name = "chkPAT";
+            this.chkPAT.Size = new System.Drawing.Size(63, 21);
+            this.chkPAT.TabIndex = 1;
+            this.chkPAT.Text = "Patient";
+            this.chkPAT.UseVisualStyleBackColor = true;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(4, 4);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(110, 21);
+            this.label71.TabIndex = 0;
+            this.label71.Text = "User Privilege";
+            // 
+            // dataGridView_users
+            // 
+            this.dataGridView_users.AllowUserToAddRows = false;
+            this.dataGridView_users.AllowUserToDeleteRows = false;
+            this.dataGridView_users.AllowUserToResizeRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dataGridView_users.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView_users.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_users.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_users.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView_users.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_users.ColumnHeadersHeight = 25;
+            this.dataGridView_users.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_users.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column31,
+            this.name,
+            this.usertype});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_users.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView_users.Location = new System.Drawing.Point(8, 56);
+            this.dataGridView_users.MultiSelect = false;
+            this.dataGridView_users.Name = "dataGridView_users";
+            this.dataGridView_users.ReadOnly = true;
+            this.dataGridView_users.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_users.RowHeadersVisible = false;
+            this.dataGridView_users.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView_users.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView_users.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_users.Size = new System.Drawing.Size(230, 514);
+            this.dataGridView_users.TabIndex = 3;
+            this.dataGridView_users.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_users_CellContentClick);
+            this.dataGridView_users.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_users_CellMouseClick);
+            // 
+            // Column31
+            // 
+            this.Column31.DataPropertyName = "id";
+            this.Column31.HeaderText = "id";
+            this.Column31.Name = "Column31";
+            this.Column31.ReadOnly = true;
+            this.Column31.Visible = false;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "User Name";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 150;
+            // 
+            // usertype
+            // 
+            this.usertype.DataPropertyName = "usertype";
+            this.usertype.HeaderText = "User Type";
+            this.usertype.Name = "usertype";
+            this.usertype.ReadOnly = true;
+            this.usertype.Width = 80;
+            // 
+            // btnAssignPrivilege
+            // 
+            this.btnAssignPrivilege.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAssignPrivilege.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAssignPrivilege.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAssignPrivilege.ForeColor = System.Drawing.Color.White;
+            this.btnAssignPrivilege.Location = new System.Drawing.Point(122, 19);
+            this.btnAssignPrivilege.Name = "btnAssignPrivilege";
+            this.btnAssignPrivilege.Size = new System.Drawing.Size(113, 30);
+            this.btnAssignPrivilege.TabIndex = 2;
+            this.btnAssignPrivilege.Text = "Save Permission";
+            this.btnAssignPrivilege.UseVisualStyleBackColor = false;
+            this.btnAssignPrivilege.Click += new System.EventHandler(this.btnAssignPrivilege_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(8, 19);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(114, 30);
+            this.btnRefresh.TabIndex = 1;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.White;
+            this.tabPage5.Controls.Add(this.btn_staff_refresh);
+            this.tabPage5.Controls.Add(this.btn_staff_availa_add);
+            this.tabPage5.Controls.Add(this.label14);
+            this.tabPage5.Controls.Add(this.panel3);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1125, 591);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Staff Availability";
+            // 
+            // btn_staff_refresh
+            // 
+            this.btn_staff_refresh.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_staff_refresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_staff_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_staff_refresh.ForeColor = System.Drawing.Color.White;
+            this.btn_staff_refresh.Location = new System.Drawing.Point(801, 82);
+            this.btn_staff_refresh.Name = "btn_staff_refresh";
+            this.btn_staff_refresh.Size = new System.Drawing.Size(99, 33);
+            this.btn_staff_refresh.TabIndex = 6;
+            this.btn_staff_refresh.Text = "Refresh";
+            this.btn_staff_refresh.UseVisualStyleBackColor = false;
+            this.btn_staff_refresh.Click += new System.EventHandler(this.btn_staff_refresh_Click);
+            // 
+            // btn_staff_availa_add
+            // 
+            this.btn_staff_availa_add.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_staff_availa_add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_staff_availa_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_staff_availa_add.ForeColor = System.Drawing.Color.White;
+            this.btn_staff_availa_add.Location = new System.Drawing.Point(687, 82);
+            this.btn_staff_availa_add.Name = "btn_staff_availa_add";
+            this.btn_staff_availa_add.Size = new System.Drawing.Size(99, 33);
+            this.btn_staff_availa_add.TabIndex = 4;
+            this.btn_staff_availa_add.Text = "Save";
+            this.btn_staff_availa_add.UseVisualStyleBackColor = false;
+            this.btn_staff_availa_add.Click += new System.EventHandler(this.btn_staff_availa_add_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Underline);
+            this.label14.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label14.Location = new System.Drawing.Point(14, 24);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(151, 25);
+            this.label14.TabIndex = 5;
+            this.label14.Text = " Staff Availability";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.DGV_Staff);
+            this.panel3.Location = new System.Drawing.Point(6, 82);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(675, 503);
+            this.panel3.TabIndex = 4;
+            // 
+            // DGV_Staff
+            // 
+            this.DGV_Staff.AllowUserToAddRows = false;
+            this.DGV_Staff.AllowUserToDeleteRows = false;
+            this.DGV_Staff.AllowUserToResizeColumns = false;
+            this.DGV_Staff.AllowUserToResizeRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DGV_Staff.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.DGV_Staff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGV_Staff.BackgroundColor = System.Drawing.Color.White;
+            this.DGV_Staff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DGV_Staff.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.DGV_Staff.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DGV_Staff.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column35,
+            this.slno,
+            this.dataGridViewTextBoxColumn1,
+            this.Designation,
+            this.available});
+            this.DGV_Staff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DGV_Staff.Location = new System.Drawing.Point(6, 8);
+            this.DGV_Staff.Name = "DGV_Staff";
+            this.DGV_Staff.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_Staff.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.DGV_Staff.RowHeadersVisible = false;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            this.DGV_Staff.RowsDefaultCellStyle = dataGridViewCellStyle11;
+            this.DGV_Staff.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.DGV_Staff.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV_Staff.Size = new System.Drawing.Size(649, 378);
+            this.DGV_Staff.TabIndex = 3;
+            // 
+            // Column35
+            // 
+            this.Column35.DataPropertyName = "id";
+            this.Column35.HeaderText = "id";
+            this.Column35.Name = "Column35";
+            this.Column35.ReadOnly = true;
+            this.Column35.Visible = false;
+            // 
+            // slno
+            // 
+            this.slno.FillWeight = 45.68528F;
+            this.slno.HeaderText = "Slno";
+            this.slno.Name = "slno";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "doctor_name";
+            this.dataGridViewTextBoxColumn1.FillWeight = 127.1574F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // Designation
+            // 
+            this.Designation.FillWeight = 127.1574F;
+            this.Designation.HeaderText = "Designation";
+            this.Designation.Name = "Designation";
+            // 
+            // available
+            // 
+            this.available.HeaderText = "available";
+            this.available.Name = "available";
+            this.available.Visible = false;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // Practice_Staff_Setting
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1311, 715);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.label55);
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Practice_Staff_Setting";
+            this.Text = "Staff Settings";
+            this.Activated += new System.EventHandler(this.Practice_Staff_Setting_Activated);
+            this.Load += new System.EventHandler(this.Practice_Staff_Setting_Load);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel_manage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Staff)).EndInit();
+            this.panel_color.ResumeLayout(false);
+            this.panel_color.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_notification)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.panel_visitingtime_main.ResumeLayout(false);
+            this.panel_visitingtime_main.PerformLayout();
+            this.panel_manage_edit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_visit_timing)).EndInit();
+            this.panel_fulldayandtime.ResumeLayout(false);
+            this.panel_saturday_break.ResumeLayout(false);
+            this.panel_saturday_break.PerformLayout();
+            this.panel_friday_break.ResumeLayout(false);
+            this.panel_friday_break.PerformLayout();
+            this.panel_thursday_break.ResumeLayout(false);
+            this.panel_thursday_break.PerformLayout();
+            this.panel_wednesday_break.ResumeLayout(false);
+            this.panel_wednesday_break.PerformLayout();
+            this.panel_tuesday_break.ResumeLayout(false);
+            this.panel_tuesday_break.PerformLayout();
+            this.panel_monday_break.ResumeLayout(false);
+            this.panel_monday_break.PerformLayout();
+            this.panel_sunday_break.ResumeLayout(false);
+            this.panel_sunday_break.PerformLayout();
+            this.panel_alldays.ResumeLayout(false);
+            this.panel_alldays.PerformLayout();
+            this.panel_saturday_visit.ResumeLayout(false);
+            this.panel_saturday_visit.PerformLayout();
+            this.panel_friday_visit.ResumeLayout(false);
+            this.panel_friday_visit.PerformLayout();
+            this.panel_thursday_visit.ResumeLayout(false);
+            this.panel_thursday_visit.PerformLayout();
+            this.panel_wednesday_visit.ResumeLayout(false);
+            this.panel_wednesday_visit.PerformLayout();
+            this.panel_tuesday_visit.ResumeLayout(false);
+            this.panel_tuesday_visit.PerformLayout();
+            this.panel_monday_visit.ResumeLayout(false);
+            this.panel_monday_visit.PerformLayout();
+            this.panel_sunday_visit.ResumeLayout(false);
+            this.panel_sunday_visit.PerformLayout();
+            this.panel_main_break.ResumeLayout(false);
+            this.panel_main_break.PerformLayout();
+            this.panel_main_visit.ResumeLayout(false);
+            this.panel_main_visit.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_users)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Staff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_manage;
+        private System.Windows.Forms.Button btn_Refresh;
+        private System.Windows.Forms.DataGridView dataGridView_Staff;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labPasword;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmbStaffType;
+        private System.Windows.Forms.TextBox text_mobile;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel_color;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label_doctor_error;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label_email_error;
+        private System.Windows.Forms.Label choosecolor;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox text_reg_no;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.TextBox text_email;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.TextBox text_PassConfrim;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox text_password;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox text_doctorname;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton radio_login_yes;
+        private System.Windows.Forms.Button button_closedoctor;
+        private System.Windows.Forms.RadioButton radio_login_no;
+        private System.Windows.Forms.Button button_savedoctor;
+        private System.Windows.Forms.Label Lab_InvalidNumber;
+        private System.Windows.Forms.Label lab_Activation;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button button_refresh;
+        private System.Windows.Forms.Button button_notification_Save;
+        private System.Windows.Forms.DataGridView dataGridView_notification;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel_visitingtime_main;
+        private System.Windows.Forms.Panel panel_manage_edit;
+        private System.Windows.Forms.DataGridView dataGridView_visit_timing;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column28;
+        private System.Windows.Forms.Panel panel_fulldayandtime;
+        private System.Windows.Forms.Panel panel_saturday_break;
+        private System.Windows.Forms.ComboBox combo_resume_saturday_minute;
+        private System.Windows.Forms.ComboBox combo_break_saturday_minute;
+        private System.Windows.Forms.ComboBox combo_resume_saturday_hour;
+        private System.Windows.Forms.ComboBox combo_break_saturday_hour;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel panel_friday_break;
+        private System.Windows.Forms.ComboBox combo_resume_friday_minute;
+        private System.Windows.Forms.ComboBox combo_break_friday_minute;
+        private System.Windows.Forms.ComboBox combo_resume_friday_hour;
+        private System.Windows.Forms.ComboBox combo_break_friday_hour;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel_thursday_break;
+        private System.Windows.Forms.ComboBox combo_resume_thursday_minute;
+        private System.Windows.Forms.ComboBox combo_break_thursday_minute;
+        private System.Windows.Forms.ComboBox combo_resume_thursday_hour;
+        private System.Windows.Forms.ComboBox combo_break_thursday_hour;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Panel panel_wednesday_break;
+        private System.Windows.Forms.ComboBox combo_resume_wednesday_minute;
+        private System.Windows.Forms.ComboBox combo_break_wednesday_minute;
+        private System.Windows.Forms.ComboBox combo_resume_wednesday_hour;
+        private System.Windows.Forms.ComboBox combo_break_wednesday_hour;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Panel panel_tuesday_break;
+        private System.Windows.Forms.ComboBox combo_resume_tuesday_minute;
+        private System.Windows.Forms.ComboBox combo_break_tuesday_minute;
+        private System.Windows.Forms.ComboBox combo_resume_tuesday_hour;
+        private System.Windows.Forms.ComboBox combo_break_tuesday_hour;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Panel panel_monday_break;
+        private System.Windows.Forms.ComboBox combo_resume_monday_minute;
+        private System.Windows.Forms.ComboBox combo_break_monday_minute;
+        private System.Windows.Forms.ComboBox combo_resume_monday_hour;
+        private System.Windows.Forms.ComboBox combo_break_monday_hour;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Panel panel_sunday_break;
+        private System.Windows.Forms.ComboBox combo_resume_sunday_minute;
+        private System.Windows.Forms.ComboBox combo_break_sunday_minute;
+        private System.Windows.Forms.ComboBox combo_resume_sunday_hour;
+        private System.Windows.Forms.ComboBox combo_break_sunday_hour;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel_alldays;
+        private System.Windows.Forms.CheckBox check_visit_saturday;
+        private System.Windows.Forms.CheckBox check_break_saturday;
+        private System.Windows.Forms.CheckBox check_break_friday;
+        private System.Windows.Forms.CheckBox check_visit_friday;
+        private System.Windows.Forms.CheckBox check_break_thursday;
+        private System.Windows.Forms.CheckBox check_visit_thursday;
+        private System.Windows.Forms.CheckBox check_break_wednesday;
+        private System.Windows.Forms.CheckBox check_visit_wednesday;
+        private System.Windows.Forms.CheckBox check_break_tuesday;
+        private System.Windows.Forms.CheckBox check_visit_tuesday;
+        private System.Windows.Forms.CheckBox check_break_monday;
+        private System.Windows.Forms.CheckBox check_visit_monday;
+        private System.Windows.Forms.CheckBox check_break_sunday;
+        private System.Windows.Forms.CheckBox check_visit_sunday;
+        private System.Windows.Forms.Panel panel_saturday_visit;
+        private System.Windows.Forms.ComboBox combo_leave_saturday_minute;
+        private System.Windows.Forms.ComboBox combo_visit_saturday_minute;
+        private System.Windows.Forms.ComboBox combo_leave_saturday_hour;
+        private System.Windows.Forms.ComboBox combo_visit_saturday_hour;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Panel panel_friday_visit;
+        private System.Windows.Forms.ComboBox combo_leave_friday_minute;
+        private System.Windows.Forms.ComboBox combo_visit_friday_minute;
+        private System.Windows.Forms.ComboBox combo_leave_friday_hour;
+        private System.Windows.Forms.ComboBox combo_visit_friday_hour;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Panel panel_thursday_visit;
+        private System.Windows.Forms.ComboBox combo_leave_thursday_minute;
+        private System.Windows.Forms.ComboBox combo_visit_thursday_minute;
+        private System.Windows.Forms.ComboBox combo_leave_thursday_hour;
+        private System.Windows.Forms.ComboBox combo_visit_thursday_hour;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Panel panel_wednesday_visit;
+        private System.Windows.Forms.ComboBox combo_leave_wednesday_minute;
+        private System.Windows.Forms.ComboBox combo_visit_wednesday_minute;
+        private System.Windows.Forms.ComboBox combo_leave_wednesday_hour;
+        private System.Windows.Forms.ComboBox combo_visit_wednesday_hour;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Panel panel_tuesday_visit;
+        private System.Windows.Forms.ComboBox combo_leave_tuesday_minute;
+        private System.Windows.Forms.ComboBox combo_visit_tuesday_minute;
+        private System.Windows.Forms.ComboBox combo_leave_tuesday_hour;
+        private System.Windows.Forms.ComboBox combo_visit_tuesday_hour;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Panel panel_monday_visit;
+        private System.Windows.Forms.ComboBox combo_leave_monday_minute;
+        private System.Windows.Forms.ComboBox combo_visit_monday_minute;
+        private System.Windows.Forms.ComboBox combo_leave_monday_hour;
+        private System.Windows.Forms.ComboBox combo_visit_monday_hour;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel_sunday_visit;
+        private System.Windows.Forms.ComboBox combo_leave_sunday_minute;
+        private System.Windows.Forms.ComboBox combo_visit_sunday_minute;
+        private System.Windows.Forms.ComboBox combo_leave_sunday_hour;
+        private System.Windows.Forms.ComboBox combo_visit_sunday_hour;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button button_savetimings;
+        private System.Windows.Forms.Panel panel_main_break;
+        private System.Windows.Forms.ComboBox combo_main_resume_minute;
+        private System.Windows.Forms.ComboBox combo_main_break_minute;
+        private System.Windows.Forms.ComboBox combo_main_resume_hour;
+        private System.Windows.Forms.ComboBox combo_main_break_hour;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Panel panel_main_visit;
+        private System.Windows.Forms.ComboBox combo_main_leave_minute;
+        private System.Windows.Forms.ComboBox combo_main_visit_minute;
+        private System.Windows.Forms.ComboBox combo_main_leave_hour;
+        private System.Windows.Forms.ComboBox combo_main_visit_hour;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.CheckBox check_visiting_main;
+        private System.Windows.Forms.CheckBox check_break_main;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button_closegrid;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataGridView dataGridView_users;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column31;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usertype;
+        private System.Windows.Forms.Button btnAssignPrivilege;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button button__manage_addoctor;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView DGV_Staff;
+        private System.Windows.Forms.Button btn_staff_availa_add;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txt_followup_fee;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txt_fee;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txt_period;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn S_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Doctor_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mobile_Number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn followup_fee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn followup_period;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Activated_Login;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox chk_refund_add;
+        private System.Windows.Forms.CheckBox chk_refund;
+        private System.Windows.Forms.CheckBox chk_lab_show;
+        private System.Windows.Forms.CheckBox chk_lab_add;
+        private System.Windows.Forms.CheckBox chkLab;
+        private System.Windows.Forms.CheckBox chk_vital_show;
+        private System.Windows.Forms.CheckBox chk_vital_edit;
+        private System.Windows.Forms.CheckBox chk_vital_add;
+        private System.Windows.Forms.CheckBox chk_vital;
+        private System.Windows.Forms.CheckBox chk_attach_delete;
+        private System.Windows.Forms.CheckBox chk_c_finding_show;
+        private System.Windows.Forms.CheckBox treatment_show;
+        private System.Windows.Forms.CheckBox prescrption_show;
+        private System.Windows.Forms.CheckBox finished_show;
+        private System.Windows.Forms.CheckBox attachmnt_show;
+        private System.Windows.Forms.CheckBox invoice_show;
+        private System.Windows.Forms.CheckBox patient_show;
+        private System.Windows.Forms.CheckBox payments_show;
+        private System.Windows.Forms.CheckBox chk_report_show;
+        private System.Windows.Forms.CheckBox chk_appo_show;
+        private System.Windows.Forms.CheckBox chkPurchase;
+        private System.Windows.Forms.CheckBox chkstocktransfer;
+        private System.Windows.Forms.CheckBox chkSales;
+        private System.Windows.Forms.CheckBox chk_inv;
+        private System.Windows.Forms.CheckBox chkRPTIncom;
+        private System.Windows.Forms.CheckBox chkCommnctn;
+        private System.Windows.Forms.CheckBox chkCalendar;
+        private System.Windows.Forms.CheckBox chk_profile;
+        private System.Windows.Forms.CheckBox chkConsltn;
+        private System.Windows.Forms.CheckBox chkLabTrackng;
+        private System.Windows.Forms.CheckBox chkExpnse;
+        private System.Windows.Forms.CheckBox chkInventory;
+        private System.Windows.Forms.CheckBox chkAPTClinicAppoinment;
+        private System.Windows.Forms.CheckBox chkEMRIdelete;
+        private System.Windows.Forms.CheckBox chkEMRIedit;
+        private System.Windows.Forms.CheckBox chkEMRIadd;
+        private System.Windows.Forms.CheckBox chkEMRI;
+        private System.Windows.Forms.CheckBox chkRPTINVadd;
+        private System.Windows.Forms.CheckBox chkRPTEMRadd;
+        private System.Windows.Forms.CheckBox chkRPTINCadd;
+        private System.Windows.Forms.CheckBox chkRPTPAYadd;
+        private System.Windows.Forms.CheckBox chkRPTPATadd;
+        private System.Windows.Forms.CheckBox chkRPTAPTadd;
+        private System.Windows.Forms.CheckBox chkRPT;
+        private System.Windows.Forms.CheckBox chkCLMSadd;
+        private System.Windows.Forms.CheckBox chkstockledger;
+        private System.Windows.Forms.CheckBox chkINVCSadd;
+        private System.Windows.Forms.CheckBox chkINVAIadd;
+        private System.Windows.Forms.CheckBox chkadjustment;
+        private System.Windows.Forms.CheckBox chkEMRFPdelete;
+        private System.Windows.Forms.CheckBox chkEMRFPadd;
+        private System.Windows.Forms.CheckBox chkEMRFadd;
+        private System.Windows.Forms.CheckBox chkEMRFP;
+        private System.Windows.Forms.CheckBox chkEMRF;
+        private System.Windows.Forms.CheckBox chkEMRPdelete;
+        private System.Windows.Forms.CheckBox chkEMRPedit;
+        private System.Windows.Forms.CheckBox chkEMRPadd;
+        private System.Windows.Forms.CheckBox chkEMRTPdelete;
+        private System.Windows.Forms.CheckBox chkEMRTPedit;
+        private System.Windows.Forms.CheckBox chkEMRTPadd;
+        private System.Windows.Forms.CheckBox chkEMRP;
+        private System.Windows.Forms.CheckBox chkEMRTP;
+        private System.Windows.Forms.CheckBox chkEMRCFadd;
+        private System.Windows.Forms.CheckBox chkEMRCFedit;
+        private System.Windows.Forms.CheckBox chkEMRCFdelete;
+        private System.Windows.Forms.CheckBox chkEMRCF;
+        private System.Windows.Forms.CheckBox chkPMTadd;
+        private System.Windows.Forms.CheckBox chkAPTdelete;
+        private System.Windows.Forms.CheckBox chkAPTedit;
+        private System.Windows.Forms.CheckBox chkAPTadd;
+        private System.Windows.Forms.CheckBox chkPMT;
+        private System.Windows.Forms.CheckBox chkEMR;
+        private System.Windows.Forms.CheckBox chkAPT;
+        private System.Windows.Forms.CheckBox chkPATadd;
+        private System.Windows.Forms.CheckBox chkPATedit;
+        private System.Windows.Forms.CheckBox chkPATdelete;
+        private System.Windows.Forms.CheckBox chkPAT;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Button btn_staff_refresh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn slno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Designation;
+        private System.Windows.Forms.DataGridViewTextBoxColumn available;
+    }
+}

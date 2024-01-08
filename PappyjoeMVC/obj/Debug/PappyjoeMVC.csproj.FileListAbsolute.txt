@@ -1,0 +1,710 @@
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.Properties.Resources.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.RjCombobox.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_combobox.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_groupbox.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_label.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_textbox.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Account_Statement.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add__invoice.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Amount.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Appointment.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Attachments.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Categeory.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Clinical_Notes.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Dental_Treatment_Plan.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Drug.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Finished_Procedure.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Labwork.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_New_Patients.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Nurses_Notes.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Receipt.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Treatment_Plan.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Units.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Vital_Signs.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AlreadyExpired.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.appoinment_cancellation_reason.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AppointmentBooking.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Appointment_for_each_patient_group.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Attachments.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Attendant_Certificate.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AutomaticId_generation.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Backup_and_Restore.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Batch_Sale.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Billing.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Calender_Settings.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.CaseSheet.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.CaseSheet_Of_IP_Patients.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.certificate_found.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ChangeStatus.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Choose_Consumables_Pharmacy.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Clinical_Findings.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Clinical_Porforma.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Communication.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Communication_Settings.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Consent.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Consultation.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.consultation_new_patient.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\Pappyjoe.consultation_prescription_template.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Contacts.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Appointment_Count.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.daily_GST_report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Invoice_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_New_Patients.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Treatment_Count.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard_Doctor.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard_Reception.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.DatePicker.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Day_Wise_Receipt.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dentalwork.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dental_Treatment_Plans.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.doctors.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctors_Practice_Details.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Profile.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Appointment_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Invoice.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Receipt.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Download_Excel_Format.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Edit_Practice_Details.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.EMR_Settings.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense_Daily_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense_Category_Wise_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expiry_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Export_Data.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.fasttrack_print.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Fasttrack_window_New.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Fast_Track.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Finished_Procedure.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Form1.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.f_form.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Group_Wise_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.GST_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.GST_Summery_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Image_Zoom.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Inactive_patients.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Invoice.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.IP_patients_reports.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ItemBatchDetails.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ItemListForSales.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Item_List.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabDental.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabMedical.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabResultEntry.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabtrackingReport.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabWorks.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.lab_notification.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ListItem.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Log.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Log_details.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.MainForm.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Main_Calendar.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Manufacture.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Maternity_leave_certificate.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.MedicalLeave.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.MonthlyHSN_Tax_Payment.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Expense_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_gst_report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Treatment_Count.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Network_Computer.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.NewCredit_TagName.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Debit_TagName.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.NursesDashboard.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Nurses_Notes.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Nurse_notification.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.OpenRecurringItem.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.OPpatient_report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patients.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_consultation_report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Previous_History.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.patient_wise_consultation_report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Pescriptiontemplate.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Pharmacy_dashboard.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Practice_Staff_Setting.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Lang.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Project_type_set.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseItemLIst.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseItemReturnReport.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseList.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseOrder.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseOrderItemReport.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Batch.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.purchase_batch_for_consumables.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Item_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_order_list.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Order_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_return_Batch.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_ItemList.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_List.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.P_L_Account_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Rooms_details.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesOrder.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesOrderItemReport.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesReport_Items.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesReturnItemsReport.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_List.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_order_list.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Order_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_ReturnList.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Batch.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Itemlist.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sick_leave_new.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SimpleAppointment.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SimpleAppointment_Template.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Special_Cases.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.StockTransfer_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.StockReport.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stocktransfer_batch.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stocktransfer_itemlist.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Adjustment.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_adjustment_report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_det.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_in_Batch.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Ledger.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Out_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_transfer.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_TransferList.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_transfer_partner.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_updation_list.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Supplier.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Ledger.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Login.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Medical_Certificate.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Medical_History.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Missing_Checkout_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Appointment_Count.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Invoice_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_New_Patients.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Month_Wise_Receipt.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Credit_Account.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Debit_Account.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patients_First_Appointment.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Profile_Details.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Profile_Edit.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Paymode_Wise_Receipt.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Practice_Details.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Add.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Show.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Settings.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Printout.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Print_Label.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Print_Label_Print.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Procedure_Catalog.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Receipt.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Reports.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Search_Available_Patient.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Show_Appointment.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Supplier_invoice.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Trackingnullstatus.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_For_Each_Category.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_For_Each_Doctor.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_Plans.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Visiting_History.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Vital_Signs.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.GenerateResource.cache
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.CoreCompileInputs.cache
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe.config
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe.manifest
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\PappyjoeMVC.application
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\PappyjoeMVC.pdb
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\AxInterop.XtremeCalendarControl.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\BouncyCastle.Crypto.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\Interop.XtremeCalendarControl.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\itextsharp.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\itextsharp.xmlworker.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\MySql.Data.DLL
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\MySqlBackup.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\Zen.Barcode.Core.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\stdole.dll
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\bin\Debug\itextsharp.xml
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.TrustInfo.xml
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.exe.manifest
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.application
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.CopyComplete
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.exe
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.pdb
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.AssemblyReference.cache
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expiry_items_stock.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.DayWiseInvoice_Report.resources
+E:\projects\pappyjoe_version22.10D\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.dentalLab_invoice_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe.config
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe.manifest
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\PappyjoeMVC.application
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\PappyjoeMVC.pdb
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\AxInterop.XtremeCalendarControl.dll
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\Interop.XtremeCalendarControl.dll
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\MySql.Data.DLL
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\MySqlBackup.dll
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\Zen.Barcode.Core.dll
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\stdole.dll
+E:\older versions\version 23.10\PappyjoeMVC\bin\Debug\itextsharp.xml
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.AssemblyReference.cache
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.Properties.Resources.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.RjCombobox.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_combobox.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_groupbox.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_label.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_textbox.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Account_Statement.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add__invoice.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Amount.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Appointment.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Attachments.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Categeory.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Clinical_Notes.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Dental_Treatment_Plan.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Drug.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Finished_Procedure.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Labwork.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_New_Patients.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Nurses_Notes.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Receipt.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Treatment_Plan.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Units.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Vital_Signs.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AlreadyExpired.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.appoinment_cancellation_reason.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AppointmentBooking.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Appointment_for_each_patient_group.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Attachments.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Attendant_Certificate.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AutomaticId_generation.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Backup_and_Restore.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Batch_Sale.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Billing.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Calender_Settings.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.CaseSheet.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.CaseSheet_Of_IP_Patients.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.certificate_found.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ChangeStatus.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Choose_Consumables_Pharmacy.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Clinical_Findings.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Clinical_Porforma.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Communication.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Communication_Settings.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Consent.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Consultation.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.consultation_new_patient.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\Pappyjoe.consultation_prescription_template.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Contacts.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Appointment_Count.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.daily_GST_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Invoice_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_New_Patients.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Treatment_Count.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard_Doctor.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard_Reception.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.DatePicker.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.DayWiseInvoice_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Day_Wise_Receipt.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.dentalLab_invoice_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dentalwork.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dental_Treatment_Plans.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.doctors.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctors_Practice_Details.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Profile.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Appointment_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Invoice.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Receipt.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Download_Excel_Format.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Edit_Practice_Details.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.EMR_Settings.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense_Daily_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense_Category_Wise_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expiry_items_stock.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expiry_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Export_Data.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.fasttrack_print.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Fasttrack_window_New.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Fast_Track.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Finished_Procedure.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Form1.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.f_form.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Group_Wise_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.GST_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.GST_Summery_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Image_Zoom.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Inactive_patients.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Invoice.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.IP_patients_reports.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ItemBatchDetails.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ItemListForSales.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Item_List.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabDental.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabMedical.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabResultEntry.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabtrackingReport.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabWorks.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.lab_notification.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ListItem.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Log.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Log_details.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.MainForm.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Main_Calendar.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Manufacture.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Maternity_leave_certificate.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.MedicalLeave.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.MonthlyHSN_Tax_Payment.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Expense_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_gst_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Treatment_Count.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Network_Computer.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.NewCredit_TagName.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Debit_TagName.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.NursesDashboard.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Nurses_Notes.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Nurse_notification.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.OpenRecurringItem.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.OPpatient_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patients.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_consultation_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Previous_History.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.patient_wise_consultation_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Pescriptiontemplate.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Pharmacy_dashboard.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Practice_Staff_Setting.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Lang.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Project_type_set.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseItemLIst.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseItemReturnReport.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseList.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseOrder.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseOrderItemReport.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Batch.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.purchase_batch_for_consumables.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Item_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_order_list.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Order_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_return_Batch.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_ItemList.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_List.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.P_L_Account_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Rooms_details.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesOrder.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesOrderItemReport.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesReport_Items.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesReturnItemsReport.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_List.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_order_list.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Order_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_ReturnList.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Batch.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Itemlist.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sick_leave_new.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SimpleAppointment.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SimpleAppointment_Template.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Special_Cases.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.StockTransfer_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.StockReport.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stocktransfer_batch.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stocktransfer_itemlist.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Adjustment.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_adjustment_report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_det.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_in_Batch.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Ledger.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Out_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_transfer.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_TransferList.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_transfer_partner.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_updation_list.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Supplier.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Ledger.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Login.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Medical_Certificate.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Medical_History.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Missing_Checkout_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Appointment_Count.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Invoice_Report.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_New_Patients.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Month_Wise_Receipt.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Credit_Account.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Debit_Account.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patients_First_Appointment.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Profile_Details.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Profile_Edit.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Paymode_Wise_Receipt.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Practice_Details.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Add.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Show.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Settings.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Printout.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Print_Label.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Print_Label_Print.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Procedure_Catalog.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Receipt.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Reports.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Search_Available_Patient.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Show_Appointment.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Supplier_invoice.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Trackingnullstatus.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_For_Each_Category.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_For_Each_Doctor.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_Plans.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Visiting_History.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Vital_Signs.resources
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.GenerateResource.cache
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.CoreCompileInputs.cache
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.TrustInfo.xml
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.exe.manifest
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.application
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.CopyComplete
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.exe
+E:\older versions\version 23.10\PappyjoeMVC\obj\Debug\PappyjoeMVC.pdb
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe.config
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe.manifest
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\PappyjoeMVC.application
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\PappyjoeMVC.exe
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\PappyjoeMVC.pdb
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\AxInterop.XtremeCalendarControl.dll
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\Interop.XtremeCalendarControl.dll
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\MySql.Data.DLL
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\MySqlBackup.dll
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\Zen.Barcode.Core.dll
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\stdole.dll
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\itextsharp.xml
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.AssemblyReference.cache
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.Properties.Resources.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.RjCombobox.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_combobox.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_groupbox.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_label.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.RJControls.UserControl_textbox.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Account_Statement.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add__invoice.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Amount.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Appointment.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Attachments.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Categeory.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Clinical_Notes.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Dental_Treatment_Plan.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Drug.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Finished_Procedure.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Labwork.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_New_Patients.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Nurses_Notes.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Receipt.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Treatment_Plan.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Units.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Add_Vital_Signs.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AlreadyExpired.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.appoinment_cancellation_reason.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AppointmentBooking.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Appointment_for_each_patient_group.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Attachments.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Attendant_Certificate.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.AutomaticId_generation.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Backup_and_Restore.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Batch_Sale.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Billing.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Calender_Settings.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.CaseSheet.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.CaseSheet_Of_IP_Patients.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.certificate_found.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ChangeStatus.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Choose_Consumables_Pharmacy.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Clinical_Findings.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Clinical_Porforma.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Communication.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Communication_Settings.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Consent.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Consultation.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.consultation_new_patient.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\Pappyjoe.consultation_prescription_template.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Contacts.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Appointment_Count.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.daily_GST_report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Invoice_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_New_Patients.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Daily_Treatment_Count.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard_Doctor.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dashboard_Reception.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.DatePicker.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.DayWiseInvoice_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Day_Wise_Receipt.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.dentalLab_invoice_report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dentalwork.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Dental_Treatment_Plans.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.doctors.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctors_Practice_Details.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Profile.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Appointment_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Invoice.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Doctor_Wise_Receipt.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Download_Excel_Format.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Edit_Practice_Details.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.EMR_Settings.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense_Daily_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expense_Category_Wise_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expiry_items_stock.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Expiry_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Export_Data.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.fasttrack_print.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Fasttrack_window_New.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Fast_Track.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Finished_Procedure.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Form1.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.f_form.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Group_Wise_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.GST_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.GST_Summery_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Image_Zoom.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Inactive_patients.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Invoice.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.IP_patients_reports.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ItemBatchDetails.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ItemListForSales.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Item_List.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabDental.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabMedical.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabResultEntry.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabtrackingReport.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.LabWorks.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.lab_notification.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.ListItem.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Log.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Log_details.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.MainForm.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Main_Calendar.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Manufacture.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Maternity_leave_certificate.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.MedicalLeave.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.MonthlyHSN_Tax_Payment.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Expense_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_gst_report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Treatment_Count.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Network_Computer.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.NewCredit_TagName.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Debit_TagName.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.NursesDashboard.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Nurses_Notes.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Nurse_notification.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.OpenRecurringItem.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.OPpatient_report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patients.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_consultation_report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Previous_History.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.patient_wise_consultation_report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Pescriptiontemplate.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Pharmacy_dashboard.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Practice_Staff_Setting.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Lang.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Project_type_set.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseItemLIst.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseItemReturnReport.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseList.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseOrder.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.PurchaseOrderItemReport.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Batch.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.purchase_batch_for_consumables.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Item_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_order_list.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Order_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_return_Batch.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_ItemList.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_List.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Purchase_Return_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.P_L_Account_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Rooms_details.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesOrder.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesOrderItemReport.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesReport_Items.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SalesReturnItemsReport.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_List.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_order_list.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Order_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_ReturnList.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Batch.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Itemlist.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sales_Return_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Sick_leave_new.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SimpleAppointment.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.SimpleAppointment_Template.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Special_Cases.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.StockTransfer_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.StockReport.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stocktransfer_batch.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stocktransfer_itemlist.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Adjustment.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_adjustment_report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_det.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_in_Batch.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Ledger.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_Out_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_transfer.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Stock_TransferList.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_transfer_partner.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.stock_updation_list.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Supplier.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Ledger.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Login.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Medical_Certificate.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Medical_History.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Missing_Checkout_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Appointment_Count.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_Invoice_Report.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Monthly_New_Patients.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Month_Wise_Receipt.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Credit_Account.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.New_Debit_Account.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patients_First_Appointment.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Profile_Details.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Patient_Profile_Edit.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Paymode_Wise_Receipt.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Practice_Details.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Add.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Show.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Prescription_Settings.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Printout.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Print_Label.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Print_Label_Print.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Procedure_Catalog.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Receipt.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Reports.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Search_Available_Patient.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Show_Appointment.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Supplier_invoice.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Trackingnullstatus.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_For_Each_Category.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_For_Each_Doctor.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Treatment_Plans.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Visiting_History.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.View.Vital_Signs.resources
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.GenerateResource.cache
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.CoreCompileInputs.cache
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.TrustInfo.xml
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.exe.manifest
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.application
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.csproj.CopyComplete
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.exe
+E:\older versions\version 23.10_ released\PappyjoeMVC\obj\Debug\PappyjoeMVC.pdb
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\itextsharp.dll
+E:\older versions\version 23.10_ released\PappyjoeMVC\bin\Debug\itextsharp.xmlworker.dll

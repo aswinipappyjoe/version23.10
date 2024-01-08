@@ -1,0 +1,616 @@
+﻿using PappyjoeMVC.Controller;
+using PappyjoeMVC.Model;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Net.Mail;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace PappyjoeMVC.View
+{
+    public partial class Add_Appointment : Form
+    {
+        int j = 0;
+        public DateTime StartT, StartT1, EndTime, Dateonly; DataTable smscount = new DataTable(); DataTable sms = new DataTable();
+        public static string gender, smsName = "", smsPass = "", appointid = "", p_mobile = "", p_email = "";
+        public string doctor_id = "", appointment_id, patient_id = "", send_on_day, name = "", diff1 = "0", send_before_day, day_time, pat_id, doc, before_time, schedTime, patient_name = "", clinicn = "", locality = "", contact_no = "", text = "", dr_id = "", emailName = "", emailPass = "", DatetimeNow = "", ApptRemndrSMStime = "", pat_appoRemSMS = "", doc_appoCntSMS = "", scount= "";
+        Add_Appointment_controller ctrlr = new Add_Appointment_controller();
+        Booking_controller cntrl = new Booking_controller();
+        Communication_Setting_controller ccntrl = new Communication_Setting_controller();
+        public Add_Appointment()
+        {
+            InitializeComponent();
+            InitializeControls();
+        }
+
+        public void openform(Form myForm)
+        {
+            Panel p = this.Parent as Panel;
+            if (p != null)
+            {
+                myForm.FormBorderStyle = FormBorderStyle.None;
+                myForm.TopLevel = false;
+                myForm.Dock = DockStyle.Fill;
+                p.Controls.Add(myForm);
+                myForm.Show();
+                this.Close();
+            }
+        }
+        private void linkLabel_Name_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var form2 = new PappyjoeMVC.View.Patient_Profile_Details();
+            form2.doctor_id = doctor_id;
+            form2.patient_id = patient_id;
+            openform(form2);
+        }
+
+        private void linkLabel_id_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var form2 = new PappyjoeMVC.View.Patient_Profile_Details();
+            form2.doctor_id = doctor_id;
+            form2.patient_id = patient_id;
+            openform(form2);
+        }
+
+        private void labelallpatient_Click(object sender, EventArgs e)
+        {
+            var form2 = new Patients();
+            form2.doctor_id = doctor_id;
+            openform(form2);
+        }
+        private void InitializeControls()
+        {
+            DateTime dtHours = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+            for (int cnt = 0; cnt < 288; cnt++)
+            {
+                cmbStartTime.Items.Insert(cnt, dtHours.ToShortTimeString());
+                cmbEndTime.Items.Insert(cnt, dtHours.ToShortTimeString());
+                dtHours = dtHours.AddMinutes(5);
+            }
+            cmbStartTime.SelectedIndex = 90;
+            cmbEndTime.SelectedIndex = 91;
+            combocategory.SelectedIndex = 0;
+        }
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            var form2 = new Show_Appointment();
+            form2.patient_id = patient_id;
+            form2.doctor_id = doctor_id;
+            openform(form2);
+        }
+        private void cmbStartTime_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbStartTime.SelectedIndex < 287)
+            {
+                cmbEndTime.SelectedIndex = cmbStartTime.SelectedIndex + 1;
+            }
+            else
+            {
+                cmbEndTime.SelectedIndex = cmbStartTime.SelectedIndex;
+            }
+        }
+        public void Get_Practice_details(DataTable dt)
+        {
+            String ClinicName = "";
+            if (dt.Rows.Count > 0)
+            {
+                ClinicName = dt.Rows[0]["Name"].ToString();
+                clinicn = ClinicName.Replace("¤", "'");
+                locality = dt.Rows[0]["locality"].ToString();
+                contact_no = dt.Rows[0]["contact_no"].ToString();
+            }
+        }
+        public void getdoctrname(string dt)
+        {
+            if (dt != "")
+            {
+                int index = Cmb_doctor.FindString(dt);
+                if (index >= 0)
+                {
+                    Cmb_doctor.SelectedIndex = index;
+                }
+                else
+                {
+                    Cmb_doctor.SelectedIndex = 0;
+                }
+            }
+        }
+        public void dt_appointment(DataTable dt)
+        {
+            try
+            {
+                if (appointment_id != "0")
+                {
+                    if (dt.Rows.Count > 0)
+                    {
+                        btn_Add.Text = "UPDATE";
+                        doc = dt.Rows[0]["dr_id"].ToString();
+                        string dct = this.ctrlr.getdoctrname(dt.Rows[0]["dr_id"].ToString());
+                        getdoctrname(dct);
+                        if (dt.Rows[0]["plan_new_procedure"].ToString() != "")
+                        {
+                            int index = compoprocedure.FindString(Convert.ToString(dt.Rows[0]["plan_new_procedure"].ToString()));
+                            if (index >= 0)
+                            {
+                                compoprocedure.SelectedIndex = index;
+                            }
+                            else
+                            {
+                                compoprocedure.SelectedIndex = 0;
+                            }
+                        }
+                        int int_duration = Convert.ToInt16(dt.Rows[0]["duration"].ToString());
+                        DateTime StartTime, StartTime1, Endtime1, Endtime;
+                        dpStartTimeDate.Value = Convert.ToDateTime(dt.Rows[0]["start_datetime"].ToString());
+                        StartTime1 = dpStartTimeDate.Value;
+                        StartTime = Convert.ToDateTime(StartTime1.ToString("h:mm tt"));
+                        int mis = 0;
+                        mis = StartTime.Minute / 5;
+                        cmbStartTime.SelectedIndex = (int)(StartTime.Hour * 12 + mis);
+                        Endtime1 = Convert.ToDateTime(StartTime1.ToString("h:mm tt"));
+                        Endtime = Endtime1.AddMinutes(int_duration);
+                        mis = Endtime.Minute / 5;
+                        cmbEndTime.SelectedIndex = (int)(Endtime.Hour * 12 + mis);
+                    }
+                }
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        public void get_all_doctorname(DataTable dt)
+        {
+            try
+            {
+                if (doctor_id != "0")
+                {
+                    int dr_index = 0;
+                    if (dt.Rows.Count > 0)
+                    {
+                        Cmb_doctor.DisplayMember = "doctor_name";
+                        Cmb_doctor.ValueMember = "id";
+                        Cmb_doctor.DataSource = dt;
+                        for (int j = 0; j < dt.Rows.Count; j++)
+                        {
+                            if (dt.Rows[j]["id"].ToString() == doctor_id)
+                            {
+                                dr_index = j;
+                            }
+                        }
+                        Cmb_doctor.SelectedIndex = dr_index;
+                    }
+                }
+                else
+                {
+                    if (dt.Rows.Count > 0)
+                    {
+                        Cmb_doctor.DisplayMember = "doctor_name";
+                        Cmb_doctor.ValueMember = "id";
+                        Cmb_doctor.DataSource = dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        public void getpatdetails(DataTable rs_patients)
+        {
+            try
+            {
+                if (rs_patients.Rows[0]["pt_name"].ToString() != "")
+                {
+                    linkLabel_Name.Text = rs_patients.Rows[0]["pt_name"].ToString();
+                    patient_name = rs_patients.Rows[0]["pt_name"].ToString();
+                }
+                if (rs_patients.Rows[0]["pt_id"].ToString() != "")
+                {
+                    linkLabel_id.Text = rs_patients.Rows[0]["pt_id"].ToString();
+                }
+                if (rs_patients.Rows[0]["primary_mobile_number"].ToString() != "")
+                {
+                    p_mobile = rs_patients.Rows[0]["primary_mobile_number"].ToString();
+                }
+                if (rs_patients.Rows[0]["email_address"].ToString() != "")
+                {
+                    p_email = rs_patients.Rows[0]["email_address"].ToString();
+                }
+
+                gender = rs_patients.Rows[0]["gender"].ToString();
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        public void smsdetails(DataTable sms)
+        {
+            try
+            {
+                if (sms.Rows.Count > 0)
+                {
+                    smsName = sms.Rows[0]["smsName"].ToString();
+                    smsPass = sms.Rows[0]["smsPass"].ToString();
+                    pat_appoRemSMS = sms.Rows[0]["pat_appoRemSMS"].ToString();
+                    doc_appoCntSMS = sms.Rows[0]["doc_appoCntSMS"].ToString();
+                }
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        public void smsreminder(DataTable smsreminder)
+        {
+            try
+            {
+                if (smsreminder.Rows.Count > 0)
+                {
+                    send_on_day = smsreminder.Rows[0]["send_on_day"].ToString();
+                    send_before_day = smsreminder.Rows[0]["send_before_day"].ToString();
+                    day_time = smsreminder.Rows[0]["day_time"].ToString();
+                    before_time = smsreminder.Rows[0]["before_time"].ToString();
+                    schedTime = "";
+                    DataTable grtpatremt = this.ctrlr.getPatRemTime();
+                    if (grtpatremt.Rows.Count > 0)
+                    {
+                        schedTime = grtpatremt.Rows[0]["patientRemsmsTime"].ToString();
+                    }
+                    string ApptDate1 = StartT.ToShortDateString() + " " + schedTime;
+                    string ApptDate2 = StartT.ToShortDateString() + " " + cmbStartTime.Text;
+                    System.DateTime date1 = DateTime.Parse(ApptDate1);
+                    DateTime date2 = DateTime.Parse(ApptDate2);
+                    System.TimeSpan time = date2.Subtract(date1);
+                    string TT = StartT.ToShortDateString() + " " + time;
+                    DateTime DT = DateTime.Parse(TT);
+                    ApptRemndrSMStime = DT.ToString("dd/MM/yyyy hh:mm:ss tt");
+                    int pos = 2;
+                    char replacement = '/';
+                    ApptRemndrSMStime = ApptRemndrSMStime.Remove(pos, 1).Insert(pos, replacement.ToString());
+                    int po = 5;
+                    char replacemen = '/';
+                    ApptRemndrSMStime = ApptRemndrSMStime.Remove(po, 1).Insert(po, replacemen.ToString());
+                }
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        public void Get_Patient_Details(DataTable pat)
+        {
+            try
+            {
+
+                if (Convert.ToInt32(scount) > 5)
+                {
+                    if (pat.Rows.Count > 0)
+                    {
+                        string number = "91" + pat.Rows[0]["primary_mobile_number"].ToString();
+                        string type = "LNG";
+                        text = "Dear " + pat.Rows[0]["pt_name"].ToString() + " " + "Your appointment for " + compoprocedure.Text + " has been confirmed at " + StartT1.ToString("dd/MM/yyyy") + " " + cmbStartTime.Text + " with " + "Dr " + Cmb_doctor.Text + " Regards " + clinicn + "," + contact_no;
+                        string smspatnt = this.ctrlr.SendSMS(smsName, smsPass, number, text, type);
+                        scount = Convert.ToString(Convert.ToInt32(scount) - 1);
+                        string txt = "Dear " + pat.Rows[0]["pt_name"].ToString() + " " + "Your appointment for " + compoprocedure.Text + " has been confirmed at " + StartT1.ToString("dd/MM/yyyy") + " " + cmbStartTime.Text + " with " + "Dr " + Cmb_doctor.Text + "Regards";
+                        this.ctrlr.inssms(patient_id, DateTime.Now.ToString("yyyy-MM-dd hh:mm"), txt);
+                        //For Remainder SMS
+                        if (day_time != null)
+                        {
+                            if (dpStartTimeDate.Value > DateTime.Now.Date)
+                            {
+                                //text = "Dear " + pat.Rows[0]["pt_name"].ToString() + ", " + "Today you have an appointment at " + clinicn + " on " + StartT1.ToString("dd/MM/yyyy") + " " + cmbStartTime.Text + " for " + compoprocedure.Text + " .Regards  " + clinicn + "," + contact_no;
+                                //string smspatnt2=this.ctrlr.SendSMS(smsName, smsPass, number, text, "DRTOMS", patient_id.ToString(), StartT1.ToString("dd/MM/yyyy") + " 09:10:00 am", DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
+                            }
+                        }
+                        if (schedTime != "")
+                        {
+                            if (pat_appoRemSMS == "1")
+                            {
+                                //if (dpStartTimeDate.Value > DateTime.Now.Date)
+                                {
+                                    text = "Dear " + pat.Rows[0]["pt_name"].ToString() + ", " + "Today you have an appointment at " + clinicn + " on " + StartT1.ToString("dd/MM/yyyy") + " " + cmbStartTime.Text + " for " + compoprocedure.Text + " .Regards  " + clinicn + "," + contact_no + "CLIINI";
+                                    string smspatnt3 = this.ctrlr.SendSMS(smsName, smsPass, number, text, "DRTOMS", patient_id.ToString(), ApptRemndrSMStime, DatetimeNow);
+                                    scount = Convert.ToString(Convert.ToInt32(scount) - 1);
+                                }
+                            }
+                        }
+                    }//SMS End Patient
+                    string Encrypt = PappyjoeMVC.Model.EncryptionDecryption.Encrypt(scount, "ch3lSeAW0n2o2!C1");
+                    this.ccntrl.smsCount(Encrypt);
+                }
+
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        private void Add_Appointment_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                if (doctor_id == "0" || doctor_id == "")
+                {
+                    doctor_id = "0";
+                }
+                DataTable dt = this.ctrlr.Get_Practice_details();
+                Get_Practice_details(dt);
+                string doctr = this.ctrlr.Get_DoctorName(doctor_id);
+                DataTable ptntdtls = this.ctrlr.getpatdetails(patient_id);
+                getpatdetails(ptntdtls);
+                DataTable dctrs = this.ctrlr.get_all_doctorname();
+                get_all_doctorname(dctrs);
+                DataTable procedure = this.ctrlr.get_All_procedure();
+                compoprocedure.DisplayMember = "name";
+                compoprocedure.ValueMember = "id";
+                compoprocedure.DataSource = procedure;
+                DataTable apnt = this.ctrlr.dt_appointment(appointment_id);
+                dt_appointment(apnt);
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        public void send_email(DataTable email)
+        {
+            if (email.Rows.Count > 0)
+            {
+                emailName = email.Rows[0]["emailName"].ToString();
+                emailPass = email.Rows[0]["emailPass"].ToString();
+                try
+                {
+                    string sr1 = "<table align='center'  style='width:700px;border: 1px solid ;border-collapse: collapse; background: #EAEAEA; height:500px'><tr><td  align='left' height='27'><FONT  color='#666666'  face='Arial' SIZE=2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Appointment Reminder:" + dpStartTimeDate.Value.ToString("ddd, dd MMM yyyy") + ' ' + cmbStartTime.Text + " @ " + clinicn + "</font></td></tr><tr><td  align='left' height='400px'><table  height='423' align='center' style='width:600px; background: #FFFFFF; height:400px'><tr><td  align='left' height='6px'><FONT  color='#000000'  face='Arial' SIZE=6>" + clinicn + "</font></td></tr><tr><td  align='left' height='1px' bgcolor='#666666'></td></tr><tr><td  align='left' height='62' valign='bottom'><FONT  color='#000000'  face='Arial' SIZE=3>Good morning <b>" + label21.Text + "</b></font></td></tr> <tr><td align='left' height='197' valign='top'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Just to remind you about your appointment at " + clinicn + ".<table><tbody><tr><td width='188' height='31' valign='bottom' align='right'>WHEN :</td><td width='30' height='31' valign='bottom' align='right'></td><td width='358' valign='bottom'> <strong>" + dpStartTimeDate.Value.ToString("ddd, dd MMM yyyy") + ' ' + cmbStartTime.Text + "</strong></td>  </tr><tr><td height='76' valign='top'  align='right'>WHERE :</td><td width='30' height='31' valign='bottom' align='right'></td><td  valign='top'>" + locality + "</td></tr></tbody></table> For any queries, contact us at : " + contact_no + "</td>  </tr><tr><td  align='left' height='1px' bgcolor='#666666'></td></tr> <tr><td height='25'  align='right' valign='bottom'>Powered by&nbsp;&nbsp; </td></tr> <tr><td height='81'  align='right' valign='top'><img src='http://pappyjoe.com/assets/images/pappyjoe-logo.PNG' alt='pappyjoe official logo'>&nbsp;&nbsp;</td></tr></table></td></tr></table>";
+                    MailMessage message = new MailMessage();
+                    message.From = new MailAddress(p_email);
+                    message.To.Add(p_email);
+                    message.BodyEncoding = System.Text.Encoding.GetEncoding(1252);
+                    message.IsBodyHtml = true;
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                    message.Subject = "Appointment Reminder: " + dpStartTimeDate.Value.ToString("ddd, dd MMM yyyy") + ' ' + cmbStartTime.Text + " @ " + clinicn;
+                    message.Body = sr1.ToString();
+                    smtp.Port = 587;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.EnableSsl = true;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new System.Net.NetworkCredential(emailName, emailPass);
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.Send(message);
+                }
+                catch (Exception ex)
+                { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
+        }
+        public void getappointment(DataTable dt)
+        {
+            try
+            {
+                string dr_color = "0", dr_mobile = "0", dr_email = "";
+                if (dt.Rows.Count > 0)
+                {
+                    dr_color = dt.Rows[0]["calendar_color"].ToString();
+                    name = "Dr " + dt.Rows[0]["doctor_name"].ToString();
+                    dr_mobile = dt.Rows[0]["mobile_number"].ToString();
+                    dr_email = dt.Rows[0]["email_id"].ToString();
+                }
+                Dateonly = Convert.ToDateTime(DateTime.Now.ToLocalTime());
+                //DateTime StartT, EndTime;
+                StartT = dpStartTimeDate.Value.Date;
+                EndTime = dpStartTimeDate.Value.Date;
+                StartT = StartT.AddHours(cmbStartTime.SelectedIndex / 12);
+                EndTime = EndTime.AddHours(cmbEndTime.SelectedIndex / 12);
+                int md = cmbStartTime.SelectedIndex % 12;
+                int en_ms = cmbEndTime.SelectedIndex % 12;
+                StartT1 = StartT.AddMinutes(md * 5);
+                EndTime = EndTime.AddMinutes(en_ms * 5);
+                var diff = EndTime.Subtract(StartT);
+                diff1 = Convert.ToString(diff.Minutes);
+                if (Dateonly > StartT)
+                {
+                    MessageBox.Show("Appointment Date should be greater than Current Date...", "Appointment", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    if (cmbStartTime.SelectedIndex <= cmbEndTime.SelectedIndex && compoprocedure.Text != "")
+                    {
+                        //if (appointment_id != "")
+                        //{
+                            if (btn_Add.Text == "SAVE")
+                            {
+                                j = this.ctrlr.insappointment(Convert.ToDateTime(Dateonly).ToString("yyyy-MM-dd"), Convert.ToDateTime(StartT1).ToString("yyyy-MM-dd H:mm:ss"), diff1, txtDescription.Text, patient_id, linkLabel_Name.Text, dr_id, p_mobile, p_email, compoprocedure.Text, name);
+                                string dt1 = DateTime.Now.Date.ToString("yyyy-MM-dd");
+                                DateTime Timeonly = DateTime.Now;
+                                //this.ctrlr.save_log(doctor_id, "Appointment", " Add Appointment", dt1, Convert.ToString(Timeonly.ToString("hh:mm tt")), "Add", appointment_id);///later add
+
+                            }
+                            else
+                            {
+                                j = this.ctrlr.apntupdate(Convert.ToDateTime(StartT1).ToString("yyyy-MM-dd HH:mm"), diff1, txtDescription.Text, dr_id, compoprocedure.Text, name, appointment_id);
+                                string dt11 = DateTime.Now.Date.ToString("yyyy-MM-dd");
+                                DateTime Timeonly = DateTime.Now;
+                                btn_Add.Text = "SAVE"; appointment_id = "0";
+                                //this.ctrlr.save_log(doctor_id, "Appointment", "Edits Appointment", dt11, Convert.ToString(Timeonly.ToString("hh:mm tt")), "Edit", appointment_id);
+                            }
+                        //}
+                       
+                        sms = this.ctrlr.smsdetails();
+                        smsdetails(sms);
+                        smscount = this.ccntrl.getsmscnt();
+                        if (smscount.Rows[0]["sms"].ToString() != "")
+                        {
+                            scount = PappyjoeMVC.Model.EncryptionDecryption.Decrypt(smscount.Rows[0]["sms"].ToString(), "ch3lSeAW0n2o2!C1");
+                            if (Convert.ToInt32(scount) > 5)
+                            {
+                                //---------------Appoinment reminder sms for doctor-----------------
+                                if (doc_appoCntSMS == "1")
+                                {
+                                    DataTable DocRemTme = this.cntrl.get_DocRemsmsTime();
+                                    if (DocRemTme.Rows[0]["doctorApptCountsmsTime"].ToString() != "")
+                                    {
+                                        SMS_model a = new SMS_model();
+                                        string ApptCount = ""; string SendTime = "";
+                                        string number = "91" + dr_mobile;
+                                        string DocRem = DocRemTme.Rows[0]["doctorApptCountsmsTime"].ToString();
+                                        string ST = DateTime.Today.AddDays(1).ToShortDateString() + " " + DocRem;
+                                        DateTime DT = DateTime.Parse(ST);
+                                        SendTime = DT.ToString("dd/MM/yyyy hh:mm:ss tt");
+                                        int pos = 2;
+                                        char replacement = '/';
+                                        SendTime = SendTime.Remove(pos, 1).Insert(pos, replacement.ToString());
+                                        int po = 5;
+                                        char replacemen = '/';
+                                        SendTime = SendTime.Remove(po, 1).Insert(po, replacemen.ToString());
+
+                                        DataTable doc = this.cntrl.getDocAppntmnt(dr_id, DateTime.Today.AddDays(1).ToString(), DateTime.Today.AddDays(1).AddHours(23).AddMinutes(59).AddSeconds(59).ToString());
+                                        if (doc.Rows.Count > 0)
+                                        {
+                                            ApptCount = doc.Rows.Count.ToString();
+                                        }
+                                        string text = "Dear " + Cmb_doctor.Text + ", today you have " + ApptCount + " appointment in" + clinicn + "CLIINI";
+                                        DataTable RIDa = this.cntrl.get_docNotifInfor(dr_id);
+                                        if (RIDa.Rows.Count == 0)
+                                        {
+                                            this.cntrl.insert_DocId(dr_id);
+                                        }
+                                        DataTable RID = this.cntrl.get_docNotifInfor(dr_id);
+                                        if (RID.Rows.Count > 0)
+                                        {
+                                            string webrespo = RID.Rows[0]["webRespo"].ToString();
+                                            if (webrespo != "")
+                                            {
+                                                string deleDocrem = this.cntrl.DeleteDocRem(smsName, smsPass, RID.Rows[0]["webRespo"].ToString());
+                                                if (deleDocrem != "")
+                                                {
+                                                    string smspatnt3 = this.cntrl.SendSMS(smsName, smsPass, number, text, "DRTOMS", dr_id.ToString(), SendTime, DatetimeNow);
+                                                    if (smspatnt3 != "")
+                                                    {
+                                                        this.cntrl.updateWebresp(dr_id, smspatnt3, DatetimeNow.ToString());
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                string smspatnt3 = this.cntrl.SendSMS(smsName, smsPass, number, text, "DRTOMS", dr_id.ToString(), SendTime, DatetimeNow);
+                                                if (smspatnt3 != "")
+                                                {
+                                                    {
+                                                        this.cntrl.updateWebresp(dr_id, smspatnt3, DatetimeNow.ToString());
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    scount = Convert.ToString(Convert.ToInt32(scount) - 1);
+                                }
+                                else if (doc_appoCntSMS == "0")
+                                {
+                                    DataTable RIDa = this.cntrl.get_docNotifInfor(dr_id);
+                                    if (RIDa.Rows.Count == 0)
+                                    {
+                                        this.cntrl.insert_DocId(dr_id);
+                                    }
+                                    DataTable RID = this.cntrl.get_docNotifInfor(dr_id);
+                                    if (RID.Rows.Count > 0)
+                                    {
+                                        string webrespo = RID.Rows[0]["webRespo"].ToString();
+                                        if (webrespo != "")
+                                        {
+                                            string smspatnt3 = ""; string date = "";
+                                            string deleDocrem = this.cntrl.DeleteDocRem(smsName, smsPass, webrespo);
+                                            this.cntrl.updateWebresp(dr_id, smspatnt3, date);
+                                        }
+                                    }
+                                }
+
+                                if (checkBox1.Checked)
+                                {
+                                    DataTable rem = this.ctrlr.smsreminder();
+                                    smsreminder(rem);
+                                    DataTable ptnt = this.ctrlr.Get_Patient_Details(patient_id);
+                                    Get_Patient_Details(ptnt);
+                                }
+                                if (checkBox3.Checked)
+                                {
+                                    if (dr_mobile != "0")
+                                    {
+                                        string number = "91" + dr_mobile;
+                                        string type = "LNG";
+                                        text = "You have an appointment on " + dpStartTimeDate.Value.ToShortDateString() + " " + cmbStartTime.Text + " With " + patient_name + " for " + compoprocedure.Text + " at " + clinicn + "," + contact_no;
+                                        string smsdctr = this.ctrlr.SendSMS(smsName, smsPass, number, text, type);
+                                        scount = Convert.ToString(Convert.ToInt32(scount) - 1);
+                                        //For Remainder SMS
+                                        if (day_time != null)
+                                        {
+                                            if (dpStartTimeDate.Value > DateTime.Now.Date)
+                                            {
+                                                //text = "You have an appointment on " + dpStartTimeDate.Value.ToShortDateString() + " " + cmbStartTime.Text + " With " + patient_name + " for " + compoprocedure.Text + " at " + clinicn + "," + contact_no;
+                                                //string smsdctr2=this.ctrlr.SendSMS(smsName, smsPass, number, text, "DRTOMS", patient_id.ToString(), StartT1.ToString("dd/MM/yyyy") + " 09:10:00 am", DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
+                                            }
+                                        }
+                                        if (before_time != null)
+                                        {
+                                            if (dpStartTimeDate.Value > DateTime.Now.Date)
+                                            {
+                                                //text = "You have an appointment on " + dpStartTimeDate.Value.ToShortDateString() + " " + cmbStartTime.Text + " With " + patient_name + " for " + compoprocedure.Text + " at " + clinicn + "," + contact_no;
+                                                //string smsdctr3=this.ctrlr.SendSMS(smsName, smsPass, number, text, "DRTOMS", patient_id.ToString(), StartT1.ToString("dd/MM/yyyy") + before_time, DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
+                                            }
+                                        }
+                                    }
+                                }//Doctor SMS End
+                                string Encrypt = PappyjoeMVC.Model.EncryptionDecryption.Encrypt(scount, "ch3lSeAW0n2o2!C1");
+                                this.ccntrl.smsCount(Encrypt);
+                            }
+                        }
+
+                        if (checkBox2.Checked)
+                        {
+                            DataTable email = this.ctrlr.send_email();
+                            send_email(email);
+                        }// email end
+                        if (checkBox4.Checked) // Doctor Email
+                        {
+                            if (dr_email != "")
+                            {
+                                DataTable email = this.ctrlr.send_email();
+                                send_email(email);
+                            }
+                        }// Doctor Email end
+                        if (j > 0)
+                        {
+                            var form2 = new PappyjoeMVC.View.Show_Appointment();
+                            form2.patient_id = patient_id;
+                            form2.doctor_id = doctor_id;
+                            openform(form2);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Inseration Failed!..", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    if (compoprocedure.Text == "")//bhj
+                    {
+                        MessageBox.Show("Please select a procedure...", "Procedure", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    //else
+                    //{
+                    //    MessageBox.Show("Appointment Time is incorrect,Please change the time", "Appointment", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //}
+                }
+            }
+            catch (Exception ex)
+            { MessageBox.Show(ex.Message, "Error !..", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DatetimeNow = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt");
+                int pos1 = 2;
+                char replacement1 = '/';
+                DatetimeNow = DatetimeNow.Remove(pos1, 1).Insert(pos1, replacement1.ToString());
+                int po1 = 5;
+                char replacemen1 = '/';
+                DatetimeNow = DatetimeNow.Remove(po1, 1).Insert(po1, replacemen1.ToString());
+
+                dr_id = Cmb_doctor.GetItemText(Cmb_doctor.SelectedValue);
+                DataTable getapnt = this.ctrlr.getappointment(dr_id);
+                getappointment(getapnt);
+            }
+            catch (Exception ex)
+            { MessageBox.Show("Error!..", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+    }
+}
