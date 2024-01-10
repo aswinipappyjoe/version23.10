@@ -554,7 +554,7 @@ namespace PappyjoeMVC.View
             //    TotalAmount = (qty * unitcost);
             //    txt_Amount.Text = TotalAmount.ToString("##.00");
             //}
-            if (txtdisc.Text != "0.0")
+            if (txtdisc.Text != "0")
             {
                 if (TotalAmount > 0)
                 {

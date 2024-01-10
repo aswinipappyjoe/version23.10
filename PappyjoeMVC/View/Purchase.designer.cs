@@ -1065,7 +1065,6 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvItemData.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvItemData.RowHeadersVisible = false;
-            this.dgvItemData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvItemData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvItemData.Size = new System.Drawing.Size(1113, 238);
             this.dgvItemData.TabIndex = 248;

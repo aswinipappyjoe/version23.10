@@ -1368,7 +1368,7 @@ namespace PappyjoeMVC.View
                     cmbUnit.Items.Add(dtitems.Rows[0]["Unit2"].ToString());
                     //cmbUnit.SelectedIndex = 0;
                 }
-                if (cmbUnit.Items.Count > 1)
+                if (cmbUnit.Items.Count >= 1)
                 {
                     cmbUnit.SelectedIndex = 0;
                 }
@@ -2372,7 +2372,7 @@ namespace PappyjoeMVC.View
                     }
                     else
                     {
-                        dgvItemData.Enabled = false;
+                        //dgvItemData.Enabled = false;
                         Btn_Add.Text = "Save";
                         btn_Save.Text = "SAVE";
                         btn_Save.Enabled = false; Btn_Add.Enabled = false; txt_SupplierId.Enabled = false;
