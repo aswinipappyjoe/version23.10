@@ -480,49 +480,49 @@ namespace PappyjoeMVC.View
                     else
                         date = "";
                         dgv_Stock.Rows.Add("", "", "", "Opening Balance", date, "", "", "","" , total_stock.ToString("0.00"));
-                    ///purchase
-                    //DataTable dt_purchase_from = this.cntrl.get_purchase_from_to(date_from, date_To, item_id);
-                    //if (dt_purchase_from.Rows.Count > 0)
-                    //{
-                    //    decimal total_Pstock = 0, receipt_stk = 0, receipt_rate = 0;
-                       
-                    //    total_Pstock = total_Pstock + total_stock;
-                    //    for (int m = 0; m < dt_purchase_from.Rows.Count; m++)
-                    //    {
-                    //        decimal unitmf = 0, qty = 0, stock = 0;
-                    //        unitmf = Convert.ToDecimal(dt_purchase_from.Rows[0]["UnitMF"].ToString());
-                    //        if (Convert.ToDecimal(dt_purchase_from.Rows[m]["FreeQty"].ToString()) > 0)
-                    //        {
-                    //            qty = Convert.ToDecimal(dt_purchase_from.Rows[m]["Qty"].ToString()) + Convert.ToDecimal(dt_purchase_from.Rows[m]["FreeQty"].ToString());
-                    //        }
-                    //        else
-                    //            qty = Convert.ToDecimal(dt_purchase_from.Rows[m]["Qty"].ToString());
+                   //purchase
+                    DataTable dt_purchase_from = this.cntrl.get_purchase_from_to(date_from, date_To, item_id);
+                    if (dt_purchase_from.Rows.Count > 0)
+                    {
+                        decimal total_Pstock = 0, receipt_stk = 0, receipt_rate = 0;
 
-                    //        if (unitmf > 0)
-                    //        {
-                    //            if (dt_item_details.Rows[0]["Unit1"].ToString().Trim() == dt_purchase_from.Rows[m]["Unit"].ToString().Trim())
-                    //            {
-                    //                stock = qty * unitmf;
-                    //            }
-                    //            else
-                    //            {
-                    //                stock = qty;
-                                   
-                    //            }
-                    //        }
-                    //        else
-                    //        {
-                    //            stock = qty;
-                               
-                    //        }
-                    //        total_Pstock = total_Pstock + stock;
-                    //        receipt_stk = receipt_stk + stock;
-                    //        receipt_rate = receipt_rate + Convert.ToDecimal(dt_purchase_from.Rows[m]["Amount"].ToString());
-                    //        dgv_Stock.Rows.Add(item_id, Convert.ToDateTime(dt_purchase_from.Rows[m]["PurchDate"].ToString()).ToString("dd-MM-yyyy"), dt_purchase_from.Rows[m]["PurchNumber"].ToString(), "Cash", "Purchase", dt_purchase_from.Rows[m]["Qty"].ToString()+" " + dt_purchase_from.Rows[m]["Unit"].ToString(),Convert.ToDecimal( dt_purchase_from.Rows[m]["Amount"].ToString()).ToString("0.00"), "", "", total_Pstock.ToString("0.00"));
-                    //    }
-                    //    Total_receipt_stk = Total_receipt_stk + receipt_stk;
-                    //    Total_receipt_rate = Total_receipt_rate + receipt_rate;
-                    //}
+                        total_Pstock = total_Pstock + total_stock;
+                        for (int m = 0; m < dt_purchase_from.Rows.Count; m++)
+                        {
+                            decimal unitmf = 0, qty = 0, stock = 0;
+                            unitmf = Convert.ToDecimal(dt_purchase_from.Rows[0]["UnitMF"].ToString());
+                            if (Convert.ToDecimal(dt_purchase_from.Rows[m]["FreeQty"].ToString()) > 0)
+                            {
+                                qty = Convert.ToDecimal(dt_purchase_from.Rows[m]["Qty"].ToString()) + Convert.ToDecimal(dt_purchase_from.Rows[m]["FreeQty"].ToString());
+                            }
+                            else
+                                qty = Convert.ToDecimal(dt_purchase_from.Rows[m]["Qty"].ToString());
+
+                            if (unitmf > 0)
+                            {
+                                if (dt_item_details.Rows[0]["Unit1"].ToString().Trim() == dt_purchase_from.Rows[m]["Unit"].ToString().Trim())
+                                {
+                                    stock = qty * unitmf;
+                                }
+                                else
+                                {
+                                    stock = qty;
+
+                                }
+                            }
+                            else
+                            {
+                                stock = qty;
+
+                            }
+                            total_Pstock = total_Pstock + stock;
+                            receipt_stk = receipt_stk + stock;
+                            receipt_rate = receipt_rate + Convert.ToDecimal(dt_purchase_from.Rows[m]["Amount"].ToString());
+                            dgv_Stock.Rows.Add(item_id, Convert.ToDateTime(dt_purchase_from.Rows[m]["PurchDate"].ToString()).ToString("dd-MM-yyyy"), dt_purchase_from.Rows[m]["PurchNumber"].ToString(), "Cash", "Purchase", dt_purchase_from.Rows[m]["Qty"].ToString() + " " + dt_purchase_from.Rows[m]["Unit"].ToString(), Convert.ToDecimal(dt_purchase_from.Rows[m]["Amount"].ToString()).ToString("0.00"), "", "", total_Pstock.ToString("0.00"));
+                        }
+                        Total_receipt_stk = Total_receipt_stk + receipt_stk;
+                        Total_receipt_rate = Total_receipt_rate + receipt_rate;
+                    }
                     DataTable dt_purchase_return_from = this.cntrl.get_purchase_return_from_to(date_from, date_To, item_id);
                     if (dt_purchase_return_from.Rows.Count > 0)
                     {
@@ -564,45 +564,45 @@ namespace PappyjoeMVC.View
                         Total_issuse_rate = Total_issuse_rate + issuse_rate;
                     }
 
-                    //DataTable dt_sales_from = this.cntrl.get_sales_from_to(date_from, date_To, item_id);
-                    //if (dt_sales_from.Rows.Count > 0)
-                    //{
-                    //    decimal last_stk = 0, issuse_stk = 0, issuse_rate = 0;
-                    //    last_stk = Convert.ToDecimal(dgv_Stock.Rows[dgv_Stock.Rows.Count - 1].Cells["balance"].Value.ToString());
-                    //    for (int i = 0; i < dt_sales_from.Rows.Count; i++)
-                    //    {
-                    //        decimal unitmf = 0, qty = 0, stock = 0;
-                    //        unitmf = Convert.ToDecimal(dt_sales_from.Rows[0]["UnitMF"].ToString());
-                    //        if (Convert.ToDecimal(dt_sales_from.Rows[i]["FreeQty"].ToString()) > 0)
-                    //        {
-                    //            qty = Convert.ToDecimal(dt_sales_from.Rows[i]["Qty"].ToString()) + Convert.ToDecimal(dt_sales_from.Rows[i]["FreeQty"].ToString());
-                    //        }
-                    //        else
-                    //            qty = Convert.ToDecimal(dt_sales_from.Rows[i]["Qty"].ToString());
+                    DataTable dt_sales_from = this.cntrl.get_sales_from_to(date_from, date_To, item_id);
+                    if (dt_sales_from.Rows.Count > 0)
+                    {
+                        decimal last_stk = 0, issuse_stk = 0, issuse_rate = 0;
+                        last_stk = Convert.ToDecimal(dgv_Stock.Rows[dgv_Stock.Rows.Count - 1].Cells["balance"].Value.ToString());
+                        for (int i = 0; i < dt_sales_from.Rows.Count; i++)
+                        {
+                            decimal unitmf = 0, qty = 0, stock = 0;
+                            unitmf = Convert.ToDecimal(dt_sales_from.Rows[0]["UnitMF"].ToString());
+                            if (Convert.ToDecimal(dt_sales_from.Rows[i]["FreeQty"].ToString()) > 0)
+                            {
+                                qty = Convert.ToDecimal(dt_sales_from.Rows[i]["Qty"].ToString()) + Convert.ToDecimal(dt_sales_from.Rows[i]["FreeQty"].ToString());
+                            }
+                            else
+                                qty = Convert.ToDecimal(dt_sales_from.Rows[i]["Qty"].ToString());
 
-                    //        if (unitmf > 0)
-                    //        {
-                    //            if (dt_item_details.Rows[0]["Unit1"].ToString().Trim() == dt_sales_from.Rows[i]["Unit"].ToString().Trim())
-                    //            {
-                    //                stock = qty * unitmf;
-                    //            }
-                    //            else
-                    //            {
-                    //                stock = qty;
-                    //            }
-                    //        }
-                    //        else
-                    //        {
-                    //            stock = qty;
-                    //        }
-                    //        issuse_stk = issuse_stk + stock;
-                    //        last_stk = last_stk - stock;
-                    //        issuse_rate = issuse_rate + Convert.ToDecimal(dt_sales_from.Rows[i]["TotalAmount"].ToString());
-                    //        dgv_Stock.Rows.Add(item_id, Convert.ToDateTime(dt_sales_from.Rows[i]["InvDate"].ToString()).ToString("dd-MM-yyyy"), dt_sales_from.Rows[i]["InvNumber"].ToString(), "Cash", "Sales", "", "", dt_sales_from.Rows[i]["Qty"].ToString()+" " + dt_sales_from.Rows[i]["Unit"].ToString(),Convert.ToDecimal( dt_sales_from.Rows[i]["TotalAmount"].ToString()).ToString("0.00"), last_stk.ToString("0.00"));
-                    //    }
-                    //    Total_issuse_stk = Total_issuse_stk + issuse_stk;
-                    //    Total_issuse_rate = Total_issuse_rate + issuse_rate;
-                    //}
+                            if (unitmf > 0)
+                            {
+                                if (dt_item_details.Rows[0]["Unit1"].ToString().Trim() == dt_sales_from.Rows[i]["Unit"].ToString().Trim())
+                                {
+                                    stock = qty * unitmf;
+                                }
+                                else
+                                {
+                                    stock = qty;
+                                }
+                            }
+                            else
+                            {
+                                stock = qty;
+                            }
+                            issuse_stk = issuse_stk + stock;
+                            last_stk = last_stk - stock;
+                            issuse_rate = issuse_rate + Convert.ToDecimal(dt_sales_from.Rows[i]["TotalAmount"].ToString());
+                            dgv_Stock.Rows.Add(item_id, Convert.ToDateTime(dt_sales_from.Rows[i]["InvDate"].ToString()).ToString("dd-MM-yyyy"), dt_sales_from.Rows[i]["InvNumber"].ToString(), "Cash", "Sales", "", "", dt_sales_from.Rows[i]["Qty"].ToString() + " " + dt_sales_from.Rows[i]["Unit"].ToString(), Convert.ToDecimal(dt_sales_from.Rows[i]["TotalAmount"].ToString()).ToString("0.00"), last_stk.ToString("0.00"));
+                        }
+                        Total_issuse_stk = Total_issuse_stk + issuse_stk;
+                        Total_issuse_rate = Total_issuse_rate + issuse_rate;
+                    }
                     DataTable dt_sales_return_from = this.cntrl.get_sales_return_from_to(date_from, date_To, item_id);
                     if (dt_sales_return_from.Rows.Count > 0)
                     {

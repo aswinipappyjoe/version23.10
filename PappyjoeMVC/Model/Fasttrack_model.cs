@@ -16,7 +16,11 @@ namespace PappyjoeMVC.Model
             DataTable auto = db.table("select * from tbl_patient_automaticid ");
             return auto;
         }
-
+        public DataTable Get_invoice_prefix()
+        {
+            DataTable invno = db.table("select invoice_prefix,invoice_number,invoive_automation from tbl_invoice_automaticid where invoive_automation='Yes'");
+            return invno;
+        }
         public DataTable Load_dctrname(string doctor_id)
         {
             DataTable dt_doctor = db.table("select id,doctor_name from tbl_doctor  where id='" + doctor_id + "'");
@@ -495,7 +499,7 @@ namespace PappyjoeMVC.Model
             db.trans_execute("update tbl_invoices_main set Tonurse_paid='" + check + "' where  id= '" + id + "' ", con, trans);
         }
 
-
+      
 
 
     }

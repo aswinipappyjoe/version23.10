@@ -726,7 +726,7 @@ namespace PappyjoeMVC.View
                 {
                     if (dgv_batchSale.CurrentRow.Cells["ColQty"].Value != null && dgv_batchSale.CurrentRow.Cells["ColQty"].Value.ToString() != "")
                     {
-                        if (Convert.ToDecimal(dgv_batchSale.CurrentRow.Cells["ColStock"].Value.ToString()) > Convert.ToDecimal(dgv_batchSale.CurrentRow.Cells["ColQty"].Value.ToString()))
+                        if (Convert.ToDecimal(dgv_batchSale.CurrentRow.Cells["ColStock"].Value.ToString()) >= Convert.ToDecimal(dgv_batchSale.CurrentRow.Cells["ColQty"].Value.ToString()))
                             {
                             curent_Stock = Convert.ToDecimal(dgv_batchSale.CurrentRow.Cells["ColStock"].Value.ToString()) - Convert.ToDecimal(dgv_batchSale.CurrentRow.Cells["ColQty"].Value.ToString());
                             dgv_batchSale.CurrentRow.Cells["colCurrentStock"].Value = curent_Stock.ToString();

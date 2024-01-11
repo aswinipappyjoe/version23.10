@@ -2404,6 +2404,16 @@ namespace PappyjoeMVC.View
                                     }
                                     clear();
                                     txt_search.Visible = true;
+                                    DataTable invno = null;
+                                    invno = this.cntrl.Get_invoice_prefix();
+                                    if (invno.Rows.Count == 0)
+                                    {
+                                        txt_invoiceno.Enabled = false;
+                                    }
+                                    else
+                                    {
+                                        txt_invoiceno.Text = invno.Rows[0]["invoice_prefix"].ToString() + invno.Rows[0]["invoice_number"].ToString();
+                                    }
                                 }
                                 catch (Exception ex)
                                 {
@@ -4357,6 +4367,7 @@ namespace PappyjoeMVC.View
 
         private void btn_newPatient_Click(object sender, EventArgs e)
         {
+            listpatientsearch.Visible = false;
             txt_search.Visible = true;
             label15.Visible = false;
             label7.Visible = false;

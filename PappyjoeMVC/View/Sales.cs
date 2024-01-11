@@ -538,6 +538,11 @@ namespace PappyjoeMVC.View
                 TotalAmount = Amount + gst_Amount;
                 txt_Amount.Text = TotalAmount.ToString("##.00");
             }
+            else
+            {
+                Amount = qty * unitcost;
+                txt_Amount.Text = Amount.ToString("##.00");
+            }
             if (decimal.TryParse(txtdisc.Text, out d))
             {
                 discount = Convert.ToDecimal(txtdisc.Text);
@@ -572,6 +577,7 @@ namespace PappyjoeMVC.View
                 }
 
             }
+           
         }
         //public void TotalAmount_Calculation()
         //{
