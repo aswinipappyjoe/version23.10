@@ -76,7 +76,10 @@ namespace PappyjoeMVC.View
             { payment_show(false, false, false, false, false, false, false); }
         }
 
-      
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         public void payment_show(Boolean BankName, Boolean Number, Boolean bank, Boolean lab_number, Boolean last4digit, Boolean cardno, Boolean t4digit)
         {
@@ -114,22 +117,22 @@ namespace PappyjoeMVC.View
                    
                     if (Cmb_ModeOfPaymnt.Text == "Cheque")
                     {
-                        this.cntrl.save_voucher_cheque(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total);
+                        //this.cntrl.save_voucher_cheque(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text);
 
                     }
                     else if (Cmb_ModeOfPaymnt.Text == "Card")
                     {
 
-                        this.cntrl.save_voucher_card(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_4Digit.Text, partial_total);
+                        //this.cntrl.save_voucher_card(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_4Digit.Text, partial_total, txt_vouto_sup.Text);
                     }
                     else if (Cmb_ModeOfPaymnt.Text == "Demand Draft")
                     {
 
-                        this.cntrl.save_voucher_dd(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total);
+                        //this.cntrl.save_voucher_dd(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text);
                     }
                     else
                     {
-                        this.cntrl.save_voucher(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, partial_total);
+                        this.cntrl.save_voucher(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, partial_total, txt_vouto_sup.Text);
                     }
                     this.cntrl.update_purchtype(txt_purno.Text);
                     this.cntrl.update_purch_Amout_status(txt_purno.Text, amount_status);
@@ -147,22 +150,22 @@ namespace PappyjoeMVC.View
                 {
                     if (Cmb_ModeOfPaymnt.Text == "Cheque")
                     {
-                        this.cntrl.save_voucher_cheque(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, ccon, trans);
+                        this.cntrl.save_voucher_cheque(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text, ccon, trans);
 
                     }
                     else if (Cmb_ModeOfPaymnt.Text == "Card")
                     {
 
-                        this.cntrl.save_voucher_card(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_4Digit.Text, partial_total, ccon, trans);
+                        //this.cntrl.save_voucher_card(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_4Digit.Text, partial_total, txt_vouto_sup.Text, ccon, trans);
                     }
                     else if (Cmb_ModeOfPaymnt.Text == "Demand Draft")
                     {
 
-                        this.cntrl.save_voucher_dd(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, ccon, trans);
+                        this.cntrl.save_voucher_dd(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text, ccon, trans);
                     }
                     else
                     {
-                        this.cntrl.save_voucher(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, partial_total, ccon, trans);
+                        this.cntrl.save_voucher(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, partial_total, txt_vouto_sup.Text, ccon, trans);
                     }
                     if (advance != Convert.ToDecimal(txt_advance.Text))
                     {

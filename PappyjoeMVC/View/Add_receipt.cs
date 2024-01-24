@@ -122,7 +122,8 @@ namespace PappyjoeMVC.View
                         DataTable dt1 = this.cntrl.Patient_invoice(patient_id, invoices[p]);
                         if (dt1.Rows.Count > 0)
                         {
-                            ab = Convert.ToDecimal(dt1.Rows[0][3].ToString());
+                            dateTimePicker1.Value = Convert.ToDateTime(dt1.Rows[0]["date"].ToString());
+                               ab = Convert.ToDecimal(dt1.Rows[0][3].ToString());
                             Doctor_Name = dt1.Rows[0]["dr_id"].ToString();
                             try
                             {

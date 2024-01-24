@@ -499,6 +499,8 @@ namespace PappyjoeMVC.View
             txtSupplierName.Text = dt.Rows[0]["Supplier_Name"].ToString();
             dtpPurchDate.Value = Convert.ToDateTime(dt.Rows[0]["PurchDate"].ToString());
             txt_SupplierId.Text = dt.Rows[0]["Sup_Code"].ToString();
+            textBox1.Text = dt.Rows[0]["InvNumber"].ToString();
+            listBox1.Hide();
             list_Pur_no.Hide();
         }
 
@@ -793,6 +795,77 @@ namespace PappyjoeMVC.View
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (flagpurchRet == false)
+            {
+                clear();
+                dtpPurchDate.Value = Convert.ToDateTime(DateTime.Now.ToString());
+                txtTotal_item.Text = "0";
+                txtTotalCost.Text = "0.00";
+                dgvGridData.Rows.Clear();
+                dgvItemData.Rows.Clear();//load_purch_invno_aenum
+                dt_pur_NO = this.cntrl.load_purch_invno_aenum(textBox1.Text);//   load_purchaenum(txt_pur_no.Text);
+                if (dt_pur_NO.Rows.Count > 0)
+                {
+                    listBox1.DataSource = dt_pur_NO;
+                    listBox1.ValueMember = "InvNumber";
+                    listBox1.DisplayMember = "InvNumber";
+                    listBox1.Show();
+                }
+                if (textBox1.Text == "")
+                {
+                    clear();
+                    txt_pur_no.Text = "";
+                    txt_SupplierId.Text = "";
+                    txtSupplierName.Text = "";
+                    dtpPurchDate.Value = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+                }
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //if (flagpurchRet == false)
+            //{
+            //    clear();
+            //    dtpPurchDate.Value = Convert.ToDateTime(DateTime.Now.ToString());
+            //    txtTotal_item.Text = "0";
+            //    txtTotalCost.Text = "0.00";
+            //    dgvGridData.Rows.Clear();
+            //    dgvItemData.Rows.Clear();//load_purch_invno_aenum
+            //    dt_pur_NO = this.cntrl.load_purch_invno_aenum(textBox1.Text);//   load_purchaenum(txt_pur_no.Text);
+            //    if (dt_pur_NO.Rows.Count > 0)
+            //    {
+            //        listBox1.DataSource = dt_pur_NO;
+            //        listBox1.ValueMember = "InvNumber";
+            //        listBox1.DisplayMember = "InvNumber";
+            //        listBox1.Show();
+            //    }
+            //    if (textBox1.Text == "") 
+            //    {
+            //        clear();
+            //        txt_pur_no.Text = "";
+            //        txt_SupplierId.Text = "";
+            //        txtSupplierName.Text = "";
+            //        dtpPurchDate.Value = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            //    }
+            //}
+        }
+
+        private void listBox1_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            textBox1.Text = listBox1.SelectedValue.ToString();
+            dt = this.cntrl.Load_pur_details_on_invoice(textBox1.Text);//   Load_pur_details(textBox1.Text);
+            txtSupplierName.Text = dt.Rows[0]["Supplier_Name"].ToString();
+            dtpPurchDate.Value = Convert.ToDateTime(dt.Rows[0]["PurchDate"].ToString());
+            txt_SupplierId.Text = dt.Rows[0]["Sup_Code"].ToString();
+            txt_pur_no.Text= dt.Rows[0]["PurchNumber"].ToString();
+            list_Pur_no.Hide();
+            listBox1.Hide();
         }
 
         public void clear()

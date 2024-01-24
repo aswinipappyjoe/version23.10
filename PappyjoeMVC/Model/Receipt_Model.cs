@@ -27,7 +27,7 @@ namespace PappyjoeMVC.Model
         }
         public DataTable Patient_invoice(string patient_id, string invoices)
         {
-            DataTable dt1 = db.table("select invoice_no,services,pt_id,total,dr_id from tbl_invoices where total!='" + 0 + "' and pt_id='" + patient_id + "' and invoice_no='" + invoices + "'");
+            DataTable dt1 = db.table("select invoice_no,services,pt_id,total,dr_id,date from tbl_invoices where total!='" + 0 + "' and pt_id='" + patient_id + "' and invoice_no='" + invoices + "'");
             return dt1;
         }
         public DataTable select_invoice(string invoices)

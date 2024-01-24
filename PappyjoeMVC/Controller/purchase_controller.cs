@@ -232,27 +232,27 @@ namespace PappyjoeMVC.Controller
             DataTable dtb = _model.get_openingbalance(sup_code);
             return dtb;
         }
-        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, decimal partial_total, MySqlConnection con, MySqlTransaction tran)
+        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, decimal partial_total,string vno, MySqlConnection con, MySqlTransaction tran)
         {
-            _model.save_voucher( voucherno,  purchno,  date,  supplierid,  amount,  paymethod,  advance,  opening_balance,  Amount_paid,  Due,  Applied_to, partial_total, con, tran);
+            _model.save_voucher( voucherno,  purchno,  date,  supplierid,  amount,  paymethod,  advance,  opening_balance,  Amount_paid,  Due,  Applied_to, partial_total,vno, con, tran);
         }
-        public void save_voucher_cheque(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string num, decimal partial_total, MySqlConnection con,MySqlTransaction tran)
+        public void save_voucher_cheque(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string num, decimal partial_total,string vno, MySqlConnection con,MySqlTransaction tran)
         {
-            _model.save_voucher_cheque(voucherno, purchno, date, supplierid, amount, paymethod, advance, opening_balance, Amount_paid, Due, Applied_to,bank,num, partial_total,con, tran);
+            _model.save_voucher_cheque(voucherno, purchno, date, supplierid, amount, paymethod, advance, opening_balance, Amount_paid, Due, Applied_to,bank,num, partial_total,vno,con, tran);
         }
         public void save_voucher_card(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string card, string digitnum, decimal partial_total, MySqlConnection con, MySqlTransaction tran)
         {
             _model.save_voucher_card(voucherno, purchno, date, supplierid, amount, paymethod, advance, opening_balance, Amount_paid, Due, Applied_to, card, digitnum, partial_total, con, tran);
 
         }
-        public void save_voucher_dd(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string ddnum, decimal partial_total, MySqlConnection con, MySqlTransaction tran)
+        public void save_voucher_dd(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string ddnum, decimal partial_total,string vno, MySqlConnection con, MySqlTransaction tran)
         {
-            _model.save_voucher_dd(voucherno, purchno, date, supplierid, amount, paymethod, advance, opening_balance, Amount_paid, Due, Applied_to, bank, ddnum, partial_total, con, tran);
+            _model.save_voucher_dd(voucherno, purchno, date, supplierid, amount, paymethod, advance, opening_balance, Amount_paid, Due, Applied_to, bank, ddnum, partial_total,vno, con, tran);
 
         }
-        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, decimal partial_total)
+        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, decimal partial_total,string vno)
         {
-            _model.save_voucher(voucherno, purchno, date, supplierid, amount, paymethod, advance, opening_balance, Amount_paid, Due, Applied_to, partial_total);
+            _model.save_voucher(voucherno, purchno, date, supplierid, amount, paymethod, advance, opening_balance, Amount_paid, Due, Applied_to, partial_total,vno);
         }
         public void save_voucher_cheque(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string num, decimal partial_total)
         {

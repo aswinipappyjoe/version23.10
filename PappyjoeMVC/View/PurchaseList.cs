@@ -66,22 +66,33 @@ namespace PappyjoeMVC.View
                         for (int i = 0; dt.Rows.Count > i; i++)
                         {
                             dgv_Purchase.Rows.Add();
-                            slno = i + 1;
+                            slno = i + 1;//InvNumber
                             DataTable dt_due = this.cntrl.get_due_from_voucher(dt.Rows[i]["PurchNumber"].ToString());
                             dgv_Purchase.Rows[i].Cells["colslNo"].Value = slno;
                             dgv_Purchase.Rows[i].Cells["colPurNum"].Value = dt.Rows[i]["PurchNumber"].ToString(); 
                             dgv_Purchase.Rows[i].Cells["voucherno"].Value = dt.Rows[i]["Amount_Status"].ToString();
                             dgv_Purchase.Rows[i].Cells["colPurchDate"].Value = Convert.ToDateTime(dt.Rows[i]["PurchDate"].ToString()).ToString("dd/MM/yyyy");
+                            dgv_Purchase.Rows[i].Cells["invno"].Value = dt.Rows[i]["InvNumber"].ToString();
                             dgv_Purchase.Rows[i].Cells["SupplierId"].Value = dt.Rows[i]["Sup_Code"].ToString();
                             dgv_Purchase.Rows[i].Cells["colName"].Value = dt.Rows[i]["Supplier_Name"].ToString();
                             dgv_Purchase.Rows[i].Cells["colTotalAmount"].Value =Convert.ToDecimal( dt.Rows[i]["GrandTotal"].ToString()).ToString("0.00");
                             dgv_Purchase.Rows[i].Cells["colPayment"].Value = dt.Rows[i]["PurchType"].ToString();
-                            if(dt_due.Rows.Count>0)
+                            if (dt.Rows[i]["PurchType"].ToString() == "Credit")
                             {
-                                dgv_Purchase.Rows[i].Cells["due"].Value = dt_due.Rows[0]["Partial_amount"].ToString();
+                                dgv_Purchase.Rows[i].Cells["due"].Value= Convert.ToDecimal(dt.Rows[i]["GrandTotal"].ToString()).ToString("0.00");
+
+                                dgv_Purchase.Rows[i].Cells["voucherno"].Value = "Pending";
                             }
                             else
-                                dgv_Purchase.Rows[i].Cells["due"].Value = "0.00";
+                            {
+                                if (dt_due.Rows.Count > 0)
+                                {
+                                    dgv_Purchase.Rows[i].Cells["due"].Value = dt_due.Rows[0]["Partial_amount"].ToString();
+                                }
+                                else
+                                    dgv_Purchase.Rows[i].Cells["due"].Value = "0.00";
+                            }
+                            
                             if (dt.Rows[i]["Amount_Status"].ToString() == "Completed")
                             {
                                 dgv_Purchase.Rows[i].DefaultCellStyle.BackColor = Color.Coral;
@@ -148,21 +159,27 @@ namespace PappyjoeMVC.View
                     int slno = 0;
                     DataTable dt = this.cntrl.getPurchase_btwndates(Convert.ToDateTime(dateTo).ToString("yyyy-MM-dd"), Convert.ToDateTime(dateFrom).ToString("yyyy-MM-dd"), type,rad_Credit.Text);
                     if (dt.Rows.Count != 0)
-                    {
-                       // if()
+                    {//InvNumber
+                     // if()
                         for (int i = 0; dt.Rows.Count > i; i++)
                         {
                             dgv_Purchase.Rows.Add();
                             slno = i + 1;
                             dgv_Purchase.Rows[i].Cells["colslNo"].Value = slno;
-                            dgv_Purchase.Rows[i].Cells["voucherno"].Value = dt.Rows[i]["Amount_Status"].ToString();
+                            dgv_Purchase.Rows[i].Cells["voucherno"].Value = "Pending";// dt.Rows[i]["Amount_Status"].ToString();
                             dgv_Purchase.Rows[i].Cells["colPurNum"].Value = dt.Rows[i]["PurchNumber"].ToString();
                             dgv_Purchase.Rows[i].Cells["colPurchDate"].Value = Convert.ToDateTime(dt.Rows[i]["PurchDate"].ToString()).ToString("dd/MM/yyyy");
+                            dgv_Purchase.Rows[i].Cells["invno"].Value = dt.Rows[i]["InvNumber"].ToString();
                             dgv_Purchase.Rows[i].Cells["SupplierId"].Value = dt.Rows[i]["Sup_Code"].ToString();
                             dgv_Purchase.Rows[i].Cells["colName"].Value = dt.Rows[i]["Supplier_Name"].ToString();
                             dgv_Purchase.Rows[i].Cells["colTotalAmount"].Value =Convert.ToDecimal( dt.Rows[i]["GrandTotal"].ToString()).ToString("0.00");
                             dgv_Purchase.Rows[i].Cells["colPayment"].Value = dt.Rows[i]["PurchType"].ToString();
-                            if(dt.Rows[i]["Amount_Status"].ToString()=="Completed")
+                            if (dt.Rows[i]["PurchType"].ToString() == "Credit")
+                            {
+                                dgv_Purchase.Rows[i].Cells["due"].Value = Convert.ToDecimal(dt.Rows[i]["GrandTotal"].ToString()).ToString("0.00");
+                            }
+                            //else
+                           if (dt.Rows[i]["Amount_Status"].ToString()=="Completed")
                             {
                                 dgv_Purchase.Rows[i].DefaultCellStyle.BackColor = Color.Coral;
                                

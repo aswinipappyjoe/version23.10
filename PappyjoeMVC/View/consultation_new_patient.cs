@@ -94,12 +94,12 @@ namespace PappyjoeMVC.View
 
                         try
                         {
-                            string smsName1 = PappyjoeMVC.Model.GlobalVariables.smsName.ToString();
-                            string smsPass1 = PappyjoeMVC.Model.GlobalVariables.smsPass.ToString();
-                            string url = "https://www.smscountry.com/SMSCwebservice_bulk.aspx?User=" + smsName1 + "&passwd=" + smsPass1 + "&mobilenumber=91" + txtmobile.Text + "&message=Dear " + txtpatname.Text + ",Welcome to " + str_Clinic + "," + contact_no;
-                            WebRequest request = WebRequest.Create(url);
-                            WebResponse response = request.GetResponse();
-                            string result = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                            //string smsName1 = PappyjoeMVC.Model.GlobalVariables.smsName.ToString();
+                            //string smsPass1 = PappyjoeMVC.Model.GlobalVariables.smsPass.ToString();
+                            //string url = "https://www.smscountry.com/SMSCwebservice_bulk.aspx?User=" + smsName1 + "&passwd=" + smsPass1 + "&mobilenumber=91" + txtmobile.Text + "&message=Dear " + txtpatname.Text + ",Welcome to " + str_Clinic + "," + contact_no;
+                            //WebRequest request = WebRequest.Create(url);
+                            //WebResponse response = request.GetResponse();
+                            //string result = new StreamReader(response.GetResponseStream()).ReadToEnd();
                             txtpatname.Text = "";
                             loadptid();
                             txtmobile.Text = "";

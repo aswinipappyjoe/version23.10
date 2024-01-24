@@ -104,6 +104,9 @@
             this.Del = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gbDocumentDetails = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.txt_pur_no = new System.Windows.Forms.TextBox();
             this.list_Pur_no = new System.Windows.Forms.ListBox();
             this.dtpPurchDate = new System.Windows.Forms.DateTimePicker();
@@ -910,7 +913,7 @@
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Controls.Add(this.gbDocumentDetails);
             this.panel2.Controls.Add(this.gbTaxDetails);
-            this.panel2.Location = new System.Drawing.Point(1, 47);
+            this.panel2.Location = new System.Drawing.Point(1, 45);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1174, 219);
             this.panel2.TabIndex = 274;
@@ -918,22 +921,58 @@
             // gbDocumentDetails
             // 
             this.gbDocumentDetails.BackColor = System.Drawing.Color.White;
+            this.gbDocumentDetails.Controls.Add(this.listBox1);
+            this.gbDocumentDetails.Controls.Add(this.textBox1);
+            this.gbDocumentDetails.Controls.Add(this.label19);
             this.gbDocumentDetails.Controls.Add(this.txt_pur_no);
             this.gbDocumentDetails.Controls.Add(this.list_Pur_no);
             this.gbDocumentDetails.Controls.Add(this.dtpPurchDate);
             this.gbDocumentDetails.Controls.Add(this.lblDocumentNumber);
             this.gbDocumentDetails.Controls.Add(this.lblDocumentDate);
             this.gbDocumentDetails.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.gbDocumentDetails.Location = new System.Drawing.Point(9, 3);
+            this.gbDocumentDetails.Location = new System.Drawing.Point(4, 3);
             this.gbDocumentDetails.Name = "gbDocumentDetails";
-            this.gbDocumentDetails.Size = new System.Drawing.Size(388, 102);
+            this.gbDocumentDetails.Size = new System.Drawing.Size(669, 102);
             this.gbDocumentDetails.TabIndex = 79;
             this.gbDocumentDetails.TabStop = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(450, 43);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(200, 56);
+            this.listBox1.TabIndex = 216;
+            this.listBox1.Visible = false;
+            this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.textBox1.Location = new System.Drawing.Point(450, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 22);
+            this.textBox1.TabIndex = 215;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label19.Location = new System.Drawing.Point(341, 23);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(106, 13);
+            this.label19.TabIndex = 215;
+            this.label19.Text = "Supplier Invoice no";
             // 
             // txt_pur_no
             // 
             this.txt_pur_no.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txt_pur_no.Location = new System.Drawing.Point(117, 20);
+            this.txt_pur_no.Location = new System.Drawing.Point(96, 20);
             this.txt_pur_no.Name = "txt_pur_no";
             this.txt_pur_no.Size = new System.Drawing.Size(228, 22);
             this.txt_pur_no.TabIndex = 98;
@@ -945,7 +984,7 @@
             // 
             this.list_Pur_no.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.list_Pur_no.FormattingEnabled = true;
-            this.list_Pur_no.Location = new System.Drawing.Point(117, 42);
+            this.list_Pur_no.Location = new System.Drawing.Point(96, 42);
             this.list_Pur_no.Name = "list_Pur_no";
             this.list_Pur_no.Size = new System.Drawing.Size(228, 56);
             this.list_Pur_no.TabIndex = 214;
@@ -956,7 +995,7 @@
             // 
             this.dtpPurchDate.Enabled = false;
             this.dtpPurchDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpPurchDate.Location = new System.Drawing.Point(117, 59);
+            this.dtpPurchDate.Location = new System.Drawing.Point(96, 59);
             this.dtpPurchDate.Name = "dtpPurchDate";
             this.dtpPurchDate.Size = new System.Drawing.Size(228, 22);
             this.dtpPurchDate.TabIndex = 97;
@@ -966,7 +1005,7 @@
             this.lblDocumentNumber.AutoSize = true;
             this.lblDocumentNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblDocumentNumber.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblDocumentNumber.Location = new System.Drawing.Point(10, 20);
+            this.lblDocumentNumber.Location = new System.Drawing.Point(8, 20);
             this.lblDocumentNumber.Name = "lblDocumentNumber";
             this.lblDocumentNumber.Size = new System.Drawing.Size(85, 17);
             this.lblDocumentNumber.TabIndex = 68;
@@ -978,7 +1017,7 @@
             this.lblDocumentDate.AutoSize = true;
             this.lblDocumentDate.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.lblDocumentDate.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblDocumentDate.Location = new System.Drawing.Point(3, 62);
+            this.lblDocumentDate.Location = new System.Drawing.Point(1, 62);
             this.lblDocumentDate.Name = "lblDocumentDate";
             this.lblDocumentDate.Size = new System.Drawing.Size(91, 17);
             this.lblDocumentDate.TabIndex = 69;
@@ -1071,7 +1110,7 @@
             this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Location = new System.Drawing.Point(962, 4);
+            this.btnPrint.Location = new System.Drawing.Point(963, 4);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(99, 30);
             this.btnPrint.TabIndex = 293;
@@ -1097,7 +1136,7 @@
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.BackColor = System.Drawing.Color.DarkGray;
-            this.panel6.Location = new System.Drawing.Point(-23, 43);
+            this.panel6.Location = new System.Drawing.Point(-23, 41);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1363, 1);
             this.panel6.TabIndex = 274;
@@ -1109,7 +1148,7 @@
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Save.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(1072, 4);
+            this.btn_Save.Location = new System.Drawing.Point(1073, 4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(99, 30);
             this.btn_Save.TabIndex = 273;
@@ -1125,9 +1164,9 @@
             this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.btnPrint);
             this.panel7.Controls.Add(this.btn_Save);
-            this.panel7.Location = new System.Drawing.Point(3, 1);
+            this.panel7.Location = new System.Drawing.Point(2, 1);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1172, 35);
+            this.panel7.Size = new System.Drawing.Size(1173, 35);
             this.panel7.TabIndex = 278;
             // 
             // Purchase_Return
@@ -1249,5 +1288,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Unit_Cost;
         private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
         private System.Windows.Forms.DataGridViewImageColumn Del;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

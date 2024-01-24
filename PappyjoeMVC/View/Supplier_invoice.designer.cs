@@ -31,6 +31,7 @@ namespace PappyjoeMVC.View
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Supplier_invoice));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.Lab_Last4Digit = new System.Windows.Forms.Label();
             this.Lab_Numbr = new System.Windows.Forms.Label();
             this.txt_BankNAme = new System.Windows.Forms.TextBox();
@@ -67,7 +68,9 @@ namespace PappyjoeMVC.View
             this.label12 = new System.Windows.Forms.Label();
             this.btnSaveSupplier = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txt_vouto_sup = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +79,8 @@ namespace PappyjoeMVC.View
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txt_vouto_sup);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.Lab_Last4Digit);
             this.panel1.Controls.Add(this.Lab_Numbr);
@@ -113,6 +118,17 @@ namespace PappyjoeMVC.View
             this.panel1.Size = new System.Drawing.Size(628, 347);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label16.Location = new System.Drawing.Point(111, 264);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(79, 15);
+            this.label16.TabIndex = 359;
+            this.label16.Text = "Approved  By";
             // 
             // Lab_Last4Digit
             // 
@@ -253,7 +269,6 @@ namespace PappyjoeMVC.View
             this.txt_advance.Size = new System.Drawing.Size(207, 22);
             this.txt_advance.TabIndex = 21;
             this.txt_advance.Text = "0";
-            //this.txt_advance.TextChanged += new System.EventHandler(this.txt_advance_TextChanged);
             // 
             // txt_opbalan
             // 
@@ -389,7 +404,7 @@ namespace PappyjoeMVC.View
             // 
             this.dateTimePickerdailytreatment1.CalendarForeColor = System.Drawing.Color.DarkSlateGray;
             this.dateTimePickerdailytreatment1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerdailytreatment1.Location = new System.Drawing.Point(420, 37);
+            this.dateTimePickerdailytreatment1.Location = new System.Drawing.Point(420, 61);
             this.dateTimePickerdailytreatment1.Name = "dateTimePickerdailytreatment1";
             this.dateTimePickerdailytreatment1.Size = new System.Drawing.Size(194, 22);
             this.dateTimePickerdailytreatment1.TabIndex = 7;
@@ -399,7 +414,7 @@ namespace PappyjoeMVC.View
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(379, 40);
+            this.label4.Location = new System.Drawing.Point(379, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 6;
@@ -527,16 +542,40 @@ namespace PappyjoeMVC.View
             this.panel4.Size = new System.Drawing.Size(696, 1);
             this.panel4.TabIndex = 23;
             // 
-            // label16
+            // btnClear
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label16.Location = new System.Drawing.Point(111, 264);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 15);
-            this.label16.TabIndex = 359;
-            this.label16.Text = "Approved  By";
+            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.BackColor = System.Drawing.Color.Tomato;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(537, 0);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(85, 30);
+            this.btnClear.TabIndex = 275;
+            this.btnClear.Text = "CLOSE";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txt_vouto_sup
+            // 
+            this.txt_vouto_sup.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_vouto_sup.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vouto_sup.Location = new System.Drawing.Point(420, 37);
+            this.txt_vouto_sup.Name = "txt_vouto_sup";
+            this.txt_vouto_sup.Size = new System.Drawing.Size(194, 22);
+            this.txt_vouto_sup.TabIndex = 361;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label17.Location = new System.Drawing.Point(281, 43);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(130, 13);
+            this.label17.TabIndex = 360;
+            this.label17.Text = "Voucher No(To supplier)";
             // 
             // Supplier_invoice
             // 
@@ -544,6 +583,7 @@ namespace PappyjoeMVC.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(623, 446);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btnSaveSupplier);
             this.Controls.Add(this.label12);
@@ -603,5 +643,8 @@ namespace PappyjoeMVC.View
         private System.Windows.Forms.TextBox txt_Number;
         private System.Windows.Forms.Label Bank;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox txt_vouto_sup;
+        private System.Windows.Forms.Label label17;
     }
 }

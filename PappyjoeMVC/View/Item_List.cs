@@ -403,7 +403,7 @@ namespace PappyjoeMVC.View
         public int row_count = 0;
         private void lb_showMore_Click(object sender, EventArgs e)
         {
-            int count = row_count + 20;
+            int count = row_count + 50;
             DataTable dtb = this.cntrl.Fill_Grid_scroll(count);
             Fill_Grid_showmore(dtb);
             row_count = count;

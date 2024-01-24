@@ -44,9 +44,19 @@ namespace PappyjoeMVC.Controller
             DataTable dtb = model.load_purchaenum(purchaseno);
             return dtb;
         }
+        public DataTable load_purch_invno_aenum(string purchaseno)
+        {
+            DataTable dtb = model.load_purch_invno_aenum(purchaseno);
+            return dtb;
+        }
         public DataTable Load_pur_details(string pur_no)
         {
             DataTable dtb = model.Load_pur_details(pur_no);
+            return dtb;
+        }
+        public DataTable Load_pur_details_on_invoice(string pur_no)
+        {
+            DataTable dtb = model.Load_pur_details_on_invoice(pur_no);
             return dtb;
         }
         public DataTable get_Loaditems_details(string itemcd1, string pur_no)

@@ -55,6 +55,7 @@
             this.colslNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPurNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPurchDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.invno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SupplierId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPayment = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -265,6 +266,7 @@
             this.colslNo,
             this.colPurNum,
             this.colPurchDate,
+            this.invno,
             this.SupplierId,
             this.colName,
             this.colPayment,
@@ -384,7 +386,7 @@
             // colPurNum
             // 
             this.colPurNum.FillWeight = 87.59729F;
-            this.colPurNum.HeaderText = "Purchase Number";
+            this.colPurNum.HeaderText = "Purchase No";
             this.colPurNum.Name = "colPurNum";
             this.colPurNum.ReadOnly = true;
             this.colPurNum.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -396,6 +398,12 @@
             this.colPurchDate.Name = "colPurchDate";
             this.colPurchDate.ReadOnly = true;
             this.colPurchDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // invno
+            // 
+            this.invno.HeaderText = "Invoice No";
+            this.invno.Name = "invno";
+            this.invno.ReadOnly = true;
             // 
             // SupplierId
             // 
@@ -501,6 +509,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colslNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPurNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPurchDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn invno;
         private System.Windows.Forms.DataGridViewTextBoxColumn SupplierId;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPayment;

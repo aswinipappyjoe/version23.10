@@ -477,9 +477,9 @@ namespace PappyjoeMVC.Model
             int i = db.trans_execute("insert into tbl_treatment_plan_main (date,dr_id,dr_name,pt_id,pt_name,total_cost,total_discount,grand_total) values('" + _date + "','" + dr_id + "','" + _doctor + "','" + patient_id + "','" + _patientname + "','" + _totalcost + "','" + _totaldiscount + "','" + _grandtotal + "')", con, trans);
         }
         //invoice
-        public void save_invoice_main(string patient_id, string name, string billno, MySqlConnection con, MySqlTransaction trans)
+        public void save_invoice_main(string date,string patient_id, string name, string billno, MySqlConnection con, MySqlTransaction trans)
         {
-            db.trans_execute("insert into tbl_invoices_main (date,pt_id,pt_name,invoice,status,type,Tonurse_paid) values('" + DateTime.Now.ToString("yyyy-MM-dd") + "','" + patient_id + "','" + name + "','" + billno + "','1','service','False')", con, trans);
+            db.trans_execute("insert into tbl_invoices_main (date,pt_id,pt_name,invoice,status,type,Tonurse_paid) values('" +date + "','" + patient_id + "','" + name + "','" + billno + "','1','service','False')", con, trans);
         }
         public string get_invoiceMain_maxid(MySqlConnection con, MySqlTransaction trans)//trans
         {

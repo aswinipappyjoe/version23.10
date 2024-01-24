@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PappyjoeMVC.exe" size="18375168">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PappyjoeMVC.exe" size="18379264">
       <assemblyIdentity name="PappyjoeMVC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4O0E8RlXRVLCBxZzNlHtY2hh+bgdqiDxGI4rZGWPRFY=</dsig:DigestValue>
+        <dsig:DigestValue>PgL8QGBE6TJD6aPpnwDvFgDRKI/DRoSSXoKtVk0KIKQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

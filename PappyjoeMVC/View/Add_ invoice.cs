@@ -95,11 +95,11 @@ namespace PappyjoeMVC.View
                 linkL_Name.Text = patient.Rows[0]["pt_name"].ToString();
                 linkLabel_id.Text = patient.Rows[0]["pt_id"].ToString();
             }
-            System.Data.DataTable pay = cmodel.get_total_payment(patient_id);
-            if (pay.Rows.Count > 0)
-            {
-                lab_due.Text =Convert.ToDecimal( pay.Rows[0]["total_payment"].ToString()).ToString("0.00") + "due";
-            }
+            //System.Data.DataTable pay = cmodel.get_total_payment(patient_id);
+            //if (pay.Rows.Count > 0)
+            //{
+            //    lab_due.Text =Convert.ToDecimal( pay.Rows[0]["total_payment"].ToString()).ToString("0.00") + "due";
+            //}
             DataTable invno = null;
             invno = this.cntrl.Get_invoice_prefix();
             if (invno.Rows.Count == 0)

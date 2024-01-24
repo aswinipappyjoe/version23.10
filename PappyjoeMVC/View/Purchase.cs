@@ -2135,37 +2135,53 @@ namespace PappyjoeMVC.View
         }
         private void txtDic_KeyUp(object sender, KeyEventArgs e)
         {
-
-           //else if (e.KeyCode == Keys.Enter)
-           // {
-                decimal dis;
-                decimal totalAmount;
-                decimal Discount;
-                if (txtDic.Text != "" || txtDic.Text == ".")
+            decimal dis;
+            decimal totalAmount;
+            decimal Discount;
+            if (txtDic.Text != "" || txtDic.Text == ".")
+            {
+                dis = Convert.ToDecimal(txtDic.Text);
+            }
+            else
+            {
+                dis = 0;
+            }
+            if (disoncost == "S")
+            {
+                if (cmb_disc.Text == "INR")
                 {
-                    dis = Convert.ToDecimal(txtDic.Text);
+                    totalAmount = Convert.ToDecimal(txtTotalCost.Text);
+                    Discount = Convert.ToDecimal(totalAmount - dis);//(dis * totalAmount) / 100
+                    txt_Discount.Text = Discount.ToString("##.00");
+                    txtGrandTotal.Focus();
                 }
                 else
                 {
-                    dis = 0;
-                }
-                if (disoncost == "S")
-                {
                     totalAmount = Convert.ToDecimal(txtTotalCost.Text);
-                    Discount = Convert.ToDecimal((dis * totalAmount) / 100);
+                    Discount = Convert.ToDecimal(totalAmount - dis);
                     txt_Discount.Text = Discount.ToString("##.00");
                     txtGrandTotal.Focus();
+                }
+
+            }
+            else
+            {
+                if (cmb_disc.Text == "INR")
+                {
+                    totalAmount = Convert.ToDecimal(txt_TotalAmount.Text);
+                    Discount = Convert.ToDecimal(totalAmount - dis);
+                    txt_Discount.Text = Discount.ToString("##.00");
+                    txtGrandTotal.Text = Discount.ToString("##.00");
                 }
                 else
                 {
                     totalAmount = Convert.ToDecimal(txt_TotalAmount.Text);
                     Discount = Convert.ToDecimal((dis * totalAmount) / 100);
                     txt_Discount.Text = Discount.ToString("##.00");
+                    txtGrandTotal.Text = Discount.ToString("##.00");
                 }
-            //}
-          
 
-
+            }
         }
 
         private void txtDic_Leave(object sender, EventArgs e)
@@ -3155,6 +3171,55 @@ namespace PappyjoeMVC.View
             }
             //calculaton();
 
+        }
+
+        private void cmb_disc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            decimal dis;
+            decimal totalAmount;
+            decimal Discount;
+            if (txtDic.Text != "" || txtDic.Text == ".")
+            {
+                dis = Convert.ToDecimal(txtDic.Text);
+            }
+            else
+            {
+                dis = 0;
+            }
+            if (disoncost == "S")
+            {
+                if (cmb_disc.Text == "INR")
+                {
+                    totalAmount = Convert.ToDecimal(txtTotalCost.Text);
+                    Discount = Convert.ToDecimal(totalAmount - dis);//(dis * totalAmount) / 100
+                    txt_Discount.Text = Discount.ToString("##.00");
+                    txtGrandTotal.Focus();
+                }
+                else
+                {
+                    totalAmount = Convert.ToDecimal(txtTotalCost.Text);
+                    Discount = Convert.ToDecimal(totalAmount - dis);
+                    txt_Discount.Text = Discount.ToString("##.00");
+                    txtGrandTotal.Focus();
+                }
+
+            }
+            else
+            {
+                if (cmb_disc.Text == "INR")
+                {
+                    totalAmount = Convert.ToDecimal(txt_TotalAmount.Text);
+                    Discount = Convert.ToDecimal(totalAmount - dis);
+                    txt_Discount.Text = Discount.ToString("##.00");
+                }
+                else
+                {
+                    totalAmount = Convert.ToDecimal(txt_TotalAmount.Text);
+                    Discount = Convert.ToDecimal((dis * totalAmount) / 100);
+                    txt_Discount.Text = Discount.ToString("##.00");
+                }
+
+            }
         }
     }
 }

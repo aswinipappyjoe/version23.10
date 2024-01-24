@@ -140,6 +140,7 @@
             this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.txtTotal_item = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmb_disc = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -842,6 +843,7 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Controls.Add(this.cmb_disc);
             this.panel4.Controls.Add(this.rad_CreditSale);
             this.panel4.Controls.Add(this.rad_CashSale);
             this.panel4.Controls.Add(this.label17);
@@ -871,7 +873,7 @@
             // rad_CreditSale
             // 
             this.rad_CreditSale.AutoSize = true;
-            this.rad_CreditSale.Location = new System.Drawing.Point(463, 266);
+            this.rad_CreditSale.Location = new System.Drawing.Point(666, 247);
             this.rad_CreditSale.Name = "rad_CreditSale";
             this.rad_CreditSale.Size = new System.Drawing.Size(100, 17);
             this.rad_CreditSale.TabIndex = 335;
@@ -883,7 +885,7 @@
             // 
             this.rad_CashSale.AutoSize = true;
             this.rad_CashSale.Checked = true;
-            this.rad_CashSale.Location = new System.Drawing.Point(367, 265);
+            this.rad_CashSale.Location = new System.Drawing.Point(564, 246);
             this.rad_CashSale.Name = "rad_CashSale";
             this.rad_CashSale.Size = new System.Drawing.Size(97, 17);
             this.rad_CashSale.TabIndex = 334;
@@ -898,7 +900,7 @@
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label17.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label17.Location = new System.Drawing.Point(578, 314);
+            this.label17.Location = new System.Drawing.Point(556, 321);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(132, 22);
             this.label17.TabIndex = 279;
@@ -911,7 +913,7 @@
             this.txtSgst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSgst.Enabled = false;
             this.txtSgst.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtSgst.Location = new System.Drawing.Point(714, 314);
+            this.txtSgst.Location = new System.Drawing.Point(692, 321);
             this.txtSgst.MaxLength = 8;
             this.txtSgst.Name = "txtSgst";
             this.txtSgst.ReadOnly = true;
@@ -926,7 +928,7 @@
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label16.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label16.Location = new System.Drawing.Point(578, 340);
+            this.label16.Location = new System.Drawing.Point(556, 347);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(132, 22);
             this.label16.TabIndex = 277;
@@ -939,7 +941,7 @@
             this.txtCgst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCgst.Enabled = false;
             this.txtCgst.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtCgst.Location = new System.Drawing.Point(714, 340);
+            this.txtCgst.Location = new System.Drawing.Point(692, 347);
             this.txtCgst.MaxLength = 8;
             this.txtCgst.Name = "txtCgst";
             this.txtCgst.ReadOnly = true;
@@ -954,7 +956,7 @@
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label13.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label13.Location = new System.Drawing.Point(578, 263);
+            this.label13.Location = new System.Drawing.Point(556, 270);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(132, 22);
             this.label13.TabIndex = 274;
@@ -966,7 +968,7 @@
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label15.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label15.Location = new System.Drawing.Point(578, 288);
+            this.label15.Location = new System.Drawing.Point(556, 295);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(132, 22);
             this.label15.TabIndex = 273;
@@ -979,7 +981,7 @@
             this.txtIgstResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtIgstResult.Enabled = false;
             this.txtIgstResult.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtIgstResult.Location = new System.Drawing.Point(714, 288);
+            this.txtIgstResult.Location = new System.Drawing.Point(692, 295);
             this.txtIgstResult.MaxLength = 8;
             this.txtIgstResult.Name = "txtIgstResult";
             this.txtIgstResult.ReadOnly = true;
@@ -1219,10 +1221,10 @@
             this.txtDic.BackColor = System.Drawing.Color.White;
             this.txtDic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDic.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtDic.Location = new System.Drawing.Point(935, 316);
+            this.txtDic.Location = new System.Drawing.Point(951, 316);
             this.txtDic.MaxLength = 8;
             this.txtDic.Name = "txtDic";
-            this.txtDic.Size = new System.Drawing.Size(49, 20);
+            this.txtDic.Size = new System.Drawing.Size(43, 20);
             this.txtDic.TabIndex = 270;
             this.txtDic.Text = "0.00";
             this.txtDic.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1237,9 +1239,9 @@
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label24.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label24.Location = new System.Drawing.Point(851, 263);
+            this.label24.Location = new System.Drawing.Point(820, 263);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(132, 22);
+            this.label24.Size = new System.Drawing.Size(177, 22);
             this.label24.TabIndex = 255;
             this.label24.Text = "Total Items";
             // 
@@ -1259,10 +1261,10 @@
             this.Exp_Date,
             this.period,
             this.batchentry});
-            this.dgvGridData.Location = new System.Drawing.Point(9, 252);
+            this.dgvGridData.Location = new System.Drawing.Point(3, 244);
             this.dgvGridData.Name = "dgvGridData";
             this.dgvGridData.RowHeadersVisible = false;
-            this.dgvGridData.Size = new System.Drawing.Size(413, 113);
+            this.dgvGridData.Size = new System.Drawing.Size(547, 135);
             this.dgvGridData.TabIndex = 267;
             // 
             // tempItem_code
@@ -1343,9 +1345,9 @@
             this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label22.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label22.Location = new System.Drawing.Point(851, 288);
+            this.label22.Location = new System.Drawing.Point(818, 288);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(132, 22);
+            this.label22.Size = new System.Drawing.Size(179, 22);
             this.label22.TabIndex = 249;
             this.label22.Text = "Total Amount";
             // 
@@ -1371,7 +1373,7 @@
             this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.label23.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label23.Location = new System.Drawing.Point(850, 316);
+            this.label23.Location = new System.Drawing.Point(817, 316);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(83, 22);
             this.label23.TabIndex = 253;
@@ -1383,9 +1385,9 @@
             this.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblTotal.ForeColor = System.Drawing.Color.SlateGray;
-            this.lblTotal.Location = new System.Drawing.Point(850, 342);
+            this.lblTotal.Location = new System.Drawing.Point(817, 342);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(132, 29);
+            this.lblTotal.Size = new System.Drawing.Size(180, 29);
             this.lblTotal.TabIndex = 21;
             this.lblTotal.Text = "Grand Total";
             // 
@@ -1396,7 +1398,7 @@
             this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalCost.Enabled = false;
             this.txtTotalCost.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txtTotalCost.Location = new System.Drawing.Point(714, 263);
+            this.txtTotalCost.Location = new System.Drawing.Point(692, 270);
             this.txtTotalCost.MaxLength = 8;
             this.txtTotalCost.Name = "txtTotalCost";
             this.txtTotalCost.ReadOnly = true;
@@ -1431,6 +1433,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1101, 35);
             this.panel1.TabIndex = 279;
+            // 
+            // cmb_disc
+            // 
+            this.cmb_disc.BackColor = System.Drawing.Color.White;
+            this.cmb_disc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_disc.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_disc.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.cmb_disc.FormattingEnabled = true;
+            this.cmb_disc.Items.AddRange(new object[] {
+            "INR",
+            "%"});
+            this.cmb_disc.Location = new System.Drawing.Point(902, 316);
+            this.cmb_disc.Name = "cmb_disc";
+            this.cmb_disc.Size = new System.Drawing.Size(44, 21);
+            this.cmb_disc.TabIndex = 354;
+            this.cmb_disc.SelectedIndexChanged += new System.EventHandler(this.cmb_disc_SelectedIndexChanged);
             // 
             // Purchase
             // 
@@ -1570,5 +1588,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn igstCal;
         private System.Windows.Forms.DataGridViewImageColumn ItemEdit;
         private System.Windows.Forms.DataGridViewImageColumn Del;
+        private System.Windows.Forms.ComboBox cmb_disc;
     }
 }

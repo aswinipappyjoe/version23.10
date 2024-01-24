@@ -215,7 +215,7 @@ namespace PappyjoeMVC.Model
         //purchase list 
         public DataTable getPurchase_btwndates(string fromdate, string todate, string type,string purtype)//ffytfytfyt
         {
-            DataTable dt = db.table("select p.PurchNumber,p.PurchDate,p.Sup_Code,s.Supplier_Name,p.GrandTotal,p.PurchType,p.Amount_Status from tbl_PURCHASE as p inner join tbl_Supplier as s on p.Sup_Code = s.Supplier_Code  where  PurchDate between '" + fromdate + "' and '" + todate + "' and p.memo='Purchase' and p.Product_type='" + type + "' and PurchType='" + purtype + "'"); //,v.voucherno,v.Partial_amount  inner join tbl_voucher v on v.purchno =p.PurchNumber
+            DataTable dt = db.table("select p.PurchNumber,p.PurchDate,p.Sup_Code,s.Supplier_Name,p.GrandTotal,p.PurchType,p.Amount_Status,p.InvNumber from tbl_PURCHASE as p inner join tbl_Supplier as s on p.Sup_Code = s.Supplier_Code  where  PurchDate between '" + fromdate + "' and '" + todate + "' and p.memo='Purchase' and p.Product_type='" + type + "' and PurchType='" + purtype + "'"); //,v.voucherno,v.Partial_amount  inner join tbl_voucher v on v.purchno =p.PurchNumber
             return dt;
         }
         public DataTable get_due_from_voucher(string purno)
@@ -226,7 +226,7 @@ namespace PappyjoeMVC.Model
         }
         public DataTable getPurchase_btwndates(string fromdate, string todate, string type, string sup,string purtype)
         {
-            DataTable dt = db.table("select p.PurchNumber,p.PurchDate,p.Sup_Code,s.Supplier_Name,p.GrandTotal,p.PurchType,p.Amount_Status from tbl_PURCHASE as p inner join tbl_Supplier as s on p.Sup_Code = s.Supplier_Code  where  PurchDate between '" + fromdate + "' and '" + todate + "' and Sup_Code='"+sup+"' and p.memo='Purchase' and p.Product_type='" + type + "' and PurchType='" + purtype + "'");
+            DataTable dt = db.table("select p.PurchNumber,p.PurchDate,p.Sup_Code,s.Supplier_Name,p.GrandTotal,p.PurchType,p.Amount_Status,p.InvNumber from tbl_PURCHASE as p inner join tbl_Supplier as s on p.Sup_Code = s.Supplier_Code  where  PurchDate between '" + fromdate + "' and '" + todate + "' and Sup_Code='"+sup+"' and p.memo='Purchase' and p.Product_type='" + type + "' and PurchType='" + purtype + "'");
             return dt;
         }
         public DataTable data_from_Pur_Master(object dgv_Purchase)
@@ -283,25 +283,25 @@ namespace PappyjoeMVC.Model
         {
             db.trans_execute("update tbl_supplier set advance ='" + advance + "' where  Supplier_Code='" + sup_code + "'",con,tran);
         }
-        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to,decimal Partial_amount, MySqlConnection con, MySqlTransaction tran)
+        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to,decimal Partial_amount,string vno, MySqlConnection con, MySqlTransaction tran)
         {
-            db.trans_execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Partial_amount) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + Partial_amount + "' )", con, tran);
+            db.trans_execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Partial_amount,voucherno_tosupplier) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + Partial_amount + "' ,'" + vno + "')", con, tran);
         }
-        public void save_voucher_cheque(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to,string bank,string num, decimal Partial_amount, MySqlConnection con, MySqlTransaction tran)
+        public void save_voucher_cheque(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to,string bank,string num, decimal Partial_amount,string vno, MySqlConnection con, MySqlTransaction tran)
         {
-            db.trans_execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Bank,Number,Partial_amount) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + bank + "','" + num + "','" + Partial_amount + "')", con,tran);
+            db.trans_execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Bank,Number,Partial_amount,voucherno_tosupplier) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + bank + "','" + num + "','" + Partial_amount + "','" + vno + "')", con,tran);
         } 
         public void save_voucher_card(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string card, string digitnum, decimal Partial_amount, MySqlConnection con, MySqlTransaction tran)
         {
             db.trans_execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,cardnumber,fourdigitnumber,Partial_amount) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + card + "','" + digitnum + "','" + Partial_amount + "')", con, tran);
         }
-        public void save_voucher_dd(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string ddnum, decimal Partial_amount, MySqlConnection con, MySqlTransaction tran)
+        public void save_voucher_dd(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string ddnum, decimal Partial_amount,string vno, MySqlConnection con, MySqlTransaction tran)
         {
-            db.trans_execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Bank,DDnumber,Partial_amount) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + bank + "','" + ddnum + "','" + Partial_amount + "')", con, tran);
+            db.trans_execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Bank,DDnumber,Partial_amount,voucherno_tosupplier) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + bank + "','" + ddnum + "','" + Partial_amount + "','" + vno + "')", con, tran);
         }
-        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to,decimal Partial_amount)
+        public void save_voucher(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to,decimal Partial_amount,string vno)
         {
-            db.execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Partial_amount) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + Partial_amount + "')");
+            db.execute("insert into tbl_voucher (voucherno,purchno,date,supplierid,amount,paymethod,advance,opening_balance,Amount_paid,Due,Applied_to,Partial_amount,voucherno_tosupplier) values('" + voucherno + "','" + purchno + "','" + date + "','" + supplierid + "','" + amount + "','" + paymethod + "','" + advance + "','" + opening_balance + "','" + Amount_paid + "','" + Due + "','" + Applied_to + "','" + Partial_amount + "','" + vno + "')");
         }
         public void save_voucher_cheque(string voucherno, string purchno, string date, string supplierid, string amount, string paymethod, string advance, string opening_balance, string Amount_paid, string Due, string Applied_to, string bank, string num, decimal Partial_amount)
         {

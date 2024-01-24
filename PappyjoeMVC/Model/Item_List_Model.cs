@@ -68,7 +68,7 @@ namespace PappyjoeMVC.Model
         }
         public DataTable Fill_Grid_scroll(int count)
         {
-            DataTable dtItems = db.table("Select A.id, A.item_code,A.item_name,(select sum(Qty) from tbl_BatchNumber where item_code= A.id) 'Stock' from tbl_ITEMS A order by id limit "+count+",20");
+            DataTable dtItems = db.table("Select A.id, A.item_code,A.item_name,(select sum(Qty) from tbl_BatchNumber where item_code= A.id) 'Stock' from tbl_ITEMS A order by id limit "+count+",50");
             return dtItems;
         }
 

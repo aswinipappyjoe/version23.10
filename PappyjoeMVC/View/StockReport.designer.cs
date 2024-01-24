@@ -693,7 +693,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_main.Location = new System.Drawing.Point(170, 4);
             this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1137, 688);
+            this.panel_main.Size = new System.Drawing.Size(1132, 684);
             this.panel_main.TabIndex = 281;
             // 
             // panel3

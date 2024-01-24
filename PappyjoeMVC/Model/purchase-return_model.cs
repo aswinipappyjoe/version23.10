@@ -32,10 +32,19 @@ namespace PappyjoeMVC.Model
             DataTable dt_pur_NO = db.table("select  PurchNumber from tbl_purchase where PurchNumber like '%" + purchaseno + "%' order by PurchNumber");
             return dt_pur_NO;
         }
-       
+        public DataTable load_purch_invno_aenum(string purchaseno)
+        {
+            DataTable dt_pur_NO = db.table("select InvNumber from tbl_purchase where InvNumber like '%" + purchaseno + "%' order by InvNumber");
+            return dt_pur_NO;
+        }
         public DataTable Load_pur_details(string pur_no)
         {
-            DataTable dt = db.table("select M.PurchDate,M.Sup_Code,S.Supplier_Name from tbl_PURCHASE M inner join tbl_Supplier S on S.Supplier_Code=M.Sup_Code where PurchNumber='" + pur_no+ "'");
+            DataTable dt = db.table("select M.InvNumber,M.PurchDate,M.Sup_Code,S.Supplier_Name from tbl_PURCHASE M inner join tbl_Supplier S on S.Supplier_Code=M.Sup_Code where PurchNumber='" + pur_no+ "'");
+            return dt;
+        }
+        public DataTable Load_pur_details_on_invoice(string pur_no)
+        {
+            DataTable dt = db.table("select M.InvNumber,M.PurchDate,M.Sup_Code,S.Supplier_Name,M.PurchNumber from tbl_PURCHASE M inner join tbl_Supplier S on S.Supplier_Code=M.Sup_Code where InvNumber='" + pur_no + "'");
             return dt;
         }
         //itemlist
