@@ -972,6 +972,8 @@ namespace PappyjoeMVC.View
                 string header1 = "";
                 string header2 = "";
                 string header3 = "";
+                string check = "";
+                string header_image = "";
                 string message = "Did you want Header on Print?";
                 string caption = "Verification";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -1002,6 +1004,9 @@ namespace PappyjoeMVC.View
                         strfooter1 = print.Rows[0]["fullwidth_context"].ToString();
                         strfooter2 = print.Rows[0]["left_sign"].ToString();
                         strfooter3 = print.Rows[0]["right_sign"].ToString();
+                        check = print.Rows[0]["set_as_default_header"].ToString();
+                        header_image = print.Rows[0]["header_path"].ToString();
+
                     }
                 }
                 string Apppath = System.IO.Directory.GetCurrentDirectory();
@@ -1011,8 +1016,10 @@ namespace PappyjoeMVC.View
                 sWrite.WriteLine("</head>");
                 sWrite.WriteLine("<body>");
                 sWrite.WriteLine("<br>");
-                if (includeheader == "1")
+                if(check=="Yes")
                 {
+                if (includeheader == "1")
+                 {
                     if (includelogo == "1")
                     {
                         if (logo != null || logo_name != "")
@@ -1059,7 +1066,7 @@ namespace PappyjoeMVC.View
                         sWrite.WriteLine("<tr><td align='left' colspan='2'><hr/></td></tr>");
                         sWrite.WriteLine("</table>");
                     }
-                }
+                 }
                 else
                 {
                     sWrite.WriteLine("<table align='center' style='width:900px;border: 1px ;border-collapse: collapse;'>");
@@ -1069,6 +1076,19 @@ namespace PappyjoeMVC.View
                     sWrite.WriteLine("<tr><td align='left' height='40' valign='top'> <FONT COLOR=black FACE='Segoe UI' SIZE=2></font></td></tr>");
                     sWrite.WriteLine("<tr><td align='left' colspan='2'><hr/></td></tr>");
                     sWrite.WriteLine("</table>");
+                }
+                }
+                else
+                {
+                    string path1 = this.db.server();
+                    if (File.Exists(path1 + "\\" + header_image))
+                    {
+                        sWrite.WriteLine("<table align='center'   style='width:9000px;border: 1px ;border-collapse: collapse;' >");
+                        sWrite.WriteLine("<tr>");
+                        sWrite.WriteLine("<td  align='left'><img src='" + path1 + "\\" + header_image + "' width='1200' height='80';'></td>  ");
+                        sWrite.WriteLine("</tr>");
+                        sWrite.WriteLine("</table>");
+                    }
                 }
                 sWrite.WriteLine("<table align='center' style='width:900px;border: 1px ;border-collapse: collapse;'>");
                 //sWrite.WriteLine("<tr><td align='left'  ><hr/></td></tr>");

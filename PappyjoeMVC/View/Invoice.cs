@@ -1564,6 +1564,9 @@ namespace PappyjoeMVC.View
                 string header1 = "";
                 string header2 = "";
                 string header3 = "";
+                string check = "";
+                string header_image = "";
+
                 System.Data.DataTable print = this.cntrl.Get_invoicePrintsettings();
                 if (print.Rows.Count > 0)
                 {
@@ -1573,6 +1576,8 @@ namespace PappyjoeMVC.View
                     strfooter1 = print.Rows[0]["fullwidth_context"].ToString();
                     strfooter2 = print.Rows[0]["left_sign"].ToString();
                     strfooter3 = print.Rows[0]["right_sign"].ToString();
+                    check = print.Rows[0]["set_as_default_header"].ToString();
+                    header_image = print.Rows[0]["header_path"].ToString();
                 }
                 string doctorname = "";
                 string strinvoice = "";
@@ -1598,6 +1603,8 @@ namespace PappyjoeMVC.View
                 sWrite.WriteLine("<table align='center' style='width:700px;border: 1px ;border-collapse: collapse;'>");
                 sWrite.WriteLine("<tr><th align='center'><br><FONT COLOR=black FACE='Geneva, Arial' SIZE=5>INVOICE </font></th></tr>");
                 sWrite.WriteLine("</table>");
+                if(check=="Yes")
+                { 
                 if (includeheader == "1")
                 {
                     if (includelogo == "1")
@@ -1664,6 +1671,19 @@ namespace PappyjoeMVC.View
 
                     sWrite.WriteLine("<td align='left' height='15px' > <FONT COLOR=black FACE='Geneva, Arial' SIZE=2> <FONT COLOR=black>Invoice No: </FONT>" + strinvoice + "</font> </td> <td align='right' ><FONT COLOR=black FACE='Geneva, Arial' SIZE=2> <FONT COLOR=black>Date : </FONT>" + DateTime.Parse(strdate).ToString("dd MMM yyyy") + "</font></td></tr>");
                     sWrite.WriteLine("</table>");
+                }
+                }
+                else
+                {
+                    string paths = this.db.server();
+                    if (File.Exists(paths + "\\" + header_image))
+                    {
+                        sWrite.WriteLine("<table align='center'   style='width:700px;border: 1px ;border-collapse: collapse;' >");
+                        sWrite.WriteLine("<tr>");
+                        sWrite.WriteLine("<td  align='left'><img src='" + paths + "\\" + header_image + "' width='700' height='80';'></td>  ");
+                        sWrite.WriteLine("</tr>");
+                        sWrite.WriteLine("</table>");
+                    }
                 }
                 int Dexist = 0;
                 string sexage = "";

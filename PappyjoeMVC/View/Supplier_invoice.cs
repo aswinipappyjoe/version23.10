@@ -34,8 +34,8 @@ namespace PappyjoeMVC.View
         public decimal amount = 0, due = 0, op_balance =0;
         public static decimal advance = 0,due_amnt=0;
         public  bool purch_list_flag = false;
-        private MySqlConnection con;
-        private MySqlTransaction trans;
+        //private MySqlConnection con;
+        //private MySqlTransaction trans;
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -96,6 +96,7 @@ namespace PappyjoeMVC.View
             decimal partial_total = 0;string amount_status = "Completed";
             if (Convert.ToDecimal( txt_amount_paid.Text) >0)
             {
+              
                 if (Convert.ToDecimal(txt_amount.Text) > Convert.ToDecimal(txt_amount_paid.Text))
                 {
                     partial_total = Convert.ToDecimal(txt_amount.Text) - Convert.ToDecimal(txt_amount_paid.Text);
@@ -148,34 +149,55 @@ namespace PappyjoeMVC.View
                 }
                 else
                 {
-                    if (Cmb_ModeOfPaymnt.Text == "Cheque")
-                    {
-                        this.cntrl.save_voucher_cheque(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text, ccon, trans);
+                    //string cs = PappyjoeMVC.Model.Connection.MyGlobals.trans_connectionstring;
+                    //using (MySqlConnection ccon = new MySqlConnection(cs))
+                    //{
+                        //ccon.Open();
+                        //MySqlTransaction trans = con.BeginTransaction();
+                        try
+                        {
+                            if (Cmb_ModeOfPaymnt.Text == "Cheque")
+                            {
+                                this.cntrl.save_voucher_cheque(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text, ccon, mtran);
 
-                    }
-                    else if (Cmb_ModeOfPaymnt.Text == "Card")
-                    {
+                            }
+                            else if (Cmb_ModeOfPaymnt.Text == "Card")
+                            {
 
-                        //this.cntrl.save_voucher_card(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_4Digit.Text, partial_total, txt_vouto_sup.Text, ccon, trans);
-                    }
-                    else if (Cmb_ModeOfPaymnt.Text == "Demand Draft")
-                    {
+                                //this.cntrl.save_voucher_card(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_4Digit.Text, partial_total, txt_vouto_sup.Text, ccon, trans);
+                            }
+                            else if (Cmb_ModeOfPaymnt.Text == "Demand Draft")
+                            {
 
-                        this.cntrl.save_voucher_dd(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text, ccon, trans);
-                    }
-                    else
-                    {
-                        this.cntrl.save_voucher(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, partial_total, txt_vouto_sup.Text, ccon, trans);
-                    }
-                    if (advance != Convert.ToDecimal(txt_advance.Text))
-                    {
-                        this.cntrl.update_advance(supcode, txt_advance.Text,ccon,trans);
-                    }
-                    if(due_amnt != Convert.ToDecimal(txt_due.Text))
-                    {
-                        this.cntrl.update_due(supcode, txt_due.Text, ccon, trans);
-                    }
-                    this.cntrl.update_purch_Amout_status(txt_purno.Text, amount_status, ccon, trans);
+                                this.cntrl.save_voucher_dd(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, txt_BankNAme.Text, txt_Number.Text, partial_total, txt_vouto_sup.Text, ccon, mtran);
+                            }
+                            else
+                            {
+                                this.cntrl.save_voucher(txt_voucherno.Text, txt_purno.Text, dateTimePickerdailytreatment1.Value.ToString("yyyy-MM-dd"), supcode, txt_amount.Text, Cmb_ModeOfPaymnt.Text, txt_advance.Text, txt_opbalan.Text, txt_amount_paid.Text, txt_due.Text, doctor_id, partial_total, txt_vouto_sup.Text, ccon, mtran);
+                            }
+                            if (advance != Convert.ToDecimal(txt_advance.Text))
+                            {
+                                this.cntrl.update_advance(supcode, txt_advance.Text, ccon, mtran);
+                            }
+                            //if(due_amnt != Convert.ToDecimal(txt_due.Text))
+                            //{
+                            //    this.cntrl.update_due(supcode, txt_due.Text, ccon, trans);
+                            //}
+                            //this.cntrl.update_purch_Amout_status(txt_purno.Text, amount_status, ccon, trans);
+                            //trans.Commit();
+                            //con.Close();
+                        }
+                         catch (Exception ex)
+                        {
+                            //trans.Rollback();
+                            //con.Close();
+                            //MessageBox.Show(ex.Message, "SAVE / UPDATE function is failed !..", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                            //return;
+                        }
+                        
+                    //}
+                   
 
                 }
 
@@ -218,145 +240,200 @@ namespace PappyjoeMVC.View
 
         private void txt_amount_paid_KeyUp(object sender, KeyEventArgs e)
         {
-            label16.Visible = false;
-            decimal adv = 0,baln=0,due_balan=0;
-          if(txt_amount_paid.Text!="")
+            label16.Visible = false; decimal d;
+         decimal adv = 0,baln=0,due_balan=0,amount_paid=0,due_amount=0,amount=0;
+            if (decimal.TryParse(txt_amount_paid.Text, out d))
             {
-                if (Convert.ToDecimal(txt_amount_paid.Text) > 0)
+                amount_paid = Convert.ToDecimal(txt_amount_paid.Text);
+            }
+            //if (decimal.TryParse(txt_due.Text, out d))
+            //{
+            //    due_amount = Convert.ToDecimal(txt_due.Text);
+            //}
+            if (decimal.TryParse(txt_amount.Text, out d))
+            {
+                amount = Convert.ToDecimal(txt_amount.Text);
+            }
+            if (decimal.TryParse(txt_total_due.Text, out d))
+            {
+                due_amount = Convert.ToDecimal(txt_total_due.Text);
+            }
+            
+            if (amount_paid> due_amount)
+            {
+                baln = amount_paid - due_amount;
+                if(baln>0)
                 {
-                    if (Convert.ToDecimal(txt_amount_paid.Text)> Convert.ToDecimal(txt_amount.Text))
-                    {
-                        if(advance>0)
-                        {
-                            baln = Convert.ToDecimal(txt_amount_paid.Text) - Convert.ToDecimal(txt_amount.Text);
-                            adv = advance + baln;
-                            txt_advance.Text = adv.ToString("0.00");
-                            if (due_amnt > 0)
-                            {
-                                if (adv > 0)
-                                {
-                                    if (adv >= due_amnt)
-                                    {
-                                        due_balan = (adv - due_amnt);
-                                        txt_due.Text = "0";
-                                        txt_advance.Text = due_balan.ToString();
-                                        label16.Visible = true;
-                                        label16.Text = "The Balance Amount Rs " + baln + "  is Saves as Advance Amount";
-                                    }
-                                    else
-                                    {
-                                        due_balan = (due_amnt - adv);
-                                        txt_due.Text = due_balan.ToString();
-                                        txt_advance.Text = "0";
-                                    }
+                    txt_due.Text = "0";
+                    txt_advance.Text = baln.ToString(); label16.Visible = true;
+                    label16.Text = "The Balance Amount Rs " + baln + "  is Saves as Advance Amount";
+                }
+            }
+            else
+            {
+                baln = due_amount - amount_paid;
+                txt_due.Text=baln.ToString("0.00");
+            }
+            if(label16.Visible == true)
+            {
+               if( baln>0)
+                {
+                    txt_advance.Text = baln.ToString();
+                }
+            }
+            else
+            {
+                txt_advance.Text = "0";
+            }
+            //if (txt_amount_paid.Text!="")
+            //{
+            //    if (Convert.ToDecimal(txt_amount_paid.Text) > 0)
+            //    {
+            //        if (Convert.ToDecimal(txt_amount_paid.Text)> Convert.ToDecimal(txt_amount.Text))
+            //        {
+            //            if(advance>0)
+            //            {
+            //                baln = Convert.ToDecimal(txt_amount_paid.Text) - Convert.ToDecimal(txt_amount.Text);
+            //                adv = advance + baln;
+            //                txt_advance.Text = adv.ToString("0.00");
+            //                if (due_amnt > 0)
+            //                {
+            //                    if (adv > 0)
+            //                    {
+            //                        if (adv >= due_amnt)
+            //                        {
+            //                            due_balan = (adv - due_amnt);
+            //                            txt_due.Text = "0";
+            //                            txt_advance.Text = due_balan.ToString();
+            //                            label16.Visible = true;
+            //                            label16.Text = "The Balance Amount Rs " + baln + "  is Saves as Advance Amount";
+            //                        }
+            //                        else
+            //                        {
+            //                            due_balan = (due_amnt - adv);
+            //                            txt_due.Text = due_balan.ToString();
+            //                            txt_advance.Text = "0";
+            //                        }
                                        
 
-                                }
-                                else
-                                {
-                                    txt_due.Text = (due_amnt).ToString();
+            //                    }
+            //                    else
+            //                    {
+            //                        txt_due.Text = (due_amnt).ToString();
 
-                                }
-                            }
-                            else
-                                txt_due.Text = "0";
-                        }
-                        else
-                        {
-                            txt_advance.Text = "0";
+            //                    }
+            //                }
+            //                else
+            //                    txt_due.Text = "0";
+            //            }
+            //            else
+            //            {
+            //                txt_advance.Text = "0";
 
-                               baln = Convert.ToDecimal(txt_amount_paid.Text) - Convert.ToDecimal(txt_amount.Text);
-                            adv = Convert.ToDecimal(txt_advance.Text) + baln;
-                            txt_advance.Text = adv.ToString("0.00");
-                            if (due_amnt > 0)
-                            {
-                                if(adv>0)
-                                {
-                                    if (adv >= due_amnt)
-                                    {
-                                        due_balan = (adv - due_amnt);
-                                        txt_due.Text = "0";
-                                        txt_advance.Text = due_balan.ToString(); label16.Visible = true;
-                                        label16.Text = "The Balance Amount Rs " + baln + "  is Saves as Advance Amount";
-                                    }
-                                    else
-                                    {
-                                        due_balan = (due_amnt - adv);
-                                        txt_due.Text = due_balan.ToString();
-                                        txt_advance.Text = "0";
-                                    }
+            //                   baln = Convert.ToDecimal(txt_amount_paid.Text) - Convert.ToDecimal(txt_amount.Text);
+            //                adv = Convert.ToDecimal(txt_advance.Text) + baln;
+            //                txt_advance.Text = adv.ToString("0.00");
+            //                if (due_amnt > 0)
+            //                {
+            //                    if(adv>0)
+            //                    {
+            //                        if (adv >= due_amnt)
+            //                        {
+            //                            due_balan = (adv - due_amnt);
+            //                            txt_due.Text = "0";
+            //                            txt_advance.Text = due_balan.ToString(); label16.Visible = true;
+            //                            label16.Text = "The Balance Amount Rs " + baln + "  is Saves as Advance Amount";
+            //                        }
+            //                        else
+            //                        {
+            //                            due_balan = (due_amnt - adv);
+            //                            txt_due.Text = due_balan.ToString();
+            //                            txt_advance.Text = "0";
+            //                        }
 
-                                }
-                                else
-                                {
-                                    txt_due.Text = (due_amnt).ToString();
+            //                    }
+            //                    else
+            //                    {
+            //                        txt_due.Text = (due_amnt).ToString();
 
-                                }
-                                //txt_due.Text = (due_amnt).ToString();
-                            }
-                            else
-                                txt_due.Text = "0";
-                        }
-                    }
-                    else
-                    {
-                        due = Convert.ToDecimal(txt_amount.Text) - Convert.ToDecimal(txt_amount_paid.Text);
-                        txt_due.Text = "0";
-                        if (due_amnt>0)
-                        {
-                                txt_due.Text = (due + due_amnt).ToString();
-                        }
-                        else
-                        {
-                            txt_due.Text = due.ToString();
-                        }
+            //                    }
+            //                    //txt_due.Text = (due_amnt).ToString();
+            //                }
+            //                else
+            //                    txt_due.Text = "0";
+            //            }
+            //        }
+            //        else
+            //        {
+            //            //due = Convert.ToDecimal(txt_amount.Text) - Convert.ToDecimal(txt_amount_paid.Text);
+            //            //if (due_amnt>0)
+            //            //{
+            //            //        txt_due.Text = ( due_amnt- due ).ToString(); //(due + due_amnt).ToString();
+            //            //}
+            //            //else
+            //            //{
+            //            //    txt_due.Text = due.ToString();
+            //            //}
+                       
+            //            if(Convert.ToDecimal(txt_due.Text)>= Convert.ToDecimal(txt_amount_paid.Text))
+            //            {
+            //                due = Convert.ToDecimal(txt_due.Text) - Convert.ToDecimal(txt_amount_paid.Text);
+            //                txt_due.Text = due.ToString(); 
+
+            //            }
+            //            else
+            //            {
+            //                due = Convert.ToDecimal(txt_amount_paid.Text) - Convert.ToDecimal(txt_due.Text);
+            //                txt_due.Text = due.ToString();
+            //            }
+                        
                       
                        
-                        if (Convert.ToDecimal(txt_advance.Text)>0)
-                        {
-                            txt_advance.Text = advance.ToString("#.00"); 
-                        }
-                        else
-                            txt_advance.Text = "0";
+            //            if (Convert.ToDecimal(txt_advance.Text)>0)
+            //            {
+            //                txt_advance.Text = advance.ToString("#.00"); 
+            //            }
+            //            else
+            //                txt_advance.Text = "0";
 
-                    }
+            //        }
 
-                }
-                else
-                {
-                    decimal a = 0, b = 0;
-                   if(due_amnt>0)
-                    {
-                        a = due_amnt + Convert.ToDecimal(txt_amount.Text);
-                    }
-                   else
-                    {
-                        a = Convert.ToDecimal(txt_amount.Text);
-                    }
-                   if(Convert.ToDecimal(txt_advance.Text)>a)
-                    {
-                        txt_due.Text = "0";
-                        b = Convert.ToDecimal(txt_advance.Text) - a;
-                        txt_advance.Text = b.ToString();
-                    }
-                   else
-                    {
-                        MessageBox.Show("Total amount is grater than advance amount . Please enter a valid amount","Invalid",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                        return;
-                    }
-                }
-            }
-            else if (txt_amount_paid.Text == "")
-            {
-                txt_amount_paid.Text = "0";
-                txt_advance.Text = advance.ToString("0.00");
-                if (due_amnt > 0)
-                {
-                    txt_due.Text = (due_amnt).ToString();
-                }
-                else
-                    txt_due.Text = "0";
-            }
+            //    }
+            //    else
+            //    {
+            //        decimal a = 0, b = 0;
+            //       if(due_amnt>0)
+            //        {
+            //            a = due_amnt + Convert.ToDecimal(txt_amount.Text);
+            //        }
+            //       else
+            //        {
+            //            a = Convert.ToDecimal(txt_amount.Text);
+            //        }
+            //       if(Convert.ToDecimal(txt_advance.Text)>a)
+            //        {
+            //            txt_due.Text = "0";
+            //            b = Convert.ToDecimal(txt_advance.Text) - a;
+            //            txt_advance.Text = b.ToString();
+            //        }
+            //       else
+            //        {
+            //            MessageBox.Show("Total amount is grater than advance amount . Please enter a valid amount","Invalid",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            //            return;
+            //        }
+            //    }
+            //}
+            //else if (txt_amount_paid.Text == "")
+            //{
+            //    txt_amount_paid.Text = "0";
+            //    txt_advance.Text = advance.ToString("0.00");
+            //    if (due_amnt > 0)
+            //    {
+            //        txt_due.Text = (due_amnt).ToString();
+            //    }
+            //    else
+            //        txt_due.Text = "0";
+            //}
 
         }
 
@@ -392,8 +469,8 @@ namespace PappyjoeMVC.View
                 txt_opbalan.Text = Convert.ToDecimal(dt_opening.Rows[0][0].ToString()).ToString();
                 txt_advance.Text = Convert.ToDecimal(dt_opening.Rows[0]["advance"].ToString()).ToString();
                 advance = Convert.ToDecimal(dt_opening.Rows[0]["advance"].ToString());
-                txt_due.Text= Convert.ToDecimal(dt_opening.Rows[0]["Current_Balance"].ToString()).ToString();
-                due_amnt = Convert.ToDecimal(dt_opening.Rows[0]["Current_Balance"].ToString());
+                //txt_due.Text= Convert.ToDecimal(dt_opening.Rows[0]["Current_Balance"].ToString()).ToString();
+                //due_amnt = Convert.ToDecimal(dt_opening.Rows[0]["Current_Balance"].ToString());
             }
             else
             {
@@ -427,12 +504,25 @@ namespace PappyjoeMVC.View
                     DataTable dtb = this.cntrl.increment_Receipt();
                     DocNumber_increment(dtb);
                 }
+                txt_due.Text = Convert.ToDecimal(txt_amount.Text).ToString("0.00");
+                txt_total_due.Text = Convert.ToDecimal(txt_amount.Text).ToString("0.00");
             }
             else
             {
                 DataTable dtb = this.cntrl.increment_Receipt();
                 DocNumber_increment(dtb);
+                //if (due_amnt > 0)
+                //{
+                //    txt_due.Text = Convert.ToDecimal(due_amnt + Convert.ToDecimal(txt_amount.Text)).ToString("0.00");
+                //    txt_total_due.Text = Convert.ToDecimal(due_amnt + Convert.ToDecimal(txt_amount.Text)).ToString("0.00");
+                //}
+                //else
+                {
+                    txt_due.Text = Convert.ToDecimal(txt_amount.Text).ToString("0.00");
+                    txt_total_due.Text = Convert.ToDecimal(txt_amount.Text).ToString("0.00");
+                }
             }
+            
             //if(advance>)
         }
         public void DocNumber_increment(DataTable dtb)

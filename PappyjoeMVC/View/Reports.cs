@@ -128,13 +128,19 @@ namespace PappyjoeMVC.View
                     }
                     else
                     {
+                        //comborepcategory.Items.Insert(0, "INVOICES");
+                        //comborepcategory.Items.Insert(1, "RECEIPT");
+                        //comborepcategory.Items.Insert(2, "PAYMENTS");
+                        //comborepcategory.Items.Insert(3, "APPOINTMENTS");
+                        //comborepcategory.Items.Insert(4, "PATIENTS");
+                        //comborepcategory.Items.Insert(5, "EMR");
+                        //comborepcategory.Items.Insert(6, "INVENTORY");
                         comborepcategory.Items.Insert(0, "INVOICES");
                         comborepcategory.Items.Insert(1, "RECEIPT");
-                        comborepcategory.Items.Insert(2, "PAYMENTS");
-                        comborepcategory.Items.Insert(3, "APPOINTMENTS");
-                        comborepcategory.Items.Insert(4, "PATIENTS");
-                        comborepcategory.Items.Insert(5, "EMR");
-                        comborepcategory.Items.Insert(6, "INVENTORY");
+                        comborepcategory.Items.Insert(2, "APPOINTMENTS");
+                        comborepcategory.Items.Insert(3, "PATIENTS");
+                        comborepcategory.Items.Insert(4, "EMR");
+                        comborepcategory.Items.Insert(5, "INVENTORY");
                     }
                 }
                 if (comborepcategory.Items.Count != 0)

@@ -351,10 +351,23 @@ namespace PappyjoeMVC.View
                 {
                     if (Form_Name == "Sales")
                     {
-                        var form2 = new Sales(item_code, item_Name, Stock, ItemID);
-                        //form2.Closed += (sender1, args) => this.Close();
-                        //Item_Code = "";
-                        this.Close();
+                        DataTable dt_min = this.cntrl.dt_minimum_stock(ItemID);
+                        if (dt_min.Rows.Count > 0)
+                        {
+                            if (Convert.ToDecimal(Stock) > Convert.ToDecimal(dt_min.Rows[0]["MinimumStock"].ToString()))
+                            {
+                                var form2 = new Sales(item_code, item_Name, Stock, ItemID);
+                                //form2.Closed += (sender1, args) => this.Close();
+                                //Item_Code = "";
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Can't sell, the quantity is equall to minimum quantity", "Can't sell", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                return;
+                            }
+                        }
+
                     }
                     else if (Form_Name == "Sales Order")
                     {
@@ -411,9 +424,25 @@ namespace PappyjoeMVC.View
                 {
                     if (Form_Name == "Sales")
                     {
-                        var form2 = new Sales(item_code, item_Name, Stock, ItemID);
-                        //form2.Closed += (sender1, args) => this.Close();
-                        this.Close();
+                        DataTable dt_min = this.cntrl.dt_minimum_stock(ItemID);
+                        if (dt_min.Rows.Count > 0)
+                        {
+                            if (Convert.ToDecimal(Stock) > Convert.ToDecimal(dt_min.Rows[0]["MinimumStock"].ToString()))
+                            {
+                                var form2 = new Sales(item_code, item_Name, Stock, ItemID);
+                                //form2.Closed += (sender1, args) => this.Close();
+                                //Item_Code = "";
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Can't sell, the quantity is equall to minimum quantity", "Can't sell", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                return;
+                            }
+                        }
+                        //var form2 = new Sales(item_code, item_Name, Stock, ItemID);
+                        ////form2.Closed += (sender1, args) => this.Close();
+                        //this.Close();
                     }
                     else if (Form_Name == "Sales Order")
                     {

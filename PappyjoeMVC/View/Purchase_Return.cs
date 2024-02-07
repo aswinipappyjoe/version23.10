@@ -82,6 +82,7 @@ namespace PappyjoeMVC.View
                         DataTable dt_batch_purchase = this.cntrl.dt_get_batchpurchase(itemcd1, txt_pur_no.Text);
                         DataTable dt_stock = this.cntrl.dt_get_stock(itemcd1, dt_batch_purchase.Rows[0]["BatchNumber"].ToString());//txt_pur_no.Text
                         itemid = dtitems.Rows[0]["id"].ToString();
+                        txtUnitCost.Text = dtitems.Rows[0]["Rate"].ToString();
                         if (dtitems.Rows[0]["Unit1"].ToString() != null && dtitems.Rows[0]["Unit2"].ToString() != null)
                         {
                             unitLoad(dtitems, dt_unit);
@@ -140,7 +141,7 @@ namespace PappyjoeMVC.View
                             txt_free.Text = "0";
                         }
                         txt_free.Text = dtitems.Rows[0]["FreeQty"].ToString();
-                        txtUnitCost.Text = dtitems.Rows[0]["Rate"].ToString();
+                       
                         //txtAmount.Text = dtitems.Rows[0]["Amount"].ToString();
                         if (dtitems.Rows[0]["Qty"].ToString() != "" && dtitems.Rows[0]["Rate"].ToString() != "")
                         {

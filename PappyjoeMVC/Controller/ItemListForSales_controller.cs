@@ -61,5 +61,11 @@ namespace PappyjoeMVC.Controller
             string dt = inv_model.check_batch(item_code);
             return dt;
         }
+        public DataTable dt_minimum_stock(string itemid)
+        {
+            DataTable dt = inv_model.dt_minimum_stock(itemid);
+            return dt;
+
+        }
     }
 }

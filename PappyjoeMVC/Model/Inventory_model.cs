@@ -118,6 +118,12 @@ namespace PappyjoeMVC.Model
 
             return dtb;
         }
+        public DataTable dt_minimum_stock(string itemid)
+        {
+            DataTable dtb = db.table("select t.id,t.item_code,MinimumStock from tbl_ITEMS t where  t.id = '" + itemid + "' ");
+
+            return dtb;
+        }
         //batch sale
         public DataTable get_item_frm_purchase(string itemcode)
         {

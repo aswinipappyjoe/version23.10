@@ -31,6 +31,9 @@ namespace PappyjoeMVC.View
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Supplier_invoice));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_total_due = new System.Windows.Forms.TextBox();
+            this.txt_vouto_sup = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.Lab_Last4Digit = new System.Windows.Forms.Label();
             this.Lab_Numbr = new System.Windows.Forms.Label();
@@ -69,8 +72,6 @@ namespace PappyjoeMVC.View
             this.btnSaveSupplier = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
-            this.txt_vouto_sup = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +80,7 @@ namespace PappyjoeMVC.View
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txt_total_due);
             this.panel1.Controls.Add(this.txt_vouto_sup);
             this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label16);
@@ -118,6 +120,38 @@ namespace PappyjoeMVC.View
             this.panel1.Size = new System.Drawing.Size(628, 347);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txt_total_due
+            // 
+            this.txt_total_due.Enabled = false;
+            this.txt_total_due.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total_due.ForeColor = System.Drawing.Color.Red;
+            this.txt_total_due.Location = new System.Drawing.Point(319, 229);
+            this.txt_total_due.Name = "txt_total_due";
+            this.txt_total_due.Size = new System.Drawing.Size(91, 22);
+            this.txt_total_due.TabIndex = 362;
+            this.txt_total_due.Text = "0";
+            this.txt_total_due.WordWrap = false;
+            // 
+            // txt_vouto_sup
+            // 
+            this.txt_vouto_sup.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_vouto_sup.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vouto_sup.Location = new System.Drawing.Point(420, 37);
+            this.txt_vouto_sup.Name = "txt_vouto_sup";
+            this.txt_vouto_sup.Size = new System.Drawing.Size(194, 22);
+            this.txt_vouto_sup.TabIndex = 361;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label17.Location = new System.Drawing.Point(281, 43);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(130, 13);
+            this.label17.TabIndex = 360;
+            this.label17.Text = "Voucher No(To supplier)";
             // 
             // label16
             // 
@@ -557,26 +591,6 @@ namespace PappyjoeMVC.View
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // txt_vouto_sup
-            // 
-            this.txt_vouto_sup.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_vouto_sup.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.txt_vouto_sup.Location = new System.Drawing.Point(420, 37);
-            this.txt_vouto_sup.Name = "txt_vouto_sup";
-            this.txt_vouto_sup.Size = new System.Drawing.Size(194, 22);
-            this.txt_vouto_sup.TabIndex = 361;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label17.Location = new System.Drawing.Point(281, 43);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(130, 13);
-            this.label17.TabIndex = 360;
-            this.label17.Text = "Voucher No(To supplier)";
-            // 
             // Supplier_invoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -646,5 +660,6 @@ namespace PappyjoeMVC.View
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox txt_vouto_sup;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txt_total_due;
     }
 }

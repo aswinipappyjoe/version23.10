@@ -15,6 +15,7 @@ namespace PappyjoeMVC.View
         GeneralFunctions GF = new GeneralFunctions();
         public DataTable data_from_Pur_Master1 = new DataTable();
         public DataTable data_from_purchase1 = new DataTable();
+        Connection db = new Connection();
         decimal amtUntchange = 0;
         decimal ttlamt = 0;
         public string doctor_id = "0";
@@ -2933,11 +2934,12 @@ namespace PappyjoeMVC.View
             string strphone = "";
             string path = "";
             string logo_name = "";
+            DataTable print_settng = this.prnt_ctrl.Get_inventory_id();
             try
             {
                 if (result == System.Windows.Forms.DialogResult.Yes)
                 {
-                    DataTable print_settng = this.prnt_ctrl.Get_inventory_id();
+                    
                     System.Data.DataTable dtp = this.cntrl.get_companydetails();
                     if (dtp.Rows.Count > 0)
                     {
@@ -2975,23 +2977,41 @@ namespace PappyjoeMVC.View
                 sWrite.WriteLine("<col >");
                 sWrite.WriteLine("<br>");
                 string Appath = System.IO.Directory.GetCurrentDirectory();
-                if (File.Exists(Appath + "\\" + logo_name))
+                string check = print_settng.Rows[0]["set_as_default_header"].ToString();
+                string header_image = print_settng.Rows[0]["header_path"].ToString();
+                if (check == "Yes")
                 {
-                    sWrite.WriteLine("<table align='center' style='width:270px;border: 1px ;border-collapse: collapse;'>");
-                    sWrite.WriteLine("<tr>");
-                    sWrite.WriteLine("<td width='30px' height='50px' align='left' rowspan='3'><img src='" + Appath + "\\" + logo_name + "'style='width:70px;height:70px;' ></td>  ");
-                    sWrite.WriteLine("<td width='870px' align='left' height='25px'><FONT  COLOR=black  face='Segoe UI' SIZE=4><b>&nbsp;" + strclinicname + "</font> <br><FONT  COLOR=black  face='Segoe UI' SIZE=2>&nbsp;" + strStreet + "<br>&nbsp;" + strphone + " </b></td></tr>");
-                    sWrite.WriteLine("</table>");
+                    if (File.Exists(Appath + "\\" + logo_name))
+                    {
+                        sWrite.WriteLine("<table align='center' style='width:270px;border: 1px ;border-collapse: collapse;'>");
+                        sWrite.WriteLine("<tr>");
+                        sWrite.WriteLine("<td width='30px' height='50px' align='left' rowspan='3'><img src='" + Appath + "\\" + logo_name + "'style='width:70px;height:70px;' ></td>  ");
+                        sWrite.WriteLine("<td width='870px' align='left' height='25px'><FONT  COLOR=black  face='Segoe UI' SIZE=4><b>&nbsp;" + strclinicname + "</font> <br><FONT  COLOR=black  face='Segoe UI' SIZE=2>&nbsp;" + strStreet + "<br>&nbsp;" + strphone + " </b></td></tr>");
+                        sWrite.WriteLine("</table>");
+                    }
+                    else
+                    {
+                        sWrite.WriteLine("<table align='center' style='width:270px;border: 1px ;border-collapse: collapse;'>");
+                        sWrite.WriteLine("<tr>");
+                        sWrite.WriteLine("<td  align='left' height='20px'><FONT  COLOR=black  face='Segoe UI' SIZE=5>&nbsp;" + strclinicname + "</font></td></tr>");
+                        sWrite.WriteLine("<tr><td  align='left' height='20px'><FONT COLOR=black FACE='Segoe UI' SIZE=3>&nbsp;" + strStreet + "</font></td></tr>");
+                        sWrite.WriteLine("<tr><td align='left' height='20px' valign='top'> <FONT COLOR=black FACE='Segoe UI' SIZE=2>&nbsp;" + strphone + "</font></td></tr>");
+                        sWrite.WriteLine("<tr><td align='left' colspan='2'><hr/></td></tr>");
+                        sWrite.WriteLine("</table>");
+                    }
                 }
                 else
                 {
-                    sWrite.WriteLine("<table align='center' style='width:270px;border: 1px ;border-collapse: collapse;'>");
-                    sWrite.WriteLine("<tr>");
-                    sWrite.WriteLine("<td  align='left' height='20px'><FONT  COLOR=black  face='Segoe UI' SIZE=5>&nbsp;" + strclinicname + "</font></td></tr>");
-                    sWrite.WriteLine("<tr><td  align='left' height='20px'><FONT COLOR=black FACE='Segoe UI' SIZE=3>&nbsp;" + strStreet + "</font></td></tr>");
-                    sWrite.WriteLine("<tr><td align='left' height='20px' valign='top'> <FONT COLOR=black FACE='Segoe UI' SIZE=2>&nbsp;" + strphone + "</font></td></tr>");
-                    sWrite.WriteLine("<tr><td align='left' colspan='2'><hr/></td></tr>");
-                    sWrite.WriteLine("</table>");
+                    string paths = this.db.server();
+                    if (File.Exists(paths + "\\" + header_image))
+                    {
+                        sWrite.WriteLine("<table align='center'   style='width:270px;border: 1px ;border-collapse: collapse;' >");
+                        sWrite.WriteLine("<tr>");
+                        sWrite.WriteLine("<td  align='left'><img src='" + paths + "\\" + header_image + "' width='270' height='80';'></td>  ");
+                        sWrite.WriteLine("</tr>");
+                        sWrite.WriteLine("</table>");
+
+                    }
                 }
                 sWrite.WriteLine("<table align='center' style='width:270px;border: 1px ;border-collapse: collapse;'>");
                 //sWrite.WriteLine("<tr><td align='left'  ><hr/></td></tr>");

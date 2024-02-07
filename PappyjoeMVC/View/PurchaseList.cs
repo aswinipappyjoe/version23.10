@@ -96,7 +96,7 @@ namespace PappyjoeMVC.View
                             if (dt.Rows[i]["Amount_Status"].ToString() == "Completed")
                             {
                                 dgv_Purchase.Rows[i].DefaultCellStyle.BackColor = Color.Coral;
-
+                                dgv_Purchase.Rows[i].Cells["due"].Value = "0.00";
                             }
                             dgv_Purchase.Rows[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                             

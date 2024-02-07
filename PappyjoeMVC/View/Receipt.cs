@@ -858,6 +858,8 @@ namespace PappyjoeMVC.View
                 string str_website = "";
                 string str_druglicenseno = "";
                 string str_taxno = "";
+                string check = "";
+                string header_image = "";
                 string doctor = this.cntrl.Get_DoctorName(doctor_id);
                 if (doctor!="")
                 {
@@ -871,6 +873,7 @@ namespace PappyjoeMVC.View
                     logo_name= dtp.Rows[0]["path"].ToString();
                     str_druglicenseno = dtp.Rows[0]["Dl_Number"].ToString();
                     str_taxno = dtp.Rows[0]["Dl_Number2"].ToString();
+                  
                 }
                 string strfooter1 = "";
                 string strfooter2 = "";
@@ -887,6 +890,8 @@ namespace PappyjoeMVC.View
                     strfooter1 = print.Rows[0]["fullwidth_context"].ToString();
                     strfooter2 = print.Rows[0]["left_sign"].ToString();
                     strfooter3 = print.Rows[0]["right_sign"].ToString();
+                    check = print.Rows[0]["set_as_default_header"].ToString();
+                    header_image = print.Rows[0]["header_path"].ToString();
                 }
                 string Apppath = System.IO.Directory.GetCurrentDirectory();
                 StreamWriter sWrite = new StreamWriter(Apppath + "\\Receipt_print.html");
@@ -895,6 +900,8 @@ namespace PappyjoeMVC.View
                 sWrite.WriteLine("</head>");
                 sWrite.WriteLine("<body >");
                 sWrite.WriteLine("<br>");
+                if (check =="Yes")
+                {
                 if (includeheader == "1")
                 {
                     if (includelogo == "1")
@@ -958,6 +965,21 @@ namespace PappyjoeMVC.View
                     sWrite.WriteLine("<tr><td align='left' colspan='2'><hr/></td></tr>");
                     sWrite.WriteLine("</table>");
                 }
+                }
+                else
+                {
+                    string paths = this.db.server();
+                    if (File.Exists(paths + "\\" + header_image))
+                    {
+                        sWrite.WriteLine("<table align='center'   style='width:700px;border: 1px ;border-collapse: collapse;' >");
+                        sWrite.WriteLine("<tr>");
+                        sWrite.WriteLine("<td  align='left'><img src='" + paths + "\\" + header_image + "' width='700' height='80';'></td>  ");
+                        sWrite.WriteLine("</tr>");
+                        sWrite.WriteLine("</table>");
+
+                    }
+                }
+
                 string sexage = "";
                 int Dexist = 0;
                 string address = "";
